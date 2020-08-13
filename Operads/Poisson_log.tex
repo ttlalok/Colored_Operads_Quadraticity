@@ -1,0 +1,1132 @@
+\documentclass[11pt]{amsart} 
+ 
+ \begin{document} 
+ 
+The shuffle operad has the following relations: 
+
+ Relation ARel-1: 
+ $$ 
+a(a(1,2),3)\underline{ - a(1,a(2,3))}
+ $$ 
+
+ Relation ARel-2: 
+ $$ 
+a(b(1,2),3)\underline{ - b(a(1,3),2)}
+ $$ 
+
+ Relation ARel-3: 
+ $$ 
+\underline{b(1,b(2,3))} - b(b(1,2),3)
+ $$ 
+
+ Relation ARel-4: 
+ $$ 
+a(a(1,3),2)\underline{ - a(1,b(2,3))}
+ $$ 
+
+ Relation ARel-5: 
+ $$ 
+\underline{b(1,a(2,3))} - b(b(1,3),2)
+ $$ 
+
+ Relation ARel-6: 
+ $$ 
+a(b(1,3),2)\underline{ - b(a(1,2),3)}
+ $$ 
+
+ Relation Lie: 
+ $$ 
+\underline{B(B(1,2),3)} - B(B(1,3),2) - B(1,B(2,3))
+ $$ 
+
+ Relation Pois-1: 
+ $$ 
+B(1,a(2,3))\underline{ - a(B(1,2),3)} - b(B(1,3),2)
+ $$ 
+
+ Relation Pois-2: 
+ $$ 
+ - B(a(1,3),2)\underline{ + a(B(1,2),3)} - a(1,B(2,3))
+ $$ 
+
+ Relation Pois-3: 
+ $$ 
+\underline{ - B(b(1,2),3)} + b(1,B(2,3)) + b(B(1,3),2)
+ $$ 
+
+ Relation Pois-4: 
+ $$ 
+B(1,b(2,3)) - a(B(1,3),2)\underline{ - b(B(1,2),3)}
+ $$ 
+
+ Relation Pois-5: 
+ $$ 
+\underline{ - B(b(1,3),2)} - b(1,B(2,3)) + b(B(1,2),3)
+ $$ 
+
+ Relation Pois-6: 
+ $$ 
+\underline{ - B(a(1,2),3)} + a(B(1,3),2) + a(1,B(2,3))
+ $$ 
+
+ 
+ 
+ List of reductions: 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-1 and ARel-2:} \\ 
+& \gamma = b(a(1,a(3,4)),2) \\ 
+& \text{Reduction}: \\&b(a(a(1,3),4),2) - \underline{a(b(1,2),a(3,4))} \stackrel{ ARel-1 }{=}  \\ 
+&\underline{b(a(a(1,3),4),2)} - a(a(b(1,2),3),4) \stackrel{ ARel-2 }{=}  \\ 
+& - a(a(b(1,2),3),4) + \underline{a(b(a(1,3),2),4)} \stackrel{ ARel-2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-1 and ARel-4:} \\ 
+& \gamma = a(1,a(2,b(3,4))) \\ 
+& \text{Reduction}: \\&a(a(1,2),b(3,4)) - \underline{a(1,a(a(2,4),3))} \stackrel{ ARel-1 }{=}  \\ 
+&a(a(1,2),b(3,4)) - \underline{a(a(1,a(2,4)),3)} \stackrel{ ARel-1 }{=}  \\ 
+&\underline{a(a(1,2),b(3,4))} - a(a(a(1,2),4),3) \stackrel{ ARel-4 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-1 and ARel-5:} \\ 
+& \gamma = b(1,a(2,a(3,4))) \\ 
+& \text{Reduction}: \\&\underline{b(1,a(a(2,3),4))} - \underline{b(b(1,a(3,4)),2)} \stackrel{ ARel-5 }{=}  \\ 
+&\underline{b(b(1,4),a(2,3))} - b(b(b(1,4),3),2) \stackrel{ ARel-5 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-1 and ARel-6:} \\ 
+& \gamma = b(a(1,a(2,3)),4) \\ 
+& \text{Reduction}: \\&b(a(a(1,2),3),4) - \underline{a(b(1,4),a(2,3))} \stackrel{ ARel-1 }{=}  \\ 
+&\underline{b(a(a(1,2),3),4)} - a(a(b(1,4),2),3) \stackrel{ ARel-6 }{=}  \\ 
+& - a(a(b(1,4),2),3) + \underline{a(b(a(1,2),4),3)} \stackrel{ ARel-6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-1 and ARel-6:} \\ 
+& \gamma = b(a(1,a(2,4)),3) \\ 
+& \text{Reduction}: \\&b(a(a(1,2),4),3) - \underline{a(b(1,3),a(2,4))} \stackrel{ ARel-1 }{=}  \\ 
+&\underline{b(a(a(1,2),4),3)} - a(a(b(1,3),2),4) \stackrel{ ARel-2 }{=}  \\ 
+& - a(a(b(1,3),2),4) + \underline{a(b(a(1,2),3),4)} \stackrel{ ARel-6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-1 and Pois-1:} \\ 
+& \gamma = a(B(1,2),a(3,4)) \\ 
+& \text{Reduction}: \\&a(a(B(1,2),3),4) - \underline{B(1,a(2,a(3,4)))} + b(B(1,a(3,4)),2) \stackrel{ ARel-1 }{=}  \\ 
+&\underline{a(a(B(1,2),3),4)} + b(B(1,a(3,4)),2) - B(1,a(a(2,3),4)) \stackrel{ Pois-1 }{=}  \\ 
+&b(B(1,a(3,4)),2) - B(1,a(a(2,3),4)) + \underline{a(B(1,a(2,3)),4)} - a(b(B(1,3),2),4) \stackrel{ Pois-1 }{=}  \\ 
+&b(B(1,a(3,4)),2) - a(b(B(1,3),2),4) - \underline{b(B(1,4),a(2,3))} \stackrel{ ARel-5 }{=}  \\ 
+&b(B(1,a(3,4)),2) - a(b(B(1,3),2),4) - b(b(B(1,4),3),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-1 and Pois-1:} \\ 
+& \gamma = a(1,a(B(2,3),4)) \\ 
+& \text{Reduction}: \\&a(a(1,B(2,3)),4) - a(1,B(2,a(3,4))) + \underline{a(1,b(B(2,4),3))} \stackrel{ ARel-4 }{=}  \\ 
+&a(a(1,B(2,3)),4) - a(1,B(2,a(3,4))) + a(a(1,3),B(2,4))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-1 and Pois-2:} \\ 
+& \gamma = a(B(1,2),a(3,4)) \\ 
+& \text{Reduction}: \\&a(a(B(1,2),3),4) - \underline{B(a(1,a(3,4)),2)} - a(1,B(2,a(3,4))) \stackrel{ ARel-1 }{=}  \\ 
+&\underline{a(a(B(1,2),3),4)} - a(1,B(2,a(3,4))) - B(a(a(1,3),4),2) \stackrel{ Pois-1 }{=}  \\ 
+& - a(1,B(2,a(3,4))) - B(a(a(1,3),4),2) + \underline{a(B(1,a(2,3)),4)} - a(b(B(1,3),2),4) \stackrel{ Pois-1 }{=}  \\ 
+& - a(1,B(2,a(3,4))) - B(a(a(1,3),4),2) - a(b(B(1,3),2),4) + B(1,a(a(2,3),4))\\ 
+ &  - \underline{b(B(1,4),a(2,3))} \stackrel{ ARel-5 }{=}  \\ 
+& - a(1,B(2,a(3,4))) - B(a(a(1,3),4),2) - a(b(B(1,3),2),4) + B(1,a(a(2,3),4))\\ 
+ &  - b(b(B(1,4),3),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-1 and Pois-2:} \\ 
+& \gamma = a(1,a(B(2,3),4)) \\ 
+& \text{Reduction}: \\&a(a(1,B(2,3)),4) - a(1,B(a(2,4),3)) - \underline{a(1,a(2,B(3,4)))} \stackrel{ ARel-1 }{=}  \\ 
+&a(a(1,B(2,3)),4) - a(1,B(a(2,4),3)) - a(a(1,2),B(3,4))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-1 and Pois-6:} \\ 
+& \gamma = B(a(1,a(2,3)),4) \\ 
+& \text{Reduction}: \\&B(a(a(1,2),3),4) - \underline{a(B(1,4),a(2,3))} - a(1,B(a(2,3),4)) \stackrel{ ARel-1 }{=}  \\ 
+&\underline{B(a(a(1,2),3),4)} - \underline{a(1,B(a(2,3),4))} - a(a(B(1,4),2),3) \stackrel{ Pois-6 }{=}  \\ 
+& - a(a(B(1,4),2),3) + \underline{a(B(a(1,2),4),3)} + a(a(1,2),B(3,4)) - a(1,a(B(2,4),3))\\ 
+ &  - a(1,a(2,B(3,4))) \stackrel{ Pois-6 }{=}  \\ 
+&a(a(1,2),B(3,4)) - \underline{a(1,a(B(2,4),3))} - \underline{a(1,a(2,B(3,4)))} + a(a(1,B(2,4)),3) \stackrel{ ARel-1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-1 and Pois-6:} \\ 
+& \gamma = B(a(1,a(2,4)),3) \\ 
+& \text{Reduction}: \\&B(a(a(1,2),4),3) - \underline{a(B(1,3),a(2,4))} - a(1,B(a(2,4),3)) \stackrel{ ARel-1 }{=}  \\ 
+&B(a(a(1,2),4),3) - a(1,B(a(2,4),3)) - a(a(B(1,3),2),4)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and ARel-3:} \\ 
+& \gamma = b(a(1,3),b(2,4)) \\ 
+& \text{Reduction}: \\&a(b(1,b(2,4)),3) - \underline{b(b(a(1,3),2),4)} \stackrel{ ARel-2 }{=}  \\ 
+&\underline{a(b(1,b(2,4)),3)} - b(a(b(1,2),3),4) \stackrel{ ARel-3 }{=}  \\ 
+& - \underline{b(a(b(1,2),3),4)} + a(b(b(1,2),4),3) \stackrel{ ARel-6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and ARel-3:} \\ 
+& \gamma = b(a(1,4),b(2,3)) \\ 
+& \text{Reduction}: \\&a(b(1,b(2,3)),4) - \underline{b(b(a(1,4),2),3)} \stackrel{ ARel-2 }{=}  \\ 
+&a(b(1,b(2,3)),4) - \underline{b(a(b(1,2),4),3)} \stackrel{ ARel-2 }{=}  \\ 
+&\underline{a(b(1,b(2,3)),4)} - a(b(b(1,2),3),4) \stackrel{ ARel-3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and ARel-3:} \\ 
+& \gamma = b(1,b(a(2,4),3)) \\ 
+& \text{Reduction}: \\&\underline{b(1,a(b(2,3),4))} - \underline{b(b(1,a(2,4)),3)} \stackrel{ ARel-5 }{=}  \\ 
+&\underline{b(b(1,4),b(2,3))} - b(b(b(1,4),2),3) \stackrel{ ARel-3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and ARel-4:} \\ 
+& \gamma = a(1,b(a(2,4),3)) \\ 
+& \text{Reduction}: \\&\underline{a(1,a(b(2,3),4))} - \underline{a(a(1,3),a(2,4))} \stackrel{ ARel-1 }{=}  \\ 
+&\underline{a(a(1,b(2,3)),4)} - a(a(a(1,3),2),4) \stackrel{ ARel-4 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and ARel-4:} \\ 
+& \gamma = b(a(1,b(3,4)),2) \\ 
+& \text{Reduction}: \\&a(b(1,2),b(3,4)) - \underline{b(a(a(1,4),3),2)} \stackrel{ ARel-2 }{=}  \\ 
+&a(b(1,2),b(3,4)) - \underline{a(b(a(1,4),2),3)} \stackrel{ ARel-2 }{=}  \\ 
+&\underline{a(b(1,2),b(3,4))} - a(a(b(1,2),4),3) \stackrel{ ARel-4 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and ARel-5:} \\ 
+& \gamma = b(a(1,3),a(2,4)) \\ 
+& \text{Reduction}: \\&\underline{a(b(1,a(2,4)),3)} - b(b(a(1,3),4),2) \stackrel{ ARel-5 }{=}  \\ 
+& - \underline{b(b(a(1,3),4),2)} + a(b(b(1,4),2),3) \stackrel{ ARel-6 }{=}  \\ 
+&a(b(b(1,4),2),3) - \underline{b(a(b(1,4),3),2)} \stackrel{ ARel-2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and ARel-5:} \\ 
+& \gamma = b(a(1,4),a(2,3)) \\ 
+& \text{Reduction}: \\&a(b(1,a(2,3)),4) - \underline{b(b(a(1,4),3),2)} \stackrel{ ARel-2 }{=}  \\ 
+&a(b(1,a(2,3)),4) - \underline{b(a(b(1,3),4),2)} \stackrel{ ARel-2 }{=}  \\ 
+&\underline{a(b(1,a(2,3)),4)} - a(b(b(1,3),2),4) \stackrel{ ARel-5 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and Pois-1:} \\ 
+& \gamma = b(a(B(1,2),4),3) \\ 
+& \text{Reduction}: \\&\underline{a(b(B(1,2),3),4)} - \underline{b(B(1,a(2,4)),3)} + b(b(B(1,4),2),3) \stackrel{ Pois-4 }{=}  \\ 
+&b(b(B(1,4),2),3) + a(B(1,b(2,3)),4) - a(a(B(1,3),2),4) - B(1,b(a(2,4),3))\\ 
+ &  + \underline{a(B(1,3),a(2,4))} \stackrel{ ARel-1 }{=}  \\ 
+&b(b(B(1,4),2),3) + a(B(1,b(2,3)),4) - \underline{B(1,b(a(2,4),3))} \stackrel{ ARel-2 }{=}  \\ 
+&b(b(B(1,4),2),3) + \underline{a(B(1,b(2,3)),4)} - B(1,a(b(2,3),4)) \stackrel{ Pois-1 }{=}  \\ 
+&b(b(B(1,4),2),3) - b(B(1,4),b(2,3))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and Pois-1:} \\ 
+& \gamma = b(a(B(1,3),4),2) \\ 
+& \text{Reduction}: \\&a(b(B(1,3),2),4) - b(B(1,a(3,4)),2) + b(b(B(1,4),3),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and Pois-2:} \\ 
+& \gamma = b(a(B(1,2),4),3) \\ 
+& \text{Reduction}: \\&a(b(B(1,2),3),4) - b(B(a(1,4),2),3) - \underline{b(a(1,B(2,4)),3)} \stackrel{ ARel-6 }{=}  \\ 
+&\underline{a(b(B(1,2),3),4)} - \underline{b(B(a(1,4),2),3)} - a(b(1,3),B(2,4)) \stackrel{ Pois-4 }{=}  \\ 
+& - a(b(1,3),B(2,4)) + \underline{a(B(1,b(2,3)),4)} - a(a(B(1,3),2),4) - B(a(1,4),b(2,3))\\ 
+ &  + a(B(a(1,4),3),2) \stackrel{ Pois-1 }{=}  \\ 
+& - a(b(1,3),B(2,4)) - a(a(B(1,3),2),4) - B(a(1,4),b(2,3)) + a(B(a(1,4),3),2)\\ 
+ &  + B(1,a(b(2,3),4)) - b(B(1,4),b(2,3))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and Pois-2:} \\ 
+& \gamma = b(a(B(1,3),4),2) \\ 
+& \text{Reduction}: \\&a(b(B(1,3),2),4) - b(B(a(1,4),3),2) - \underline{b(a(1,B(3,4)),2)} \stackrel{ ARel-2 }{=}  \\ 
+&a(b(B(1,3),2),4) - b(B(a(1,4),3),2) - a(b(1,2),B(3,4))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and Pois-3:} \\ 
+& \gamma = B(b(a(1,3),2),4) \\ 
+& \text{Reduction}: \\&B(a(b(1,2),3),4) - \underline{b(a(1,3),B(2,4))} - b(B(a(1,3),4),2) \stackrel{ ARel-2 }{=}  \\ 
+&\underline{B(a(b(1,2),3),4)} - \underline{b(B(a(1,3),4),2)} - a(b(1,B(2,4)),3) \stackrel{ Pois-6 }{=}  \\ 
+& - a(b(1,B(2,4)),3) + a(B(b(1,2),4),3) + a(b(1,2),B(3,4)) - \underline{b(a(B(1,4),3),2)}\\ 
+ &  - \underline{b(a(1,B(3,4)),2)} \stackrel{ ARel-2 }{=}  \\ 
+& - a(b(1,B(2,4)),3) + \underline{a(B(b(1,2),4),3)} - a(b(B(1,4),2),3) \stackrel{ Pois-3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and Pois-3:} \\ 
+& \gamma = B(b(a(1,4),2),3) \\ 
+& \text{Reduction}: \\&B(a(b(1,2),4),3) - \underline{b(a(1,4),B(2,3))} - b(B(a(1,4),3),2) \stackrel{ ARel-2 }{=}  \\ 
+&B(a(b(1,2),4),3) - b(B(a(1,4),3),2) - a(b(1,B(2,3)),4)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-2 and Pois-5:} \\ 
+& \gamma = B(b(a(1,4),3),2) \\ 
+& \text{Reduction}: \\&B(a(b(1,3),4),2) + \underline{b(a(1,4),B(2,3))} - b(B(a(1,4),2),3) \stackrel{ ARel-2 }{=}  \\ 
+&B(a(b(1,3),4),2) - \underline{b(B(a(1,4),2),3)} + a(b(1,B(2,3)),4) \stackrel{ Pois-4 }{=}  \\ 
+&B(a(b(1,3),4),2) + a(b(1,B(2,3)),4) - B(a(1,4),b(2,3)) + a(B(a(1,4),3),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-3 and ARel-4:} \\ 
+& \gamma = a(1,b(2,b(3,4))) \\ 
+& \text{Reduction}: \\& - \underline{a(1,b(b(2,3),4))} + \underline{a(a(1,b(3,4)),2)} \stackrel{ ARel-4 }{=}  \\ 
+& - \underline{a(a(1,4),b(2,3))} + a(a(a(1,4),3),2) \stackrel{ ARel-4 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-3 and ARel-5:} \\ 
+& \gamma = b(1,b(2,a(3,4))) \\ 
+& \text{Reduction}: \\& - b(b(1,2),a(3,4)) + \underline{b(1,b(b(2,4),3))} \stackrel{ ARel-3 }{=}  \\ 
+& - b(b(1,2),a(3,4)) + \underline{b(b(1,b(2,4)),3)} \stackrel{ ARel-3 }{=}  \\ 
+& - \underline{b(b(1,2),a(3,4))} + b(b(b(1,2),4),3) \stackrel{ ARel-5 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-3 and ARel-6:} \\ 
+& \gamma = b(a(1,2),b(3,4)) \\ 
+& \text{Reduction}: \\& - b(b(a(1,2),3),4) + \underline{a(b(1,b(3,4)),2)} \stackrel{ ARel-3 }{=}  \\ 
+& - \underline{b(b(a(1,2),3),4)} + a(b(b(1,3),4),2) \stackrel{ ARel-6 }{=}  \\ 
+&a(b(b(1,3),4),2) - \underline{b(a(b(1,3),2),4)} \stackrel{ ARel-6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-3 and ARel-6:} \\ 
+& \gamma = b(1,b(a(2,3),4)) \\ 
+& \text{Reduction}: \\& - \underline{b(b(1,a(2,3)),4)} + \underline{b(1,a(b(2,4),3))} \stackrel{ ARel-5 }{=}  \\ 
+& - b(b(b(1,3),2),4) + \underline{b(b(1,3),b(2,4))} \stackrel{ ARel-3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-3 and Pois-3:} \\ 
+& \gamma = B(b(1,b(2,3)),4) \\ 
+& \text{Reduction}: \\& - B(b(b(1,2),3),4) + b(1,B(b(2,3),4)) + \underline{b(B(1,4),b(2,3))} \stackrel{ ARel-3 }{=}  \\ 
+& - \underline{B(b(b(1,2),3),4)} + \underline{b(1,B(b(2,3),4))} + b(b(B(1,4),2),3) \stackrel{ Pois-3 }{=}  \\ 
+&b(b(B(1,4),2),3) - b(b(1,2),B(3,4)) - \underline{b(B(b(1,2),4),3)} + b(1,b(2,B(3,4)))\\ 
+ &  + b(1,b(B(2,4),3)) \stackrel{ Pois-3 }{=}  \\ 
+& - b(b(1,2),B(3,4)) + \underline{b(1,b(2,B(3,4)))} + \underline{b(1,b(B(2,4),3))} - b(b(1,B(2,4)),3) \stackrel{ ARel-3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-3 and Pois-3:} \\ 
+& \gamma = B(b(1,b(2,4)),3) \\ 
+& \text{Reduction}: \\& - B(b(b(1,2),4),3) + b(1,B(b(2,4),3)) + \underline{b(B(1,3),b(2,4))} \stackrel{ ARel-3 }{=}  \\ 
+& - \underline{B(b(b(1,2),4),3)} + \underline{b(1,B(b(2,4),3))} + b(b(B(1,3),2),4) \stackrel{ Pois-5 }{=}  \\ 
+&b(b(B(1,3),2),4) + b(b(1,2),B(3,4)) - b(B(b(1,2),3),4) - \underline{b(1,b(2,B(3,4)))}\\ 
+ &  + \underline{b(1,b(B(2,3),4))} \stackrel{ ARel-3 }{=}  \\ 
+&b(b(B(1,3),2),4) - \underline{b(B(b(1,2),3),4)} + b(b(1,B(2,3)),4) \stackrel{ Pois-3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-3 and Pois-4:} \\ 
+& \gamma = b(B(1,2),b(3,4)) \\ 
+& \text{Reduction}: \\& - b(b(B(1,2),3),4) + \underline{B(1,b(2,b(3,4)))} - a(B(1,b(3,4)),2) \stackrel{ ARel-3 }{=}  \\ 
+& - \underline{b(b(B(1,2),3),4)} - a(B(1,b(3,4)),2) + B(1,b(b(2,3),4)) \stackrel{ Pois-4 }{=}  \\ 
+& - a(B(1,b(3,4)),2) + B(1,b(b(2,3),4)) - \underline{b(B(1,b(2,3)),4)} + b(a(B(1,3),2),4) \stackrel{ Pois-4 }{=}  \\ 
+& - a(B(1,b(3,4)),2) + b(a(B(1,3),2),4) + \underline{a(B(1,4),b(2,3))} \stackrel{ ARel-4 }{=}  \\ 
+& - a(B(1,b(3,4)),2) + \underline{b(a(B(1,3),2),4)} + a(a(B(1,4),3),2) \stackrel{ ARel-6 }{=}  \\ 
+& - a(B(1,b(3,4)),2) + a(a(B(1,4),3),2) + \underline{a(b(B(1,3),4),2)} \stackrel{ Pois-4 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-3 and Pois-4:} \\ 
+& \gamma = b(1,b(B(2,3),4)) \\ 
+& \text{Reduction}: \\& - b(b(1,B(2,3)),4) + b(1,B(2,b(3,4))) - \underline{b(1,a(B(2,4),3))} \stackrel{ ARel-5 }{=}  \\ 
+& - b(b(1,B(2,3)),4) + b(1,B(2,b(3,4))) - b(b(1,3),B(2,4))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-3 and Pois-5:} \\ 
+& \gamma = B(b(1,b(3,4)),2) \\ 
+& \text{Reduction}: \\& - B(b(b(1,3),4),2) - b(1,B(2,b(3,4))) + \underline{b(B(1,2),b(3,4))} \stackrel{ ARel-3 }{=}  \\ 
+& - B(b(b(1,3),4),2) - b(1,B(2,b(3,4))) + \underline{b(b(B(1,2),3),4)} \stackrel{ Pois-4 }{=}  \\ 
+& - B(b(b(1,3),4),2) - b(1,B(2,b(3,4))) + \underline{b(B(1,b(2,3)),4)} - b(a(B(1,3),2),4) \stackrel{ Pois-4 }{=}  \\ 
+& - \underline{B(b(b(1,3),4),2)} - b(1,B(2,b(3,4))) - b(a(B(1,3),2),4) + B(1,b(b(2,3),4))\\ 
+ &  - a(B(1,4),b(2,3)) \stackrel{ Pois-5 }{=}  \\ 
+& - b(1,B(2,b(3,4))) - b(a(B(1,3),2),4) + B(1,b(b(2,3),4)) - a(B(1,4),b(2,3))\\ 
+ &  + b(b(1,3),B(2,4)) - \underline{b(B(b(1,3),2),4)} \stackrel{ Pois-5 }{=}  \\ 
+& - b(1,B(2,b(3,4))) - b(a(B(1,3),2),4) + B(1,b(b(2,3),4)) - \underline{a(B(1,4),b(2,3))}\\ 
+ &  + b(b(1,3),B(2,4)) + b(b(1,B(2,3)),4) - b(b(B(1,2),3),4) \stackrel{ ARel-4 }{=}  \\ 
+& - b(1,B(2,b(3,4))) - \underline{b(a(B(1,3),2),4)} + B(1,b(b(2,3),4)) + b(b(1,3),B(2,4))\\ 
+ &  + b(b(1,B(2,3)),4) - b(b(B(1,2),3),4) - a(a(B(1,4),3),2) \stackrel{ ARel-6 }{=}  \\ 
+& - b(1,B(2,b(3,4))) + B(1,b(b(2,3),4)) + b(b(1,3),B(2,4)) + b(b(1,B(2,3)),4)\\ 
+ &  - \underline{b(b(B(1,2),3),4)} - a(a(B(1,4),3),2) - \underline{a(b(B(1,3),4),2)} \stackrel{ Pois-4 }{=}  \\ 
+& - b(1,B(2,b(3,4))) + B(1,b(b(2,3),4)) + b(b(1,3),B(2,4)) + b(b(1,B(2,3)),4)\\ 
+ &  - \underline{b(B(1,b(2,3)),4)} + b(a(B(1,3),2),4) - a(B(1,b(3,4)),2) \stackrel{ Pois-4 }{=}  \\ 
+& - b(1,B(2,b(3,4))) + b(b(1,3),B(2,4)) + b(b(1,B(2,3)),4) + b(a(B(1,3),2),4)\\ 
+ &  - a(B(1,b(3,4)),2) + a(B(1,4),b(2,3))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-4 and ARel-5:} \\ 
+& \gamma = b(1,a(2,b(3,4))) \\ 
+& \text{Reduction}: \\&b(1,a(a(2,4),3)) - \underline{b(b(1,b(3,4)),2)} \stackrel{ ARel-3 }{=}  \\ 
+&\underline{b(1,a(a(2,4),3))} - b(b(b(1,3),4),2) \stackrel{ ARel-5 }{=}  \\ 
+& - b(b(b(1,3),4),2) + \underline{b(b(1,3),a(2,4))} \stackrel{ ARel-5 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-4 and ARel-5:} \\ 
+& \gamma = a(1,b(2,a(3,4))) \\ 
+& \text{Reduction}: \\&\underline{a(a(1,a(3,4)),2)} - a(1,b(b(2,4),3)) \stackrel{ ARel-1 }{=}  \\ 
+& - \underline{a(1,b(b(2,4),3))} + a(a(a(1,3),4),2) \stackrel{ ARel-4 }{=}  \\ 
+&a(a(a(1,3),4),2) - \underline{a(a(1,3),b(2,4))} \stackrel{ ARel-4 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-4 and ARel-6:} \\ 
+& \gamma = b(a(1,b(2,3)),4) \\ 
+& \text{Reduction}: \\&b(a(a(1,3),2),4) - \underline{a(b(1,4),b(2,3))} \stackrel{ ARel-4 }{=}  \\ 
+&\underline{b(a(a(1,3),2),4)} - a(a(b(1,4),3),2) \stackrel{ ARel-6 }{=}  \\ 
+& - a(a(b(1,4),3),2) + \underline{a(b(a(1,3),4),2)} \stackrel{ ARel-6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-4 and ARel-6:} \\ 
+& \gamma = b(a(1,b(2,4)),3) \\ 
+& \text{Reduction}: \\&b(a(a(1,4),2),3) - \underline{a(b(1,3),b(2,4))} \stackrel{ ARel-4 }{=}  \\ 
+&\underline{b(a(a(1,4),2),3)} - a(a(b(1,3),4),2) \stackrel{ ARel-6 }{=}  \\ 
+& - a(a(b(1,3),4),2) + \underline{a(b(a(1,4),3),2)} \stackrel{ ARel-2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-4 and ARel-6:} \\ 
+& \gamma = a(1,b(a(2,3),4)) \\ 
+& \text{Reduction}: \\&\underline{a(a(1,4),a(2,3))} - \underline{a(1,a(b(2,4),3))} \stackrel{ ARel-1 }{=}  \\ 
+&a(a(a(1,4),2),3) - \underline{a(a(1,b(2,4)),3)} \stackrel{ ARel-4 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-4 and Pois-1:} \\ 
+& \gamma = a(B(1,2),b(3,4)) \\ 
+& \text{Reduction}: \\&a(a(B(1,2),4),3) - \underline{B(1,a(2,b(3,4)))} + b(B(1,b(3,4)),2) \stackrel{ ARel-4 }{=}  \\ 
+&\underline{a(a(B(1,2),4),3)} + b(B(1,b(3,4)),2) - B(1,a(a(2,4),3)) \stackrel{ Pois-1 }{=}  \\ 
+&b(B(1,b(3,4)),2) - B(1,a(a(2,4),3)) + \underline{a(B(1,a(2,4)),3)} - a(b(B(1,4),2),3) \stackrel{ Pois-1 }{=}  \\ 
+&b(B(1,b(3,4)),2) - a(b(B(1,4),2),3) - \underline{b(B(1,3),a(2,4))} \stackrel{ ARel-5 }{=}  \\ 
+&b(B(1,b(3,4)),2) - a(b(B(1,4),2),3) - \underline{b(b(B(1,3),4),2)} \stackrel{ Pois-4 }{=}  \\ 
+& - a(b(B(1,4),2),3) + b(a(B(1,4),3),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-4 and Pois-2:} \\ 
+& \gamma = a(B(1,2),b(3,4)) \\ 
+& \text{Reduction}: \\&a(a(B(1,2),4),3) - \underline{B(a(1,b(3,4)),2)} - a(1,B(2,b(3,4))) \stackrel{ ARel-4 }{=}  \\ 
+&\underline{a(a(B(1,2),4),3)} - a(1,B(2,b(3,4))) - B(a(a(1,4),3),2) \stackrel{ Pois-1 }{=}  \\ 
+& - a(1,B(2,b(3,4))) - B(a(a(1,4),3),2) + \underline{a(B(1,a(2,4)),3)} - a(b(B(1,4),2),3) \stackrel{ Pois-1 }{=}  \\ 
+& - a(1,B(2,b(3,4))) - B(a(a(1,4),3),2) - a(b(B(1,4),2),3) + B(1,a(a(2,4),3))\\ 
+ &  - \underline{b(B(1,3),a(2,4))} \stackrel{ ARel-5 }{=}  \\ 
+& - a(1,B(2,b(3,4))) - B(a(a(1,4),3),2) - a(b(B(1,4),2),3) + B(1,a(a(2,4),3))\\ 
+ &  - \underline{b(b(B(1,3),4),2)} \stackrel{ Pois-4 }{=}  \\ 
+& - a(1,B(2,b(3,4))) - B(a(a(1,4),3),2) - a(b(B(1,4),2),3) + B(1,a(a(2,4),3))\\ 
+ &  - b(B(1,b(3,4)),2) + b(a(B(1,4),3),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-4 and Pois-4:} \\ 
+& \gamma = a(1,b(B(2,3),4)) \\ 
+& \text{Reduction}: \\&a(a(1,4),B(2,3)) - a(1,B(2,b(3,4))) + \underline{a(1,a(B(2,4),3))} \stackrel{ ARel-1 }{=}  \\ 
+&a(a(1,4),B(2,3)) - a(1,B(2,b(3,4))) + a(a(1,B(2,4)),3)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-4 and Pois-6:} \\ 
+& \gamma = B(a(1,b(2,3)),4) \\ 
+& \text{Reduction}: \\&B(a(a(1,3),2),4) - \underline{a(B(1,4),b(2,3))} - a(1,B(b(2,3),4)) \stackrel{ ARel-4 }{=}  \\ 
+&B(a(a(1,3),2),4) - \underline{a(1,B(b(2,3),4))} - a(a(B(1,4),3),2) \stackrel{ Pois-3 }{=}  \\ 
+&\underline{B(a(a(1,3),2),4)} - a(a(B(1,4),3),2) - a(1,b(2,B(3,4))) - a(1,b(B(2,4),3)) \stackrel{ Pois-6 }{=}  \\ 
+& - a(a(B(1,4),3),2) - a(1,b(2,B(3,4))) - a(1,b(B(2,4),3)) + \underline{a(B(a(1,3),4),2)}\\ 
+ &  + a(a(1,3),B(2,4)) \stackrel{ Pois-6 }{=}  \\ 
+& - \underline{a(1,b(2,B(3,4)))} - \underline{a(1,b(B(2,4),3))} + a(a(1,3),B(2,4)) + a(a(1,B(3,4)),2) \stackrel{ ARel-4 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-4 and Pois-6:} \\ 
+& \gamma = B(a(1,b(2,4)),3) \\ 
+& \text{Reduction}: \\&B(a(a(1,4),2),3) - \underline{a(B(1,3),b(2,4))} - a(1,B(b(2,4),3)) \stackrel{ ARel-4 }{=}  \\ 
+&B(a(a(1,4),2),3) - a(1,B(b(2,4),3)) - \underline{a(a(B(1,3),4),2)} \stackrel{ Pois-1 }{=}  \\ 
+&B(a(a(1,4),2),3) - \underline{a(1,B(b(2,4),3))} - a(B(1,a(3,4)),2) + a(b(B(1,4),3),2) \stackrel{ Pois-5 }{=}  \\ 
+&\underline{B(a(a(1,4),2),3)} - a(B(1,a(3,4)),2) + a(b(B(1,4),3),2) + a(1,b(2,B(3,4)))\\ 
+ &  - a(1,b(B(2,3),4)) \stackrel{ Pois-6 }{=}  \\ 
+& - a(B(1,a(3,4)),2) + a(b(B(1,4),3),2) + \underline{a(1,b(2,B(3,4)))} - \underline{a(1,b(B(2,3),4))}\\ 
+ &  + a(B(a(1,4),3),2) + a(a(1,4),B(2,3)) \stackrel{ ARel-4 }{=}  \\ 
+& - a(B(1,a(3,4)),2) + a(b(B(1,4),3),2) + a(B(a(1,4),3),2) + a(a(1,B(3,4)),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-5 and ARel-6:} \\ 
+& \gamma = b(a(1,2),a(3,4)) \\ 
+& \text{Reduction}: \\& - b(b(a(1,2),4),3) + \underline{a(b(1,a(3,4)),2)} \stackrel{ ARel-5 }{=}  \\ 
+& - \underline{b(b(a(1,2),4),3)} + a(b(b(1,4),3),2) \stackrel{ ARel-6 }{=}  \\ 
+&a(b(b(1,4),3),2) - \underline{b(a(b(1,4),2),3)} \stackrel{ ARel-6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-5 and Pois-1:} \\ 
+& \gamma = b(1,a(B(2,3),4)) \\ 
+& \text{Reduction}: \\& - b(b(1,4),B(2,3)) + b(1,B(2,a(3,4))) - \underline{b(1,b(B(2,4),3))} \stackrel{ ARel-3 }{=}  \\ 
+& - b(b(1,4),B(2,3)) + b(1,B(2,a(3,4))) - b(b(1,B(2,4)),3)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-5 and Pois-2:} \\ 
+& \gamma = b(1,a(B(2,3),4)) \\ 
+& \text{Reduction}: \\& - b(b(1,4),B(2,3)) + b(1,B(a(2,4),3)) + \underline{b(1,a(2,B(3,4)))} \stackrel{ ARel-5 }{=}  \\ 
+& - b(b(1,4),B(2,3)) + b(1,B(a(2,4),3)) + b(b(1,B(3,4)),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-5 and Pois-3:} \\ 
+& \gamma = B(b(1,a(2,3)),4) \\ 
+& \text{Reduction}: \\& - B(b(b(1,3),2),4) + b(1,B(a(2,3),4)) + \underline{b(B(1,4),a(2,3))} \stackrel{ ARel-5 }{=}  \\ 
+& - \underline{B(b(b(1,3),2),4)} + b(1,B(a(2,3),4)) + b(b(B(1,4),3),2) \stackrel{ Pois-3 }{=}  \\ 
+&b(1,B(a(2,3),4)) + b(b(B(1,4),3),2) - b(b(1,3),B(2,4)) - \underline{b(B(b(1,3),4),2)} \stackrel{ Pois-3 }{=}  \\ 
+&\underline{b(1,B(a(2,3),4))} - b(b(1,3),B(2,4)) - b(b(1,B(3,4)),2) \stackrel{ Pois-6 }{=}  \\ 
+& - b(b(1,3),B(2,4)) - b(b(1,B(3,4)),2) + \underline{b(1,a(B(2,4),3))} + \underline{b(1,a(2,B(3,4)))} \stackrel{ ARel-5 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-5 and Pois-3:} \\ 
+& \gamma = B(b(1,a(2,4)),3) \\ 
+& \text{Reduction}: \\& - B(b(b(1,4),2),3) + b(1,B(a(2,4),3)) + \underline{b(B(1,3),a(2,4))} \stackrel{ ARel-5 }{=}  \\ 
+& - \underline{B(b(b(1,4),2),3)} + b(1,B(a(2,4),3)) + b(b(B(1,3),4),2) \stackrel{ Pois-3 }{=}  \\ 
+&b(1,B(a(2,4),3)) + \underline{b(b(B(1,3),4),2)} - b(b(1,4),B(2,3)) - b(B(b(1,4),3),2) \stackrel{ Pois-4 }{=}  \\ 
+&b(1,B(a(2,4),3)) - b(b(1,4),B(2,3)) - \underline{b(B(b(1,4),3),2)} + b(B(1,b(3,4)),2)\\ 
+ &  - b(a(B(1,4),3),2) \stackrel{ Pois-5 }{=}  \\ 
+&b(1,B(a(2,4),3)) - b(b(1,4),B(2,3)) + b(B(1,b(3,4)),2) - \underline{b(a(B(1,4),3),2)}\\ 
+ &  + b(b(1,B(3,4)),2) - b(b(B(1,3),4),2) \stackrel{ ARel-2 }{=}  \\ 
+&b(1,B(a(2,4),3)) - b(b(1,4),B(2,3)) + b(B(1,b(3,4)),2) + b(b(1,B(3,4)),2)\\ 
+ &  - \underline{b(b(B(1,3),4),2)} - a(b(B(1,4),2),3) \stackrel{ Pois-4 }{=}  \\ 
+&b(1,B(a(2,4),3)) - b(b(1,4),B(2,3)) + b(b(1,B(3,4)),2) - a(b(B(1,4),2),3)\\ 
+ &  + b(a(B(1,4),3),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-5 and Pois-4:} \\ 
+& \gamma = b(B(1,2),a(3,4)) \\ 
+& \text{Reduction}: \\& - b(b(B(1,2),4),3) + \underline{B(1,b(2,a(3,4)))} - a(B(1,a(3,4)),2) \stackrel{ ARel-5 }{=}  \\ 
+& - \underline{b(b(B(1,2),4),3)} - a(B(1,a(3,4)),2) + B(1,b(b(2,4),3)) \stackrel{ Pois-4 }{=}  \\ 
+& - a(B(1,a(3,4)),2) + B(1,b(b(2,4),3)) - \underline{b(B(1,b(2,4)),3)} + b(a(B(1,4),2),3) \stackrel{ Pois-4 }{=}  \\ 
+& - a(B(1,a(3,4)),2) + b(a(B(1,4),2),3) + \underline{a(B(1,3),b(2,4))} \stackrel{ ARel-4 }{=}  \\ 
+& - a(B(1,a(3,4)),2) + \underline{b(a(B(1,4),2),3)} + a(a(B(1,3),4),2) \stackrel{ ARel-6 }{=}  \\ 
+& - a(B(1,a(3,4)),2) + \underline{a(a(B(1,3),4),2)} + a(b(B(1,4),3),2) \stackrel{ Pois-1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-5 and Pois-5:} \\ 
+& \gamma = B(b(1,a(3,4)),2) \\ 
+& \text{Reduction}: \\& - B(b(b(1,4),3),2) - b(1,B(2,a(3,4))) + \underline{b(B(1,2),a(3,4))} \stackrel{ ARel-5 }{=}  \\ 
+& - B(b(b(1,4),3),2) - b(1,B(2,a(3,4))) + \underline{b(b(B(1,2),4),3)} \stackrel{ Pois-4 }{=}  \\ 
+& - B(b(b(1,4),3),2) - b(1,B(2,a(3,4))) + \underline{b(B(1,b(2,4)),3)} - b(a(B(1,4),2),3) \stackrel{ Pois-4 }{=}  \\ 
+& - \underline{B(b(b(1,4),3),2)} - b(1,B(2,a(3,4))) - b(a(B(1,4),2),3) + B(1,b(b(2,4),3))\\ 
+ &  - a(B(1,3),b(2,4)) \stackrel{ Pois-5 }{=}  \\ 
+& - b(1,B(2,a(3,4))) - b(a(B(1,4),2),3) + B(1,b(b(2,4),3)) - a(B(1,3),b(2,4))\\ 
+ &  + b(b(1,4),B(2,3)) - \underline{b(B(b(1,4),2),3)} \stackrel{ Pois-5 }{=}  \\ 
+& - b(1,B(2,a(3,4))) - b(a(B(1,4),2),3) + B(1,b(b(2,4),3)) - \underline{a(B(1,3),b(2,4))}\\ 
+ &  + b(b(1,4),B(2,3)) + b(b(1,B(2,4)),3) - b(b(B(1,2),4),3) \stackrel{ ARel-4 }{=}  \\ 
+& - b(1,B(2,a(3,4))) - \underline{b(a(B(1,4),2),3)} + B(1,b(b(2,4),3)) + b(b(1,4),B(2,3))\\ 
+ &  + b(b(1,B(2,4)),3) - b(b(B(1,2),4),3) - a(a(B(1,3),4),2) \stackrel{ ARel-6 }{=}  \\ 
+& - b(1,B(2,a(3,4))) + B(1,b(b(2,4),3)) + b(b(1,4),B(2,3)) + b(b(1,B(2,4)),3)\\ 
+ &  - b(b(B(1,2),4),3) - \underline{a(a(B(1,3),4),2)} - a(b(B(1,4),3),2) \stackrel{ Pois-1 }{=}  \\ 
+& - b(1,B(2,a(3,4))) + B(1,b(b(2,4),3)) + b(b(1,4),B(2,3)) + b(b(1,B(2,4)),3)\\ 
+ &  - \underline{b(b(B(1,2),4),3)} - a(B(1,a(3,4)),2) \stackrel{ Pois-4 }{=}  \\ 
+& - b(1,B(2,a(3,4))) + B(1,b(b(2,4),3)) + b(b(1,4),B(2,3)) + b(b(1,B(2,4)),3)\\ 
+ &  - a(B(1,a(3,4)),2) - \underline{b(B(1,b(2,4)),3)} + b(a(B(1,4),2),3) \stackrel{ Pois-4 }{=}  \\ 
+& - b(1,B(2,a(3,4))) + b(b(1,4),B(2,3)) + b(b(1,B(2,4)),3) - a(B(1,a(3,4)),2)\\ 
+ &  + b(a(B(1,4),2),3) + a(B(1,3),b(2,4))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-6 and Pois-1:} \\ 
+& \gamma = b(a(B(1,2),3),4) \\ 
+& \text{Reduction}: \\&\underline{a(b(B(1,2),4),3)} - \underline{b(B(1,a(2,3)),4)} + b(b(B(1,3),2),4) \stackrel{ Pois-4 }{=}  \\ 
+&b(b(B(1,3),2),4) + a(B(1,b(2,4)),3) - a(a(B(1,4),2),3) - B(1,b(a(2,3),4))\\ 
+ &  + \underline{a(B(1,4),a(2,3))} \stackrel{ ARel-1 }{=}  \\ 
+&b(b(B(1,3),2),4) + a(B(1,b(2,4)),3) - \underline{B(1,b(a(2,3),4))} \stackrel{ ARel-6 }{=}  \\ 
+&b(b(B(1,3),2),4) + \underline{a(B(1,b(2,4)),3)} - B(1,a(b(2,4),3)) \stackrel{ Pois-1 }{=}  \\ 
+&b(b(B(1,3),2),4) - b(B(1,3),b(2,4))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-6 and Pois-2:} \\ 
+& \gamma = b(a(B(1,2),3),4) \\ 
+& \text{Reduction}: \\&a(b(B(1,2),4),3) - b(B(a(1,3),2),4) - \underline{b(a(1,B(2,3)),4)} \stackrel{ ARel-6 }{=}  \\ 
+&\underline{a(b(B(1,2),4),3)} - \underline{b(B(a(1,3),2),4)} - a(b(1,4),B(2,3)) \stackrel{ Pois-4 }{=}  \\ 
+& - a(b(1,4),B(2,3)) + a(B(1,b(2,4)),3) - a(a(B(1,4),2),3) - B(a(1,3),b(2,4))\\ 
+ &  + \underline{a(B(a(1,3),4),2)} \stackrel{ Pois-6 }{=}  \\ 
+& - a(b(1,4),B(2,3)) + \underline{a(B(1,b(2,4)),3)} - a(a(B(1,4),2),3) - B(a(1,3),b(2,4))\\ 
+ &  + a(a(B(1,4),3),2) + a(a(1,B(3,4)),2) \stackrel{ Pois-1 }{=}  \\ 
+& - a(b(1,4),B(2,3)) - a(a(B(1,4),2),3) - B(a(1,3),b(2,4)) + a(a(B(1,4),3),2)\\ 
+ &  + a(a(1,B(3,4)),2) + B(1,a(b(2,4),3)) - b(B(1,3),b(2,4))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-6 and Pois-3:} \\ 
+& \gamma = B(b(a(1,2),3),4) \\ 
+& \text{Reduction}: \\&B(a(b(1,3),2),4) - \underline{b(a(1,2),B(3,4))} - b(B(a(1,2),4),3) \stackrel{ ARel-6 }{=}  \\ 
+&\underline{B(a(b(1,3),2),4)} - \underline{b(B(a(1,2),4),3)} - a(b(1,B(3,4)),2) \stackrel{ Pois-6 }{=}  \\ 
+& - a(b(1,B(3,4)),2) + a(B(b(1,3),4),2) + a(b(1,3),B(2,4)) - \underline{b(a(B(1,4),2),3)}\\ 
+ &  - \underline{b(a(1,B(2,4)),3)} \stackrel{ ARel-6 }{=}  \\ 
+& - a(b(1,B(3,4)),2) + \underline{a(B(b(1,3),4),2)} - a(b(B(1,4),3),2) \stackrel{ Pois-3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-6 and Pois-5:} \\ 
+& \gamma = B(b(a(1,2),4),3) \\ 
+& \text{Reduction}: \\&B(a(b(1,4),2),3) + \underline{b(a(1,2),B(3,4))} - b(B(a(1,2),3),4) \stackrel{ ARel-6 }{=}  \\ 
+&B(a(b(1,4),2),3) - \underline{b(B(a(1,2),3),4)} + a(b(1,B(3,4)),2) \stackrel{ Pois-4 }{=}  \\ 
+&\underline{B(a(b(1,4),2),3)} + a(b(1,B(3,4)),2) - \underline{B(a(1,2),b(3,4))} + \underline{a(B(a(1,2),4),3)} \stackrel{ Pois-6 }{=}  \\ 
+&a(b(1,B(3,4)),2) + \underline{a(B(b(1,4),3),2)} + a(b(1,4),B(2,3)) - a(B(1,b(3,4)),2)\\ 
+ &  - a(1,B(2,b(3,4))) + a(a(B(1,4),2),3) + a(a(1,B(2,4)),3) \stackrel{ Pois-5 }{=}  \\ 
+&a(b(1,4),B(2,3)) - a(B(1,b(3,4)),2) - a(1,B(2,b(3,4))) + a(a(B(1,4),2),3)\\ 
+ &  + a(a(1,B(2,4)),3) + a(b(B(1,3),4),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations ARel-6 and Pois-5:} \\ 
+& \gamma = B(b(a(1,3),4),2) \\ 
+& \text{Reduction}: \\&B(a(b(1,4),3),2) + \underline{b(a(1,3),B(2,4))} - b(B(a(1,3),2),4) \stackrel{ ARel-2 }{=}  \\ 
+&B(a(b(1,4),3),2) - \underline{b(B(a(1,3),2),4)} + a(b(1,B(2,4)),3) \stackrel{ Pois-4 }{=}  \\ 
+&B(a(b(1,4),3),2) + a(b(1,B(2,4)),3) - B(a(1,3),b(2,4)) + \underline{a(B(a(1,3),4),2)} \stackrel{ Pois-6 }{=}  \\ 
+&B(a(b(1,4),3),2) + a(b(1,B(2,4)),3) - B(a(1,3),b(2,4)) + a(a(B(1,4),3),2)\\ 
+ &  + a(a(1,B(3,4)),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Lie and Pois-1:} \\ 
+& \gamma = a(B(B(1,2),3),4) \\ 
+& \text{Reduction}: \\& - a(B(B(1,3),2),4) - a(B(1,B(2,3)),4) + \underline{B(B(1,2),a(3,4))} - \underline{b(B(B(1,2),4),3)} \stackrel{ Lie }{=}  \\ 
+& - \underline{a(B(B(1,3),2),4)} - \underline{a(B(1,B(2,3)),4)} + B(B(1,a(3,4)),2) + B(1,B(2,a(3,4)))\\ 
+ &  - b(B(B(1,4),2),3) - b(B(1,B(2,4)),3) \stackrel{ Pois-1 }{=}  \\ 
+&B(B(1,a(3,4)),2) + B(1,B(2,a(3,4))) - b(B(B(1,4),2),3) - b(B(1,B(2,4)),3)\\ 
+ &  - B(B(1,3),a(2,4)) + b(B(B(1,3),4),2) - \underline{B(1,a(B(2,3),4))} + b(B(1,4),B(2,3)) \stackrel{ Pois-1 }{=}  \\ 
+&B(B(1,a(3,4)),2) - \underline{b(B(B(1,4),2),3)} - \underline{b(B(1,B(2,4)),3)} - B(B(1,3),a(2,4))\\ 
+ &  + b(B(B(1,3),4),2) + b(B(1,4),B(2,3)) + B(1,b(B(2,4),3)) \stackrel{ Pois-4 }{=}  \\ 
+&B(B(1,a(3,4)),2) - B(B(1,3),a(2,4)) + \underline{b(B(B(1,3),4),2)} + b(B(1,4),B(2,3))\\ 
+ &  - B(B(1,4),b(2,3)) + a(B(B(1,4),3),2) + a(B(1,3),B(2,4)) \stackrel{ Lie }{=}  \\ 
+&B(B(1,a(3,4)),2) - B(B(1,3),a(2,4)) + b(B(1,4),B(2,3)) - B(B(1,4),b(2,3))\\ 
+ &  + a(B(B(1,4),3),2) + a(B(1,3),B(2,4)) + b(B(B(1,4),3),2) + b(B(1,B(3,4)),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Lie and Pois-2:} \\ 
+& \gamma = a(B(B(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{a(B(B(1,3),2),4)} - \underline{a(B(1,B(2,3)),4)} + \underline{B(a(B(1,2),4),3)} + \underline{a(B(1,2),B(3,4))} \stackrel{ Pois-1 }{=}  \\ 
+& - B(B(1,3),a(2,4)) + b(B(B(1,3),4),2) - \underline{B(1,a(B(2,3),4))} + b(B(1,4),B(2,3))\\ 
+ &  + B(B(1,a(2,4)),3) - B(b(B(1,4),2),3) + B(1,a(2,B(3,4))) - b(B(1,B(3,4)),2) \stackrel{ Pois-1 }{=}  \\ 
+& - B(B(1,3),a(2,4)) + b(B(B(1,3),4),2) + b(B(1,4),B(2,3)) + B(B(1,a(2,4)),3)\\ 
+ &  - \underline{B(b(B(1,4),2),3)} + B(1,a(2,B(3,4))) - b(B(1,B(3,4)),2) - B(1,B(2,a(3,4)))\\ 
+ &  + B(1,b(B(2,4),3)) \stackrel{ Pois-3 }{=}  \\ 
+& - B(B(1,3),a(2,4)) + \underline{b(B(B(1,3),4),2)} + \underline{B(B(1,a(2,4)),3)} + B(1,a(2,B(3,4)))\\ 
+ &  - b(B(1,B(3,4)),2) - B(1,B(2,a(3,4))) + B(1,b(B(2,4),3)) - b(B(B(1,4),3),2) \stackrel{ Lie }{=}  \\ 
+&B(1,a(2,B(3,4))) - B(1,B(2,a(3,4))) + B(1,b(B(2,4),3)) + B(1,B(a(2,4),3))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Lie and Pois-3:} \\ 
+& \gamma = B(B(b(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{B(B(b(1,2),4),3)} - \underline{B(b(1,2),B(3,4))} + \underline{B(b(1,B(2,3)),4)} + \underline{B(b(B(1,3),2),4)} \stackrel{ Pois-3 }{=}  \\ 
+& - \underline{B(b(1,B(2,4)),3)} - \underline{B(b(B(1,4),2),3)} - b(1,B(2,B(3,4))) - b(B(1,B(3,4)),2)\\ 
+ &  + b(1,B(B(2,3),4)) + b(B(1,4),B(2,3)) + b(B(1,3),B(2,4)) + b(B(B(1,3),4),2) \stackrel{ Pois-3 }{=}  \\ 
+& - b(1,B(2,B(3,4))) - b(B(1,B(3,4)),2) + \underline{b(1,B(B(2,3),4))} + \underline{b(B(B(1,3),4),2)}\\ 
+ &  - b(1,B(B(2,4),3)) - b(B(B(1,4),3),2) \stackrel{ Lie }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Lie and Pois-4:} \\ 
+& \gamma = b(B(B(1,2),3),4) \\ 
+& \text{Reduction}: \\& - b(B(B(1,3),2),4) - b(B(1,B(2,3)),4) + \underline{B(B(1,2),b(3,4))} - \underline{a(B(B(1,2),4),3)} \stackrel{ Lie }{=}  \\ 
+& - b(B(B(1,3),2),4) - b(B(1,B(2,3)),4) + B(B(1,b(3,4)),2) + B(1,B(2,b(3,4)))\\ 
+ &  - \underline{a(B(B(1,4),2),3)} - \underline{a(B(1,B(2,4)),3)} \stackrel{ Pois-1 }{=}  \\ 
+& - \underline{b(B(B(1,3),2),4)} - \underline{b(B(1,B(2,3)),4)} + B(B(1,b(3,4)),2) + B(1,B(2,b(3,4)))\\ 
+ &  - B(B(1,4),a(2,3)) + b(B(B(1,4),3),2) - B(1,a(B(2,4),3)) + b(B(1,3),B(2,4)) \stackrel{ Pois-4 }{=}  \\ 
+&B(B(1,b(3,4)),2) + B(1,B(2,b(3,4))) - B(B(1,4),a(2,3)) + b(B(B(1,4),3),2)\\ 
+ &  - B(1,a(B(2,4),3)) + b(B(1,3),B(2,4)) - B(B(1,3),b(2,4)) + a(B(B(1,3),4),2)\\ 
+ &  - \underline{B(1,b(B(2,3),4))} + a(B(1,4),B(2,3)) \stackrel{ Pois-4 }{=}  \\ 
+&B(B(1,b(3,4)),2) - B(B(1,4),a(2,3)) + b(B(B(1,4),3),2) + b(B(1,3),B(2,4))\\ 
+ &  - B(B(1,3),b(2,4)) + \underline{a(B(B(1,3),4),2)} + a(B(1,4),B(2,3)) \stackrel{ Lie }{=}  \\ 
+&B(B(1,b(3,4)),2) - B(B(1,4),a(2,3)) + b(B(B(1,4),3),2) + b(B(1,3),B(2,4))\\ 
+ &  - B(B(1,3),b(2,4)) + a(B(1,4),B(2,3)) + a(B(B(1,4),3),2) + a(B(1,B(3,4)),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Lie and Pois-5:} \\ 
+& \gamma = B(B(b(1,3),2),4) \\ 
+& \text{Reduction}: \\& - \underline{B(B(b(1,3),4),2)} - B(b(1,3),B(2,4)) - \underline{B(b(1,B(2,3)),4)} + \underline{B(b(B(1,2),3),4)} \stackrel{ Pois-3 }{=}  \\ 
+& - B(b(1,3),B(2,4)) - B(b(1,B(3,4)),2) - B(b(B(1,4),3),2) - b(1,B(B(2,3),4))\\ 
+ &  - b(B(1,4),B(2,3)) + \underline{b(B(1,2),B(3,4))} + b(B(B(1,2),4),3) \stackrel{ Pois-4 }{=}  \\ 
+& - \underline{B(b(1,3),B(2,4))} - \underline{B(b(1,B(3,4)),2)} - \underline{B(b(B(1,4),3),2)} - b(1,B(B(2,3),4))\\ 
+ &  - b(B(1,4),B(2,3)) + b(B(B(1,2),4),3) + B(1,b(2,B(3,4))) - a(B(1,B(3,4)),2) \stackrel{ Pois-5 }{=}  \\ 
+& - \underline{b(1,B(B(2,3),4))} + \underline{b(B(B(1,2),4),3)} + B(1,b(2,B(3,4))) - a(B(1,B(3,4)),2)\\ 
+ &  + b(1,B(B(2,4),3)) - b(B(1,B(2,4)),3) + b(1,B(2,B(3,4))) - b(B(1,2),B(3,4))\\ 
+ &  - b(B(B(1,4),2),3) \stackrel{ Lie }{=}  \\ 
+&B(1,b(2,B(3,4))) - a(B(1,B(3,4)),2) - \underline{b(B(1,2),B(3,4))} \stackrel{ Pois-4 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Lie and Pois-5:} \\ 
+& \gamma = B(B(b(1,4),2),3) \\ 
+& \text{Reduction}: \\& - B(B(b(1,4),3),2) - B(b(1,4),B(2,3)) - \underline{B(b(1,B(2,4)),3)} + B(b(B(1,2),4),3) \stackrel{ Pois-3 }{=}  \\ 
+& - B(B(b(1,4),3),2) - B(b(1,4),B(2,3)) + \underline{B(b(B(1,2),4),3)} - b(1,B(B(2,4),3))\\ 
+ &  - b(B(1,3),B(2,4)) \stackrel{ Pois-4 }{=}  \\ 
+& - \underline{B(B(b(1,4),3),2)} - \underline{B(b(1,4),B(2,3))} - b(1,B(B(2,4),3)) - b(B(1,3),B(2,4))\\ 
+ &  + B(B(1,b(2,4)),3) - B(a(B(1,4),2),3) \stackrel{ Pois-5 }{=}  \\ 
+& - b(1,B(B(2,4),3)) - b(B(1,3),B(2,4)) + B(B(1,b(2,4)),3) - B(a(B(1,4),2),3)\\ 
+ &  + \underline{B(b(1,B(3,4)),2)} - \underline{B(b(B(1,3),4),2)} + b(1,B(B(2,3),4)) - b(B(1,B(2,3)),4) \stackrel{ Pois-5 }{=}  \\ 
+& - b(1,B(B(2,4),3)) + B(B(1,b(2,4)),3) - \underline{B(a(B(1,4),2),3)} + b(1,B(B(2,3),4))\\ 
+ &  - b(B(1,B(2,3)),4) - b(1,B(2,B(3,4))) + b(B(1,2),B(3,4)) - b(B(B(1,3),2),4) \stackrel{ Pois-6 }{=}  \\ 
+& - b(1,B(B(2,4),3)) + \underline{B(B(1,b(2,4)),3)} + \underline{b(1,B(B(2,3),4))} - b(B(1,B(2,3)),4)\\ 
+ &  - b(1,B(2,B(3,4))) + b(B(1,2),B(3,4)) - b(B(B(1,3),2),4) - a(B(B(1,4),3),2)\\ 
+ &  - a(B(1,4),B(2,3)) \stackrel{ Lie }{=}  \\ 
+& - \underline{b(B(1,B(2,3)),4)} + \underline{b(B(1,2),B(3,4))} - \underline{b(B(B(1,3),2),4)} - a(B(B(1,4),3),2)\\ 
+ &  - a(B(1,4),B(2,3)) + B(B(1,3),b(2,4)) + B(1,B(b(2,4),3)) \stackrel{ Pois-4 }{=}  \\ 
+& - a(B(B(1,4),3),2) + B(1,B(b(2,4),3)) - \underline{B(1,b(B(2,3),4))} + B(1,b(2,B(3,4)))\\ 
+ &  - a(B(1,B(3,4)),2) + a(B(B(1,3),4),2) \stackrel{ Pois-4 }{=}  \\ 
+& - a(B(B(1,4),3),2) + \underline{B(1,B(b(2,4),3))} + B(1,b(2,B(3,4))) - a(B(1,B(3,4)),2)\\ 
+ &  + a(B(B(1,3),4),2) - B(1,B(2,b(3,4))) + B(1,a(B(2,4),3)) \stackrel{ Pois-5 }{=}  \\ 
+& - a(B(B(1,4),3),2) - a(B(1,B(3,4)),2) + a(B(B(1,3),4),2) - B(1,B(2,b(3,4)))\\ 
+ &  + B(1,a(B(2,4),3)) + B(1,b(B(2,3),4))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Lie and Pois-6:} \\ 
+& \gamma = B(B(a(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{B(B(a(1,2),4),3)} - \underline{B(a(1,2),B(3,4))} + \underline{B(a(B(1,3),2),4)} + \underline{B(a(1,B(2,3)),4)} \stackrel{ Pois-6 }{=}  \\ 
+& - \underline{B(a(B(1,4),2),3)} - \underline{B(a(1,B(2,4)),3)} - a(B(1,B(3,4)),2) - a(1,B(2,B(3,4)))\\ 
+ &  + a(B(B(1,3),4),2) + a(B(1,3),B(2,4)) + a(B(1,4),B(2,3)) + a(1,B(B(2,3),4)) \stackrel{ Pois-6 }{=}  \\ 
+& - a(B(1,B(3,4)),2) - a(1,B(2,B(3,4))) + \underline{a(B(B(1,3),4),2)} + \underline{a(1,B(B(2,3),4))}\\ 
+ &  - a(B(B(1,4),3),2) - a(1,B(B(2,4),3)) \stackrel{ Lie }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-1 and Pois-2:} \\ 
+& \gamma = a(B(1,2),3) \\ 
+& \text{Reduction}: \\&B(1,a(2,3)) - b(B(1,3),2) - B(a(1,3),2) - a(1,B(2,3))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-1 and Pois-3:} \\ 
+& \gamma = a(B(b(1,2),3),4) \\ 
+& \text{Reduction}: \\&\underline{B(b(1,2),a(3,4))} - \underline{b(B(b(1,2),4),3)} - a(b(1,B(2,3)),4) - a(b(B(1,3),2),4) \stackrel{ Pois-3 }{=}  \\ 
+& - a(b(1,B(2,3)),4) - a(b(B(1,3),2),4) + b(1,B(2,a(3,4))) + b(B(1,a(3,4)),2)\\ 
+ &  - b(b(1,B(2,4)),3) - b(b(B(1,4),2),3)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-1 and Pois-5:} \\ 
+& \gamma = a(B(b(1,3),2),4) \\ 
+& \text{Reduction}: \\&B(b(1,3),a(2,4)) - \underline{b(B(b(1,3),4),2)} + a(b(1,B(2,3)),4) - a(b(B(1,2),3),4) \stackrel{ Pois-3 }{=}  \\ 
+&B(b(1,3),a(2,4)) + a(b(1,B(2,3)),4) - \underline{a(b(B(1,2),3),4)} - b(b(1,B(3,4)),2)\\ 
+ &  - b(b(B(1,4),3),2) \stackrel{ Pois-4 }{=}  \\ 
+&\underline{B(b(1,3),a(2,4))} + a(b(1,B(2,3)),4) - b(b(1,B(3,4)),2) - b(b(B(1,4),3),2)\\ 
+ &  - a(B(1,b(2,3)),4) + a(a(B(1,3),2),4) \stackrel{ Pois-5 }{=}  \\ 
+&a(b(1,B(2,3)),4) - b(b(1,B(3,4)),2) - b(b(B(1,4),3),2) - \underline{a(B(1,b(2,3)),4)}\\ 
+ &  + a(a(B(1,3),2),4) - b(1,B(a(2,4),3)) + b(B(1,a(2,4)),3) \stackrel{ Pois-1 }{=}  \\ 
+&a(b(1,B(2,3)),4) - b(b(1,B(3,4)),2) - b(b(B(1,4),3),2) + a(a(B(1,3),2),4)\\ 
+ &  - b(1,B(a(2,4),3)) + \underline{b(B(1,a(2,4)),3)} - B(1,a(b(2,3),4)) + b(B(1,4),b(2,3)) \stackrel{ Pois-4 }{=}  \\ 
+&a(b(1,B(2,3)),4) - b(b(1,B(3,4)),2) - b(b(B(1,4),3),2) + a(a(B(1,3),2),4)\\ 
+ &  - b(1,B(a(2,4),3)) - B(1,a(b(2,3),4)) + b(B(1,4),b(2,3)) + B(1,b(a(2,4),3))\\ 
+ &  - a(B(1,3),a(2,4))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-1 and Pois-5:} \\ 
+& \gamma = a(B(b(1,4),2),3) \\ 
+& \text{Reduction}: \\&B(b(1,4),a(2,3)) - b(B(b(1,4),3),2) + a(b(1,B(2,4)),3) - \underline{a(b(B(1,2),4),3)} \stackrel{ Pois-4 }{=}  \\ 
+&\underline{B(b(1,4),a(2,3))} - \underline{b(B(b(1,4),3),2)} + a(b(1,B(2,4)),3) - a(B(1,b(2,4)),3)\\ 
+ &  + a(a(B(1,4),2),3) \stackrel{ Pois-5 }{=}  \\ 
+&a(b(1,B(2,4)),3) - a(B(1,b(2,4)),3) + a(a(B(1,4),2),3) - \underline{b(1,B(a(2,3),4))}\\ 
+ &  + b(B(1,a(2,3)),4) + b(b(1,B(3,4)),2) - b(b(B(1,3),4),2) \stackrel{ Pois-6 }{=}  \\ 
+&a(b(1,B(2,4)),3) - a(B(1,b(2,4)),3) + a(a(B(1,4),2),3) + b(B(1,a(2,3)),4)\\ 
+ &  + b(b(1,B(3,4)),2) - b(b(B(1,3),4),2) - \underline{b(1,a(B(2,4),3))} - \underline{b(1,a(2,B(3,4)))} \stackrel{ ARel-5 }{=}  \\ 
+&a(b(1,B(2,4)),3) - \underline{a(B(1,b(2,4)),3)} + a(a(B(1,4),2),3) + b(B(1,a(2,3)),4)\\ 
+ &  - b(b(B(1,3),4),2) - b(b(1,3),B(2,4)) \stackrel{ Pois-1 }{=}  \\ 
+&a(b(1,B(2,4)),3) + a(a(B(1,4),2),3) + \underline{b(B(1,a(2,3)),4)} - \underline{b(b(B(1,3),4),2)}\\ 
+ &  - b(b(1,3),B(2,4)) - B(1,a(b(2,4),3)) + b(B(1,3),b(2,4)) \stackrel{ Pois-4 }{=}  \\ 
+&a(b(1,B(2,4)),3) + a(a(B(1,4),2),3) - b(b(1,3),B(2,4)) - B(1,a(b(2,4),3))\\ 
+ &  + b(B(1,3),b(2,4)) + B(1,b(a(2,3),4)) - a(B(1,4),a(2,3)) - b(B(1,b(3,4)),2)\\ 
+ &  + b(a(B(1,4),3),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-1 and Pois-6:} \\ 
+& \gamma = B(a(B(1,2),3),4) \\ 
+& \text{Reduction}: \\&\underline{B(B(1,a(2,3)),4)} - B(b(B(1,3),2),4) - \underline{a(B(B(1,2),4),3)} - a(B(1,2),B(3,4)) \stackrel{ Lie }{=}  \\ 
+& - B(b(B(1,3),2),4) - \underline{a(B(1,2),B(3,4))} + B(B(1,4),a(2,3)) + B(1,B(a(2,3),4))\\ 
+ &  - \underline{a(B(B(1,4),2),3)} - \underline{a(B(1,B(2,4)),3)} \stackrel{ Pois-1 }{=}  \\ 
+& - \underline{B(b(B(1,3),2),4)} + B(1,B(a(2,3),4)) - B(1,a(2,B(3,4))) + b(B(1,B(3,4)),2)\\ 
+ &  + b(B(B(1,4),3),2) - B(1,a(B(2,4),3)) + b(B(1,3),B(2,4)) \stackrel{ Pois-3 }{=}  \\ 
+&\underline{B(1,B(a(2,3),4))} - B(1,a(2,B(3,4))) + b(B(1,B(3,4)),2) + b(B(B(1,4),3),2)\\ 
+ &  - B(1,a(B(2,4),3)) - b(B(B(1,3),4),2) \stackrel{ Pois-6 }{=}  \\ 
+&b(B(1,B(3,4)),2) + b(B(B(1,4),3),2) - \underline{b(B(B(1,3),4),2)} \stackrel{ Lie }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-1 and Pois-6:} \\ 
+& \gamma = a(B(a(1,2),3),4) \\ 
+& \text{Reduction}: \\&\underline{B(a(1,2),a(3,4))} - \underline{b(B(a(1,2),4),3)} - a(a(B(1,3),2),4) - a(a(1,B(2,3)),4) \stackrel{ Pois-6 }{=}  \\ 
+& - a(a(B(1,3),2),4) - a(a(1,B(2,3)),4) + a(B(1,a(3,4)),2) + a(1,B(2,a(3,4)))\\ 
+ &  - \underline{b(a(B(1,4),2),3)} - \underline{b(a(1,B(2,4)),3)} \stackrel{ ARel-6 }{=}  \\ 
+& - a(a(B(1,3),2),4) - a(a(1,B(2,3)),4) + a(B(1,a(3,4)),2) + a(1,B(2,a(3,4)))\\ 
+ &  - a(b(B(1,4),3),2) - a(b(1,3),B(2,4))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-2 and Pois-3:} \\ 
+& \gamma = a(B(b(1,2),3),4) \\ 
+& \text{Reduction}: \\& - B(a(b(1,2),4),3) - a(b(1,2),B(3,4)) + a(b(1,B(2,3)),4) + a(b(B(1,3),2),4)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-2 and Pois-5:} \\ 
+& \gamma = a(B(b(1,3),2),4) \\ 
+& \text{Reduction}: \\& - B(a(b(1,3),4),2) - a(b(1,3),B(2,4)) - a(b(1,B(2,3)),4) + \underline{a(b(B(1,2),3),4)} \stackrel{ Pois-4 }{=}  \\ 
+& - B(a(b(1,3),4),2) - a(b(1,3),B(2,4)) - a(b(1,B(2,3)),4) + \underline{a(B(1,b(2,3)),4)}\\ 
+ &  - a(a(B(1,3),2),4) \stackrel{ Pois-1 }{=}  \\ 
+& - B(a(b(1,3),4),2) - a(b(1,3),B(2,4)) - a(b(1,B(2,3)),4) - a(a(B(1,3),2),4)\\ 
+ &  + B(1,a(b(2,3),4)) - b(B(1,4),b(2,3))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-2 and Pois-5:} \\ 
+& \gamma = a(B(b(1,4),2),3) \\ 
+& \text{Reduction}: \\& - B(a(b(1,4),3),2) - a(b(1,4),B(2,3)) - a(b(1,B(2,4)),3) + \underline{a(b(B(1,2),4),3)} \stackrel{ Pois-4 }{=}  \\ 
+& - B(a(b(1,4),3),2) - a(b(1,4),B(2,3)) - a(b(1,B(2,4)),3) + \underline{a(B(1,b(2,4)),3)}\\ 
+ &  - a(a(B(1,4),2),3) \stackrel{ Pois-1 }{=}  \\ 
+& - B(a(b(1,4),3),2) - a(b(1,4),B(2,3)) - a(b(1,B(2,4)),3) - a(a(B(1,4),2),3)\\ 
+ &  + B(1,a(b(2,4),3)) - b(B(1,3),b(2,4))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-2 and Pois-6:} \\ 
+& \gamma = B(a(B(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{B(B(a(1,3),2),4)} - B(a(1,B(2,3)),4) + \underline{a(B(B(1,2),4),3)} + a(B(1,2),B(3,4)) \stackrel{ Lie }{=}  \\ 
+& - B(a(1,B(2,3)),4) + \underline{a(B(1,2),B(3,4))} - B(B(a(1,3),4),2) - B(a(1,3),B(2,4))\\ 
+ &  + \underline{a(B(B(1,4),2),3)} + \underline{a(B(1,B(2,4)),3)} \stackrel{ Pois-1 }{=}  \\ 
+& - \underline{B(a(1,B(2,3)),4)} - \underline{B(B(a(1,3),4),2)} - B(a(1,3),B(2,4)) + B(1,a(2,B(3,4)))\\ 
+ &  - b(B(1,B(3,4)),2) + B(B(1,4),a(2,3)) - b(B(B(1,4),3),2) + B(1,a(B(2,4),3))\\ 
+ &  - b(B(1,3),B(2,4)) \stackrel{ Pois-6 }{=}  \\ 
+& - B(a(1,3),B(2,4)) + B(1,a(2,B(3,4))) - b(B(1,B(3,4)),2) + B(B(1,4),a(2,3))\\ 
+ &  - b(B(B(1,4),3),2) + B(1,a(B(2,4),3)) - b(B(1,3),B(2,4)) - a(B(1,4),B(2,3))\\ 
+ &  - \underline{a(1,B(B(2,3),4))} - B(a(B(1,4),3),2) - B(a(1,B(3,4)),2) \stackrel{ Lie }{=}  \\ 
+& - B(a(1,3),B(2,4)) + B(1,a(2,B(3,4))) - b(B(1,B(3,4)),2) + B(B(1,4),a(2,3))\\ 
+ &  - b(B(B(1,4),3),2) + B(1,a(B(2,4),3)) - b(B(1,3),B(2,4)) - a(B(1,4),B(2,3))\\ 
+ &  - B(a(B(1,4),3),2) - B(a(1,B(3,4)),2) - a(1,B(B(2,4),3)) - a(1,B(2,B(3,4)))\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-2 and Pois-6:} \\ 
+& \gamma = a(B(a(1,2),3),4) \\ 
+& \text{Reduction}: \\& - B(a(a(1,2),4),3) - a(a(1,2),B(3,4)) + a(a(B(1,3),2),4) + a(a(1,B(2,3)),4)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-3 and Pois-4:} \\ 
+& \gamma = b(B(b(1,2),3),4) \\ 
+& \text{Reduction}: \\&b(b(1,B(2,3)),4) + b(b(B(1,3),2),4) - \underline{B(b(1,2),b(3,4))} + \underline{a(B(b(1,2),4),3)} \stackrel{ Pois-3 }{=}  \\ 
+&b(b(1,B(2,3)),4) + b(b(B(1,3),2),4) - b(1,B(2,b(3,4))) - b(B(1,b(3,4)),2)\\ 
+ &  + a(b(1,B(2,4)),3) + a(b(B(1,4),2),3)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-3 and Pois-4:} \\ 
+& \gamma = B(b(B(1,2),3),4) \\ 
+& \text{Reduction}: \\&b(B(1,2),B(3,4)) + \underline{b(B(B(1,2),4),3)} - \underline{B(B(1,b(2,3)),4)} + B(a(B(1,3),2),4) \stackrel{ Lie }{=}  \\ 
+&b(B(1,2),B(3,4)) + B(a(B(1,3),2),4) + b(B(B(1,4),2),3) + b(B(1,B(2,4)),3)\\ 
+ &  - B(B(1,4),b(2,3)) - \underline{B(1,B(b(2,3),4))} \stackrel{ Pois-3 }{=}  \\ 
+&\underline{b(B(1,2),B(3,4))} + B(a(B(1,3),2),4) + \underline{b(B(B(1,4),2),3)} + \underline{b(B(1,B(2,4)),3)}\\ 
+ &  - B(B(1,4),b(2,3)) - B(1,b(2,B(3,4))) - B(1,b(B(2,4),3)) \stackrel{ Pois-4 }{=}  \\ 
+&\underline{B(a(B(1,3),2),4)} - a(B(1,B(3,4)),2) - a(B(B(1,4),3),2) - a(B(1,3),B(2,4)) \stackrel{ Pois-6 }{=}  \\ 
+& - a(B(1,B(3,4)),2) - a(B(B(1,4),3),2) + \underline{a(B(B(1,3),4),2)} \stackrel{ Lie }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-4 and Pois-5:} \\ 
+& \gamma = B(b(B(1,2),4),3) \\ 
+& \text{Reduction}: \\&\underline{B(B(1,b(2,4)),3)} - B(a(B(1,4),2),3) + b(B(1,2),B(3,4)) - \underline{b(B(B(1,2),3),4)} \stackrel{ Lie }{=}  \\ 
+& - B(a(B(1,4),2),3) + \underline{b(B(1,2),B(3,4))} + B(B(1,3),b(2,4)) + B(1,B(b(2,4),3))\\ 
+ &  - \underline{b(B(B(1,3),2),4)} - \underline{b(B(1,B(2,3)),4)} \stackrel{ Pois-4 }{=}  \\ 
+& - B(a(B(1,4),2),3) + B(1,B(b(2,4),3)) + B(1,b(2,B(3,4))) - a(B(1,B(3,4)),2)\\ 
+ &  + a(B(B(1,3),4),2) - \underline{B(1,b(B(2,3),4))} + a(B(1,4),B(2,3)) \stackrel{ Pois-4 }{=}  \\ 
+& - B(a(B(1,4),2),3) + \underline{B(1,B(b(2,4),3))} + B(1,b(2,B(3,4))) - a(B(1,B(3,4)),2)\\ 
+ &  + a(B(B(1,3),4),2) + a(B(1,4),B(2,3)) - B(1,B(2,b(3,4))) + B(1,a(B(2,4),3)) \stackrel{ Pois-5 }{=}  \\ 
+& - \underline{B(a(B(1,4),2),3)} - a(B(1,B(3,4)),2) + a(B(B(1,3),4),2) + a(B(1,4),B(2,3))\\ 
+ &  - B(1,B(2,b(3,4))) + B(1,a(B(2,4),3)) + B(1,b(B(2,3),4)) \stackrel{ Pois-6 }{=}  \\ 
+& - a(B(1,B(3,4)),2) + \underline{a(B(B(1,3),4),2)} - B(1,B(2,b(3,4))) + B(1,a(B(2,4),3))\\ 
+ &  + B(1,b(B(2,3),4)) - a(B(B(1,4),3),2) \stackrel{ Lie }{=}  \\ 
+& - B(1,B(2,b(3,4))) + B(1,a(B(2,4),3)) + \underline{B(1,b(B(2,3),4))} \stackrel{ Pois-4 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-4 and Pois-5:} \\ 
+& \gamma = B(b(B(1,3),4),2) \\ 
+& \text{Reduction}: \\&B(B(1,b(3,4)),2) - B(a(B(1,4),3),2) + b(B(1,3),B(2,4)) - \underline{b(B(B(1,3),2),4)} \stackrel{ Pois-4 }{=}  \\ 
+&B(B(1,b(3,4)),2) - B(a(B(1,4),3),2) + b(B(1,3),B(2,4)) - B(B(1,3),b(2,4))\\ 
+ &  + \underline{a(B(B(1,3),4),2)} \stackrel{ Lie }{=}  \\ 
+&B(B(1,b(3,4)),2) - B(a(B(1,4),3),2) + b(B(1,3),B(2,4)) - B(B(1,3),b(2,4))\\ 
+ &  + a(B(B(1,4),3),2) + a(B(1,B(3,4)),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-4 and Pois-5:} \\ 
+& \gamma = b(B(b(1,3),2),4) \\ 
+& \text{Reduction}: \\&B(b(1,3),b(2,4)) - \underline{a(B(b(1,3),4),2)} + b(b(1,B(2,3)),4) - b(b(B(1,2),3),4) \stackrel{ Pois-3 }{=}  \\ 
+&B(b(1,3),b(2,4)) + b(b(1,B(2,3)),4) - \underline{b(b(B(1,2),3),4)} - a(b(1,B(3,4)),2)\\ 
+ &  - a(b(B(1,4),3),2) \stackrel{ Pois-4 }{=}  \\ 
+&B(b(1,3),b(2,4)) + b(b(1,B(2,3)),4) - a(b(1,B(3,4)),2) - a(b(B(1,4),3),2)\\ 
+ &  - \underline{b(B(1,b(2,3)),4)} + b(a(B(1,3),2),4) \stackrel{ Pois-4 }{=}  \\ 
+&\underline{B(b(1,3),b(2,4))} + b(b(1,B(2,3)),4) - a(b(1,B(3,4)),2) - a(b(B(1,4),3),2)\\ 
+ &  + b(a(B(1,3),2),4) - B(1,b(b(2,3),4)) + a(B(1,4),b(2,3)) \stackrel{ Pois-5 }{=}  \\ 
+&b(b(1,B(2,3)),4) - a(b(1,B(3,4)),2) - a(b(B(1,4),3),2) + b(a(B(1,3),2),4)\\ 
+ &  - B(1,b(b(2,3),4)) + a(B(1,4),b(2,3)) - \underline{b(1,B(b(2,4),3))} + b(B(1,b(2,4)),3) \stackrel{ Pois-5 }{=}  \\ 
+&b(b(1,B(2,3)),4) - a(b(1,B(3,4)),2) - a(b(B(1,4),3),2) + b(a(B(1,3),2),4)\\ 
+ &  - B(1,b(b(2,3),4)) + a(B(1,4),b(2,3)) + b(B(1,b(2,4)),3) + \underline{b(1,b(2,B(3,4)))}\\ 
+ &  - \underline{b(1,b(B(2,3),4))} \stackrel{ ARel-3 }{=}  \\ 
+& - a(b(1,B(3,4)),2) - a(b(B(1,4),3),2) + b(a(B(1,3),2),4) - B(1,b(b(2,3),4))\\ 
+ &  + \underline{a(B(1,4),b(2,3))} + b(B(1,b(2,4)),3) + b(b(1,2),B(3,4)) \stackrel{ ARel-4 }{=}  \\ 
+& - a(b(1,B(3,4)),2) - a(b(B(1,4),3),2) + \underline{b(a(B(1,3),2),4)} - B(1,b(b(2,3),4))\\ 
+ &  + b(B(1,b(2,4)),3) + b(b(1,2),B(3,4)) + a(a(B(1,4),3),2) \stackrel{ ARel-6 }{=}  \\ 
+& - a(b(1,B(3,4)),2) - a(b(B(1,4),3),2) - B(1,b(b(2,3),4)) + \underline{b(B(1,b(2,4)),3)}\\ 
+ &  + b(b(1,2),B(3,4)) + a(a(B(1,4),3),2) + \underline{a(b(B(1,3),4),2)} \stackrel{ Pois-4 }{=}  \\ 
+& - a(b(1,B(3,4)),2) - a(b(B(1,4),3),2) - B(1,b(b(2,3),4)) + b(b(1,2),B(3,4))\\ 
+ &  + B(1,b(b(2,4),3)) - a(B(1,3),b(2,4)) + a(B(1,b(3,4)),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-4 and Pois-5:} \\ 
+& \gamma = b(B(b(1,4),2),3) \\ 
+& \text{Reduction}: \\&B(b(1,4),b(2,3)) - a(B(b(1,4),3),2) + b(b(1,B(2,4)),3) - \underline{b(b(B(1,2),4),3)} \stackrel{ Pois-4 }{=}  \\ 
+&B(b(1,4),b(2,3)) - a(B(b(1,4),3),2) + b(b(1,B(2,4)),3) - \underline{b(B(1,b(2,4)),3)}\\ 
+ &  + b(a(B(1,4),2),3) \stackrel{ Pois-4 }{=}  \\ 
+&\underline{B(b(1,4),b(2,3))} - \underline{a(B(b(1,4),3),2)} + b(b(1,B(2,4)),3) + b(a(B(1,4),2),3)\\ 
+ &  - B(1,b(b(2,4),3)) + a(B(1,3),b(2,4)) \stackrel{ Pois-5 }{=}  \\ 
+&b(b(1,B(2,4)),3) + b(a(B(1,4),2),3) - B(1,b(b(2,4),3)) + \underline{a(B(1,3),b(2,4))}\\ 
+ &  - b(1,B(b(2,3),4)) + b(B(1,b(2,3)),4) + a(b(1,B(3,4)),2) - a(b(B(1,3),4),2) \stackrel{ ARel-4 }{=}  \\ 
+&b(b(1,B(2,4)),3) + \underline{b(a(B(1,4),2),3)} - B(1,b(b(2,4),3)) - b(1,B(b(2,3),4))\\ 
+ &  + b(B(1,b(2,3)),4) + a(b(1,B(3,4)),2) - a(b(B(1,3),4),2) + a(a(B(1,3),4),2) \stackrel{ ARel-6 }{=}  \\ 
+&b(b(1,B(2,4)),3) - B(1,b(b(2,4),3)) - b(1,B(b(2,3),4)) + b(B(1,b(2,3)),4)\\ 
+ &  + a(b(1,B(3,4)),2) - a(b(B(1,3),4),2) + \underline{a(a(B(1,3),4),2)} + a(b(B(1,4),3),2) \stackrel{ Pois-1 }{=}  \\ 
+&b(b(1,B(2,4)),3) - B(1,b(b(2,4),3)) - \underline{b(1,B(b(2,3),4))} + b(B(1,b(2,3)),4)\\ 
+ &  + a(b(1,B(3,4)),2) - a(b(B(1,3),4),2) + a(B(1,a(3,4)),2) \stackrel{ Pois-3 }{=}  \\ 
+&b(b(1,B(2,4)),3) - B(1,b(b(2,4),3)) + \underline{b(B(1,b(2,3)),4)} + a(b(1,B(3,4)),2)\\ 
+ &  - \underline{a(b(B(1,3),4),2)} + a(B(1,a(3,4)),2) - b(1,b(2,B(3,4))) - b(1,b(B(2,4),3)) \stackrel{ Pois-4 }{=}  \\ 
+&b(b(1,B(2,4)),3) - B(1,b(b(2,4),3)) + a(b(1,B(3,4)),2) + a(B(1,a(3,4)),2)\\ 
+ &  - b(1,b(2,B(3,4))) - b(1,b(B(2,4),3)) + B(1,b(b(2,3),4)) - a(B(1,4),b(2,3))\\ 
+ &  - a(B(1,b(3,4)),2) + a(a(B(1,4),3),2)\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Pois-4 and Pois-6:} \\ 
+& \gamma = b(B(a(1,2),3),4) \\ 
+& \text{Reduction}: \\&B(a(1,2),b(3,4)) - a(B(a(1,2),4),3) - \underline{b(a(B(1,3),2),4)} - \underline{b(a(1,B(2,3)),4)} \stackrel{ ARel-6 }{=}  \\ 
+&B(a(1,2),b(3,4)) - a(B(a(1,2),4),3) - \underline{a(b(B(1,3),4),2)} - a(b(1,4),B(2,3)) \stackrel{ Pois-4 }{=}  \\ 
+&\underline{B(a(1,2),b(3,4))} - \underline{a(B(a(1,2),4),3)} - a(b(1,4),B(2,3)) - a(B(1,b(3,4)),2)\\ 
+ &  + a(a(B(1,4),3),2) \stackrel{ Pois-6 }{=}  \\ 
+& - a(b(1,4),B(2,3)) + a(a(B(1,4),3),2) + a(1,B(2,b(3,4))) - a(a(B(1,4),2),3)\\ 
+ &  - a(a(1,B(2,4)),3)\\ 
+\end{align*} 
+ 
+
+ Quadratic: False
+ 
+ S-polynomials found: 
+\begin{align*} 
+& \text{S-polynomial for relations ARel-1 Pois-1:} \\ 
+&b(B(1,a(3,4)),2) - a(b(B(1,3),2),4) - b(b(B(1,4),3),2) \\ 
+& \text{S-polynomial for relations ARel-1 Pois-1:} \\ 
+&a(a(1,B(2,3)),4) - a(1,B(2,a(3,4))) + a(a(1,3),B(2,4)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-1 Pois-2:} \\ 
+& - a(1,B(2,a(3,4))) - B(a(a(1,3),4),2) - a(b(B(1,3),2),4) + B(1,a(a(2,3),4))\\ 
+ &  - b(b(B(1,4),3),2) \\ 
+& \text{S-polynomial for relations ARel-1 Pois-2:} \\ 
+&a(a(1,B(2,3)),4) - a(1,B(a(2,4),3)) - a(a(1,2),B(3,4)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-1 Pois-6:} \\ 
+&B(a(a(1,2),4),3) - a(1,B(a(2,4),3)) - a(a(B(1,3),2),4) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-2 Pois-1:} \\ 
+&b(b(B(1,4),2),3) - b(B(1,4),b(2,3)) \\ 
+& \text{S-polynomial for relations ARel-2 Pois-1:} \\ 
+&a(b(B(1,3),2),4) - b(B(1,a(3,4)),2) + b(b(B(1,4),3),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-2 Pois-2:} \\ 
+& - a(b(1,3),B(2,4)) - a(a(B(1,3),2),4) - B(a(1,4),b(2,3)) + a(B(a(1,4),3),2)\\ 
+ &  + B(1,a(b(2,3),4)) - b(B(1,4),b(2,3)) \\ 
+& \text{S-polynomial for relations ARel-2 Pois-2:} \\ 
+&a(b(B(1,3),2),4) - b(B(a(1,4),3),2) - a(b(1,2),B(3,4)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-2 Pois-3:} \\ 
+&B(a(b(1,2),4),3) - b(B(a(1,4),3),2) - a(b(1,B(2,3)),4) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-2 Pois-5:} \\ 
+&B(a(b(1,3),4),2) + a(b(1,B(2,3)),4) - B(a(1,4),b(2,3)) + a(B(a(1,4),3),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-3 Pois-4:} \\ 
+& - b(b(1,B(2,3)),4) + b(1,B(2,b(3,4))) - b(b(1,3),B(2,4)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-3 Pois-5:} \\ 
+& - b(1,B(2,b(3,4))) + b(b(1,3),B(2,4)) + b(b(1,B(2,3)),4) + b(a(B(1,3),2),4)\\ 
+ &  - a(B(1,b(3,4)),2) + a(B(1,4),b(2,3)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-4 Pois-1:} \\ 
+& - a(b(B(1,4),2),3) + b(a(B(1,4),3),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-4 Pois-2:} \\ 
+& - a(1,B(2,b(3,4))) - B(a(a(1,4),3),2) - a(b(B(1,4),2),3) + B(1,a(a(2,4),3))\\ 
+ &  - b(B(1,b(3,4)),2) + b(a(B(1,4),3),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-4 Pois-4:} \\ 
+&a(a(1,4),B(2,3)) - a(1,B(2,b(3,4))) + a(a(1,B(2,4)),3) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-4 Pois-6:} \\ 
+& - a(B(1,a(3,4)),2) + a(b(B(1,4),3),2) + a(B(a(1,4),3),2) + a(a(1,B(3,4)),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-5 Pois-1:} \\ 
+& - b(b(1,4),B(2,3)) + b(1,B(2,a(3,4))) - b(b(1,B(2,4)),3) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-5 Pois-2:} \\ 
+& - b(b(1,4),B(2,3)) + b(1,B(a(2,4),3)) + b(b(1,B(3,4)),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-5 Pois-3:} \\ 
+&b(1,B(a(2,4),3)) - b(b(1,4),B(2,3)) + b(b(1,B(3,4)),2) - a(b(B(1,4),2),3)\\ 
+ &  + b(a(B(1,4),3),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-5 Pois-5:} \\ 
+& - b(1,B(2,a(3,4))) + b(b(1,4),B(2,3)) + b(b(1,B(2,4)),3) - a(B(1,a(3,4)),2)\\ 
+ &  + b(a(B(1,4),2),3) + a(B(1,3),b(2,4)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-6 Pois-1:} \\ 
+&b(b(B(1,3),2),4) - b(B(1,3),b(2,4)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-6 Pois-2:} \\ 
+& - a(b(1,4),B(2,3)) - a(a(B(1,4),2),3) - B(a(1,3),b(2,4)) + a(a(B(1,4),3),2)\\ 
+ &  + a(a(1,B(3,4)),2) + B(1,a(b(2,4),3)) - b(B(1,3),b(2,4)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations ARel-6 Pois-5:} \\ 
+&a(b(1,4),B(2,3)) - a(B(1,b(3,4)),2) - a(1,B(2,b(3,4))) + a(a(B(1,4),2),3)\\ 
+ &  + a(a(1,B(2,4)),3) + a(b(B(1,3),4),2) \\ 
+& \text{S-polynomial for relations ARel-6 Pois-5:} \\ 
+&B(a(b(1,4),3),2) + a(b(1,B(2,4)),3) - B(a(1,3),b(2,4)) + a(a(B(1,4),3),2)\\ 
+ &  + a(a(1,B(3,4)),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Lie Pois-1:} \\ 
+&B(B(1,a(3,4)),2) - B(B(1,3),a(2,4)) + b(B(1,4),B(2,3)) - B(B(1,4),b(2,3))\\ 
+ &  + a(B(B(1,4),3),2) + a(B(1,3),B(2,4)) + b(B(B(1,4),3),2) + b(B(1,B(3,4)),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Lie Pois-2:} \\ 
+&B(1,a(2,B(3,4))) - B(1,B(2,a(3,4))) + B(1,b(B(2,4),3)) + B(1,B(a(2,4),3)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Lie Pois-4:} \\ 
+&B(B(1,b(3,4)),2) - B(B(1,4),a(2,3)) + b(B(B(1,4),3),2) + b(B(1,3),B(2,4))\\ 
+ &  - B(B(1,3),b(2,4)) + a(B(1,4),B(2,3)) + a(B(B(1,4),3),2) + a(B(1,B(3,4)),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Lie Pois-5:} \\ 
+& - a(B(B(1,4),3),2) - a(B(1,B(3,4)),2) + a(B(B(1,3),4),2) - B(1,B(2,b(3,4)))\\ 
+ &  + B(1,a(B(2,4),3)) + B(1,b(B(2,3),4)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Pois-1 Pois-2:} \\ 
+&B(1,a(2,3)) - b(B(1,3),2) - B(a(1,3),2) - a(1,B(2,3)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Pois-1 Pois-3:} \\ 
+& - a(b(1,B(2,3)),4) - a(b(B(1,3),2),4) + b(1,B(2,a(3,4))) + b(B(1,a(3,4)),2)\\ 
+ &  - b(b(1,B(2,4)),3) - b(b(B(1,4),2),3) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Pois-1 Pois-5:} \\ 
+&a(b(1,B(2,3)),4) - b(b(1,B(3,4)),2) - b(b(B(1,4),3),2) + a(a(B(1,3),2),4)\\ 
+ &  - b(1,B(a(2,4),3)) - B(1,a(b(2,3),4)) + b(B(1,4),b(2,3)) + B(1,b(a(2,4),3))\\ 
+ &  - a(B(1,3),a(2,4)) \\ 
+& \text{S-polynomial for relations Pois-1 Pois-5:} \\ 
+&a(b(1,B(2,4)),3) + a(a(B(1,4),2),3) - b(b(1,3),B(2,4)) - B(1,a(b(2,4),3))\\ 
+ &  + b(B(1,3),b(2,4)) + B(1,b(a(2,3),4)) - a(B(1,4),a(2,3)) - b(B(1,b(3,4)),2)\\ 
+ &  + b(a(B(1,4),3),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Pois-1 Pois-6:} \\ 
+& - a(a(B(1,3),2),4) - a(a(1,B(2,3)),4) + a(B(1,a(3,4)),2) + a(1,B(2,a(3,4)))\\ 
+ &  - a(b(B(1,4),3),2) - a(b(1,3),B(2,4)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Pois-2 Pois-3:} \\ 
+& - B(a(b(1,2),4),3) - a(b(1,2),B(3,4)) + a(b(1,B(2,3)),4) + a(b(B(1,3),2),4) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Pois-2 Pois-5:} \\ 
+& - B(a(b(1,3),4),2) - a(b(1,3),B(2,4)) - a(b(1,B(2,3)),4) - a(a(B(1,3),2),4)\\ 
+ &  + B(1,a(b(2,3),4)) - b(B(1,4),b(2,3)) \\ 
+& \text{S-polynomial for relations Pois-2 Pois-5:} \\ 
+& - B(a(b(1,4),3),2) - a(b(1,4),B(2,3)) - a(b(1,B(2,4)),3) - a(a(B(1,4),2),3)\\ 
+ &  + B(1,a(b(2,4),3)) - b(B(1,3),b(2,4)) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Pois-2 Pois-6:} \\ 
+& - B(a(1,3),B(2,4)) + B(1,a(2,B(3,4))) - b(B(1,B(3,4)),2) + B(B(1,4),a(2,3))\\ 
+ &  - b(B(B(1,4),3),2) + B(1,a(B(2,4),3)) - b(B(1,3),B(2,4)) - a(B(1,4),B(2,3))\\ 
+ &  - B(a(B(1,4),3),2) - B(a(1,B(3,4)),2) - a(1,B(B(2,4),3)) - a(1,B(2,B(3,4))) \\ 
+& \text{S-polynomial for relations Pois-2 Pois-6:} \\ 
+& - B(a(a(1,2),4),3) - a(a(1,2),B(3,4)) + a(a(B(1,3),2),4) + a(a(1,B(2,3)),4) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Pois-3 Pois-4:} \\ 
+&b(b(1,B(2,3)),4) + b(b(B(1,3),2),4) - b(1,B(2,b(3,4))) - b(B(1,b(3,4)),2)\\ 
+ &  + a(b(1,B(2,4)),3) + a(b(B(1,4),2),3) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Pois-4 Pois-5:} \\ 
+&B(B(1,b(3,4)),2) - B(a(B(1,4),3),2) + b(B(1,3),B(2,4)) - B(B(1,3),b(2,4))\\ 
+ &  + a(B(B(1,4),3),2) + a(B(1,B(3,4)),2) \\ 
+& \text{S-polynomial for relations Pois-4 Pois-5:} \\ 
+& - a(b(1,B(3,4)),2) - a(b(B(1,4),3),2) - B(1,b(b(2,3),4)) + b(b(1,2),B(3,4))\\ 
+ &  + B(1,b(b(2,4),3)) - a(B(1,3),b(2,4)) + a(B(1,b(3,4)),2) \\ 
+& \text{S-polynomial for relations Pois-4 Pois-5:} \\ 
+&b(b(1,B(2,4)),3) - B(1,b(b(2,4),3)) + a(b(1,B(3,4)),2) + a(B(1,a(3,4)),2)\\ 
+ &  - b(1,b(2,B(3,4))) - b(1,b(B(2,4),3)) + B(1,b(b(2,3),4)) - a(B(1,4),b(2,3))\\ 
+ &  - a(B(1,b(3,4)),2) + a(a(B(1,4),3),2) \\ 
+\end{align*}\begin{align*} 
+& \text{S-polynomial for relations Pois-4 Pois-6:} \\ 
+& - a(b(1,4),B(2,3)) + a(a(B(1,4),3),2) + a(1,B(2,b(3,4))) - a(a(B(1,4),2),3)\\ 
+ &  - a(a(1,B(2,4)),3) \\ 
+\end{align*}
+ \end{document}

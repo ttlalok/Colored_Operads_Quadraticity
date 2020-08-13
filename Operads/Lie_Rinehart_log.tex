@@ -1,0 +1,2187 @@
+\documentclass[11pt]{amsart} 
+ 
+ \begin{document} 
+ 
+The shuffle operad has the following relations: 
+
+ Relation LR-B1: 
+ $$ 
+\underline{\beta(1,m(2,3))} - m(e(1,2),3) - n(\beta(1,3),2)
+ $$ 
+
+ Relation LR-B2: 
+ $$ 
+\underline{ - \beta(m(1,3),2)} - m(d(1,2),3) - m(1,\beta(2,3))
+ $$ 
+
+ Relation LR-B3: 
+ $$ 
+\underline{ - \beta(n(1,2),3)} - n(1,d(2,3)) + n(\beta(1,3),2)
+ $$ 
+
+ Relation LR-B4: 
+ $$ 
+\underline{\beta(1,n(2,3))} - m(e(1,3),2) - n(\beta(1,2),3)
+ $$ 
+
+ Relation LR-B5: 
+ $$ 
+\underline{ - \beta(n(1,3),2)} - n(1,e(2,3)) + n(\beta(1,2),3)
+ $$ 
+
+ Relation LR-B6: 
+ $$ 
+\underline{ - \beta(m(1,2),3)} - m(d(1,3),2) + m(1,\beta(2,3))
+ $$ 
+
+ Relation LR-A1: 
+ $$ 
+\underline{e(m(1,2),3)} - \alpha(1,e(2,3))
+ $$ 
+
+ Relation LR-A2: 
+ $$ 
+\underline{e(n(1,2),3)} - \alpha(e(1,3),2)
+ $$ 
+
+ Relation LR-A3: 
+ $$ 
+\underline{d(1,n(2,3))} - \alpha(d(1,2),3)
+ $$ 
+
+ Relation LR-A4: 
+ $$ 
+\underline{e(m(1,3),2)} - \alpha(1,d(2,3))
+ $$ 
+
+ Relation LR-A5: 
+ $$ 
+\underline{d(1,m(2,3))} - \alpha(d(1,3),2)
+ $$ 
+
+ Relation LR-A6: 
+ $$ 
+\underline{e(n(1,3),2)} - \alpha(e(1,2),3)
+ $$ 
+
+ Relation Mor1: 
+ $$ 
+\underline{d(1,\beta(2,3))} + d(d(1,2),3) - d(d(1,3),2)
+ $$ 
+
+ Relation Mor2: 
+ $$ 
+\underline{e(\beta(1,3),2)} + d(e(1,2),3) - e(1,d(2,3))
+ $$ 
+
+ Relation Mor3: 
+ $$ 
+\underline{ - d(1,\beta(2,3))} + d(d(1,3),2) - d(d(1,2),3)
+ $$ 
+
+ Relation Mor4: 
+ $$ 
+\underline{ - e(\beta(1,2),3)} + e(1,e(2,3)) - d(e(1,3),2)
+ $$ 
+
+ Relation Mor5: 
+ $$ 
+\underline{ - e(\beta(1,3),2)} + e(1,d(2,3)) - d(e(1,2),3)
+ $$ 
+
+ Relation Mor6: 
+ $$ 
+\underline{e(\beta(1,2),3)} + d(e(1,3),2) - e(1,e(2,3))
+ $$ 
+
+ Relation SMod1: 
+ $$ 
+m(\alpha(1,2),3)\underline{ - m(1,m(2,3))}
+ $$ 
+
+ Relation SMod2: 
+ $$ 
+m(\alpha(1,2),3)\underline{ - n(m(1,3),2)}
+ $$ 
+
+ Relation SMod3: 
+ $$ 
+m(\alpha(1,3),2)\underline{ - m(1,n(2,3))}
+ $$ 
+
+ Relation SMod4: 
+ $$ 
+n(1,\alpha(2,3))\underline{ - n(n(1,2),3)}
+ $$ 
+
+ Relation SMod5: 
+ $$ 
+n(1,\alpha(2,3))\underline{ - n(n(1,3),2)}
+ $$ 
+
+ Relation SMod6: 
+ $$ 
+m(\alpha(1,3),2)\underline{ - n(m(1,2),3)}
+ $$ 
+
+ Relation Com1: 
+ $$ 
+\alpha(\alpha(1,2),3)\underline{ - \alpha(\alpha(1,3),2)}
+ $$ 
+
+ Relation Com2: 
+ $$ 
+\alpha(\alpha(1,2),3)\underline{ - \alpha(1,\alpha(2,3))}
+ $$ 
+
+ Relation Lie: 
+ $$ 
+\underline{\beta(\beta(1,2),3)} - \beta(\beta(1,3),2) - \beta(1,\beta(2,3))
+ $$ 
+
+ Relation Leib1: 
+ $$ 
+\underline{e(1,\alpha(2,3))} - \alpha(e(1,2),3) - \alpha(e(1,3),2)
+ $$ 
+
+ Relation Leib2: 
+ $$ 
+\underline{d(\alpha(1,3),2)} - \alpha(d(1,2),3) - \alpha(1,e(2,3))
+ $$ 
+
+ Relation Leib3: 
+ $$ 
+\underline{d(\alpha(1,2),3)} - \alpha(1,d(2,3)) - \alpha(d(1,3),2)
+ $$ 
+
+ 
+ 
+ List of reductions: 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and LR-B2:} \\ 
+& \gamma = \beta(m(1,4),m(2,3)) \\ 
+& \text{Reduction}: \\& - m(e(m(1,4),2),3) - \underline{n(\beta(m(1,4),3),2)} - m(d(1,m(2,3)),4) - m(1,\beta(m(2,3),4)) \stackrel{ LR-B2 }{=}  \\ 
+& - m(e(m(1,4),2),3) - m(d(1,m(2,3)),4) - \underline{m(1,\beta(m(2,3),4))} + n(m(d(1,3),4),2)\\ 
+ &  + n(m(1,\beta(3,4)),2) \stackrel{ LR-B6 }{=}  \\ 
+& - \underline{m(e(m(1,4),2),3)} - m(d(1,m(2,3)),4) + n(m(d(1,3),4),2) + n(m(1,\beta(3,4)),2)\\ 
+ &  + m(1,m(d(2,4),3)) - m(1,m(2,\beta(3,4))) \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{m(d(1,m(2,3)),4)} + n(m(d(1,3),4),2) + n(m(1,\beta(3,4)),2) + m(1,m(d(2,4),3))\\ 
+ &  - m(1,m(2,\beta(3,4))) - m(\alpha(1,d(2,4)),3) \stackrel{ LR-A5 }{=}  \\ 
+&n(m(d(1,3),4),2) + n(m(1,\beta(3,4)),2) + \underline{m(1,m(d(2,4),3))} - \underline{m(1,m(2,\beta(3,4)))}\\ 
+ &  - m(\alpha(1,d(2,4)),3) - m(\alpha(d(1,3),2),4) \stackrel{ SMod1 }{=}  \\ 
+&\underline{n(m(d(1,3),4),2)} + \underline{n(m(1,\beta(3,4)),2)} - m(\alpha(d(1,3),2),4) - m(\alpha(1,2),\beta(3,4)) \stackrel{ SMod2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and LR-B2:} \\ 
+& \gamma = \beta(m(1,3),m(2,4)) \\ 
+& \text{Reduction}: \\& - m(e(m(1,3),2),4) - n(\beta(m(1,3),4),2) - m(d(1,m(2,4)),3) - \underline{m(1,\beta(m(2,4),3))} \stackrel{ LR-B2 }{=}  \\ 
+& - m(e(m(1,3),2),4) - \underline{n(\beta(m(1,3),4),2)} - m(d(1,m(2,4)),3) + m(1,m(d(2,3),4))\\ 
+ &  + m(1,m(2,\beta(3,4))) \stackrel{ LR-B6 }{=}  \\ 
+& - \underline{m(e(m(1,3),2),4)} - m(d(1,m(2,4)),3) + m(1,m(d(2,3),4)) + m(1,m(2,\beta(3,4)))\\ 
+ &  + n(m(d(1,4),3),2) - n(m(1,\beta(3,4)),2) \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{m(d(1,m(2,4)),3)} + m(1,m(d(2,3),4)) + m(1,m(2,\beta(3,4))) + n(m(d(1,4),3),2)\\ 
+ &  - n(m(1,\beta(3,4)),2) - m(\alpha(1,d(2,3)),4) \stackrel{ LR-A5 }{=}  \\ 
+&\underline{m(1,m(d(2,3),4))} + \underline{m(1,m(2,\beta(3,4)))} + n(m(d(1,4),3),2) - n(m(1,\beta(3,4)),2)\\ 
+ &  - m(\alpha(1,d(2,3)),4) - m(\alpha(d(1,4),2),3) \stackrel{ SMod1 }{=}  \\ 
+&\underline{n(m(d(1,4),3),2)} - \underline{n(m(1,\beta(3,4)),2)} - m(\alpha(d(1,4),2),3) + m(\alpha(1,2),\beta(3,4)) \stackrel{ SMod2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and LR-B3:} \\ 
+& \gamma = \beta(n(1,2),m(3,4)) \\ 
+& \text{Reduction}: \\& - m(e(n(1,2),3),4) - n(\beta(n(1,2),4),3) - n(1,d(2,m(3,4))) + \underline{n(\beta(1,m(3,4)),2)} \stackrel{ LR-B1 }{=}  \\ 
+& - m(e(n(1,2),3),4) - \underline{n(\beta(n(1,2),4),3)} - n(1,d(2,m(3,4))) + n(m(e(1,3),4),2)\\ 
+ &  + n(n(\beta(1,4),3),2) \stackrel{ LR-B3 }{=}  \\ 
+& - \underline{m(e(n(1,2),3),4)} - n(1,d(2,m(3,4))) + n(m(e(1,3),4),2) + n(n(\beta(1,4),3),2)\\ 
+ &  + n(n(1,d(2,4)),3) - n(n(\beta(1,4),2),3) \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{n(1,d(2,m(3,4)))} + n(m(e(1,3),4),2) + n(n(\beta(1,4),3),2) + n(n(1,d(2,4)),3)\\ 
+ &  - n(n(\beta(1,4),2),3) - m(\alpha(e(1,3),2),4) \stackrel{ LR-A5 }{=}  \\ 
+&\underline{n(m(e(1,3),4),2)} + n(n(\beta(1,4),3),2) + n(n(1,d(2,4)),3) - n(n(\beta(1,4),2),3)\\ 
+ &  - m(\alpha(e(1,3),2),4) - n(1,\alpha(d(2,4),3)) \stackrel{ SMod2 }{=}  \\ 
+&n(n(\beta(1,4),3),2) + \underline{n(n(1,d(2,4)),3)} - \underline{n(n(\beta(1,4),2),3)} - n(1,\alpha(d(2,4),3)) \stackrel{ SMod4 }{=}  \\ 
+&\underline{n(n(\beta(1,4),3),2)} - n(\beta(1,4),\alpha(2,3)) \stackrel{ SMod5 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and LR-B5:} \\ 
+& \gamma = \beta(n(1,4),m(2,3)) \\ 
+& \text{Reduction}: \\& - m(e(n(1,4),2),3) - n(\beta(n(1,4),3),2) - n(1,e(m(2,3),4)) + \underline{n(\beta(1,m(2,3)),4)} \stackrel{ LR-B1 }{=}  \\ 
+& - m(e(n(1,4),2),3) - \underline{n(\beta(n(1,4),3),2)} - n(1,e(m(2,3),4)) + n(m(e(1,2),3),4)\\ 
+ &  + n(n(\beta(1,3),2),4) \stackrel{ LR-B5 }{=}  \\ 
+& - m(e(n(1,4),2),3) - \underline{n(1,e(m(2,3),4))} + n(m(e(1,2),3),4) + n(n(\beta(1,3),2),4)\\ 
+ &  + n(n(1,e(3,4)),2) - n(n(\beta(1,3),4),2) \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{m(e(n(1,4),2),3)} + n(m(e(1,2),3),4) + n(n(\beta(1,3),2),4) + n(n(1,e(3,4)),2)\\ 
+ &  - n(n(\beta(1,3),4),2) - n(1,\alpha(2,e(3,4))) \stackrel{ LR-A6 }{=}  \\ 
+&n(m(e(1,2),3),4) + \underline{n(n(\beta(1,3),2),4)} + n(n(1,e(3,4)),2) - n(n(\beta(1,3),4),2)\\ 
+ &  - n(1,\alpha(2,e(3,4))) - m(\alpha(e(1,2),4),3) \stackrel{ SMod4 }{=}  \\ 
+&n(m(e(1,2),3),4) + \underline{n(n(1,e(3,4)),2)} - \underline{n(n(\beta(1,3),4),2)} - n(1,\alpha(2,e(3,4)))\\ 
+ &  - m(\alpha(e(1,2),4),3) + n(\beta(1,3),\alpha(2,4)) \stackrel{ SMod5 }{=}  \\ 
+&\underline{n(m(e(1,2),3),4)} - m(\alpha(e(1,2),4),3) \stackrel{ SMod6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and LR-B5:} \\ 
+& \gamma = \beta(n(1,3),m(2,4)) \\ 
+& \text{Reduction}: \\& - m(e(n(1,3),2),4) - n(\beta(n(1,3),4),2) - n(1,e(m(2,4),3)) + \underline{n(\beta(1,m(2,4)),3)} \stackrel{ LR-B1 }{=}  \\ 
+& - m(e(n(1,3),2),4) - \underline{n(\beta(n(1,3),4),2)} - n(1,e(m(2,4),3)) + n(m(e(1,2),4),3)\\ 
+ &  + n(n(\beta(1,4),2),3) \stackrel{ LR-B3 }{=}  \\ 
+& - m(e(n(1,3),2),4) - \underline{n(1,e(m(2,4),3))} + n(m(e(1,2),4),3) + n(n(\beta(1,4),2),3)\\ 
+ &  + n(n(1,d(3,4)),2) - n(n(\beta(1,4),3),2) \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{m(e(n(1,3),2),4)} + n(m(e(1,2),4),3) + n(n(\beta(1,4),2),3) + n(n(1,d(3,4)),2)\\ 
+ &  - n(n(\beta(1,4),3),2) - n(1,\alpha(2,d(3,4))) \stackrel{ LR-A6 }{=}  \\ 
+&\underline{n(m(e(1,2),4),3)} + n(n(\beta(1,4),2),3) + n(n(1,d(3,4)),2) - n(n(\beta(1,4),3),2)\\ 
+ &  - n(1,\alpha(2,d(3,4))) - m(\alpha(e(1,2),3),4) \stackrel{ SMod2 }{=}  \\ 
+&\underline{n(n(\beta(1,4),2),3)} + n(n(1,d(3,4)),2) - n(n(\beta(1,4),3),2) - n(1,\alpha(2,d(3,4))) \stackrel{ SMod4 }{=}  \\ 
+&\underline{n(n(1,d(3,4)),2)} - \underline{n(n(\beta(1,4),3),2)} - n(1,\alpha(2,d(3,4))) + n(\beta(1,4),\alpha(2,3)) \stackrel{ SMod5 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and LR-B6:} \\ 
+& \gamma = \beta(m(1,2),m(3,4)) \\ 
+& \text{Reduction}: \\& - m(e(m(1,2),3),4) - n(\beta(m(1,2),4),3) - m(d(1,m(3,4)),2) + \underline{m(1,\beta(2,m(3,4)))} \stackrel{ LR-B1 }{=}  \\ 
+& - m(e(m(1,2),3),4) - \underline{n(\beta(m(1,2),4),3)} - m(d(1,m(3,4)),2) + m(1,m(e(2,3),4))\\ 
+ &  + m(1,n(\beta(2,4),3)) \stackrel{ LR-B6 }{=}  \\ 
+& - \underline{m(e(m(1,2),3),4)} - m(d(1,m(3,4)),2) + m(1,m(e(2,3),4)) + m(1,n(\beta(2,4),3))\\ 
+ &  + n(m(d(1,4),2),3) - n(m(1,\beta(2,4)),3) \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{m(d(1,m(3,4)),2)} + m(1,m(e(2,3),4)) + m(1,n(\beta(2,4),3)) + n(m(d(1,4),2),3)\\ 
+ &  - n(m(1,\beta(2,4)),3) - m(\alpha(1,e(2,3)),4) \stackrel{ LR-A5 }{=}  \\ 
+&\underline{m(1,m(e(2,3),4))} + m(1,n(\beta(2,4),3)) + n(m(d(1,4),2),3) - n(m(1,\beta(2,4)),3)\\ 
+ &  - m(\alpha(1,e(2,3)),4) - m(\alpha(d(1,4),3),2) \stackrel{ SMod1 }{=}  \\ 
+&\underline{m(1,n(\beta(2,4),3))} + n(m(d(1,4),2),3) - n(m(1,\beta(2,4)),3) - m(\alpha(d(1,4),3),2) \stackrel{ SMod3 }{=}  \\ 
+&\underline{n(m(d(1,4),2),3)} - \underline{n(m(1,\beta(2,4)),3)} - m(\alpha(d(1,4),3),2) + m(\alpha(1,3),\beta(2,4)) \stackrel{ SMod6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and Mor1:} \\ 
+& \gamma = d(1,\beta(2,m(3,4))) \\ 
+& \text{Reduction}: \\& - d(1,m(e(2,3),4)) - \underline{d(1,n(\beta(2,4),3))} - d(d(1,2),m(3,4)) + d(d(1,m(3,4)),2) \stackrel{ LR-A3 }{=}  \\ 
+& - \underline{d(1,m(e(2,3),4))} - \underline{d(d(1,2),m(3,4))} + \underline{d(d(1,m(3,4)),2)} - \alpha(d(1,\beta(2,4)),3) \stackrel{ LR-A5 }{=}  \\ 
+& - \underline{\alpha(d(1,\beta(2,4)),3)} - \alpha(d(1,4),e(2,3)) - \alpha(d(d(1,2),4),3) + d(\alpha(d(1,4),3),2) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,4),e(2,3)) + \underline{d(\alpha(d(1,4),3),2)} - \alpha(d(d(1,4),2),3) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and Mor2:} \\ 
+& \gamma = e(\beta(1,m(3,4)),2) \\ 
+& \text{Reduction}: \\& - \underline{e(m(e(1,3),4),2)} - e(n(\beta(1,4),3),2) - d(e(1,2),m(3,4)) + e(1,d(2,m(3,4))) \stackrel{ LR-A4 }{=}  \\ 
+& - e(n(\beta(1,4),3),2) - \underline{d(e(1,2),m(3,4))} + \underline{e(1,d(2,m(3,4)))} - \alpha(e(1,3),d(2,4)) \stackrel{ LR-A5 }{=}  \\ 
+& - \underline{e(n(\beta(1,4),3),2)} - \alpha(e(1,3),d(2,4)) - \alpha(d(e(1,2),4),3) + e(1,\alpha(d(2,4),3)) \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,3),d(2,4)) - \alpha(d(e(1,2),4),3) + e(1,\alpha(d(2,4),3)) - \underline{\alpha(e(\beta(1,4),2),3)} \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(e(1,3),d(2,4)) + \underline{e(1,\alpha(d(2,4),3))} - \alpha(e(1,d(2,4)),3) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and Mor3:} \\ 
+& \gamma = d(1,\beta(2,m(3,4))) \\ 
+& \text{Reduction}: \\& - d(1,m(e(2,3),4)) - \underline{d(1,n(\beta(2,4),3))} + d(d(1,m(3,4)),2) - d(d(1,2),m(3,4)) \stackrel{ LR-A3 }{=}  \\ 
+& - \underline{d(1,m(e(2,3),4))} + \underline{d(d(1,m(3,4)),2)} - \underline{d(d(1,2),m(3,4))} - \alpha(d(1,\beta(2,4)),3) \stackrel{ LR-A5 }{=}  \\ 
+& - \underline{\alpha(d(1,\beta(2,4)),3)} - \alpha(d(1,4),e(2,3)) + d(\alpha(d(1,4),3),2) - \alpha(d(d(1,2),4),3) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,4),e(2,3)) + \underline{d(\alpha(d(1,4),3),2)} - \alpha(d(d(1,4),2),3) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and Mor4:} \\ 
+& \gamma = e(\beta(1,m(2,3)),4) \\ 
+& \text{Reduction}: \\& - \underline{e(m(e(1,2),3),4)} - e(n(\beta(1,3),2),4) + \underline{e(1,e(m(2,3),4))} - d(e(1,4),m(2,3)) \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{e(n(\beta(1,3),2),4)} - d(e(1,4),m(2,3)) - \alpha(e(1,2),e(3,4)) + e(1,\alpha(2,e(3,4))) \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{d(e(1,4),m(2,3))} - \alpha(e(1,2),e(3,4)) + e(1,\alpha(2,e(3,4))) - \alpha(e(\beta(1,3),4),2) \stackrel{ LR-A5 }{=}  \\ 
+& - \alpha(e(1,2),e(3,4)) + e(1,\alpha(2,e(3,4))) - \underline{\alpha(e(\beta(1,3),4),2)} - \alpha(d(e(1,4),3),2) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,2),e(3,4)) + \underline{e(1,\alpha(2,e(3,4)))} - \alpha(e(1,e(3,4)),2) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and Mor4:} \\ 
+& \gamma = e(\beta(1,m(2,4)),3) \\ 
+& \text{Reduction}: \\& - e(m(e(1,2),4),3) - \underline{e(n(\beta(1,4),2),3)} + e(1,e(m(2,4),3)) - d(e(1,3),m(2,4)) \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{e(m(e(1,2),4),3)} + \underline{e(1,e(m(2,4),3))} - d(e(1,3),m(2,4)) - \alpha(e(\beta(1,4),3),2) \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{d(e(1,3),m(2,4))} - \alpha(e(\beta(1,4),3),2) - \alpha(e(1,2),d(3,4)) + e(1,\alpha(2,d(3,4))) \stackrel{ LR-A5 }{=}  \\ 
+& - \underline{\alpha(e(\beta(1,4),3),2)} - \alpha(e(1,2),d(3,4)) + e(1,\alpha(2,d(3,4))) - \alpha(d(e(1,3),4),2) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(e(1,2),d(3,4)) + \underline{e(1,\alpha(2,d(3,4)))} - \alpha(e(1,d(3,4)),2) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and Mor5:} \\ 
+& \gamma = e(\beta(1,m(3,4)),2) \\ 
+& \text{Reduction}: \\& - \underline{e(m(e(1,3),4),2)} - e(n(\beta(1,4),3),2) + e(1,d(2,m(3,4))) - d(e(1,2),m(3,4)) \stackrel{ LR-A4 }{=}  \\ 
+& - e(n(\beta(1,4),3),2) + \underline{e(1,d(2,m(3,4)))} - \underline{d(e(1,2),m(3,4))} - \alpha(e(1,3),d(2,4)) \stackrel{ LR-A5 }{=}  \\ 
+& - \underline{e(n(\beta(1,4),3),2)} - \alpha(e(1,3),d(2,4)) + e(1,\alpha(d(2,4),3)) - \alpha(d(e(1,2),4),3) \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,3),d(2,4)) + e(1,\alpha(d(2,4),3)) - \alpha(d(e(1,2),4),3) - \underline{\alpha(e(\beta(1,4),2),3)} \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(e(1,3),d(2,4)) + \underline{e(1,\alpha(d(2,4),3))} - \alpha(e(1,d(2,4)),3) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and Mor6:} \\ 
+& \gamma = e(\beta(1,m(2,3)),4) \\ 
+& \text{Reduction}: \\& - \underline{e(m(e(1,2),3),4)} - e(n(\beta(1,3),2),4) - d(e(1,4),m(2,3)) + \underline{e(1,e(m(2,3),4))} \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{e(n(\beta(1,3),2),4)} - d(e(1,4),m(2,3)) - \alpha(e(1,2),e(3,4)) + e(1,\alpha(2,e(3,4))) \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{d(e(1,4),m(2,3))} - \alpha(e(1,2),e(3,4)) + e(1,\alpha(2,e(3,4))) - \alpha(e(\beta(1,3),4),2) \stackrel{ LR-A5 }{=}  \\ 
+& - \alpha(e(1,2),e(3,4)) + e(1,\alpha(2,e(3,4))) - \underline{\alpha(e(\beta(1,3),4),2)} - \alpha(d(e(1,4),3),2) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,2),e(3,4)) + \underline{e(1,\alpha(2,e(3,4)))} - \alpha(e(1,e(3,4)),2) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and Mor6:} \\ 
+& \gamma = e(\beta(1,m(2,4)),3) \\ 
+& \text{Reduction}: \\& - e(m(e(1,2),4),3) - \underline{e(n(\beta(1,4),2),3)} - d(e(1,3),m(2,4)) + e(1,e(m(2,4),3)) \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{e(m(e(1,2),4),3)} - d(e(1,3),m(2,4)) + \underline{e(1,e(m(2,4),3))} - \alpha(e(\beta(1,4),3),2) \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{d(e(1,3),m(2,4))} - \alpha(e(\beta(1,4),3),2) - \alpha(e(1,2),d(3,4)) + e(1,\alpha(2,d(3,4))) \stackrel{ LR-A5 }{=}  \\ 
+& - \underline{\alpha(e(\beta(1,4),3),2)} - \alpha(e(1,2),d(3,4)) + e(1,\alpha(2,d(3,4))) - \alpha(d(e(1,3),4),2) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(e(1,2),d(3,4)) + \underline{e(1,\alpha(2,d(3,4)))} - \alpha(e(1,d(3,4)),2) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and SMod1:} \\ 
+& \gamma = \beta(1,m(2,m(3,4))) \\ 
+& \text{Reduction}: \\& - m(e(1,2),m(3,4)) - \underline{n(\beta(1,m(3,4)),2)} + \underline{\beta(1,m(\alpha(2,3),4))} \stackrel{ LR-B1 }{=}  \\ 
+& - \underline{m(e(1,2),m(3,4))} - n(m(e(1,3),4),2) - n(n(\beta(1,4),3),2) + m(e(1,\alpha(2,3)),4)\\ 
+ &  + n(\beta(1,4),\alpha(2,3)) \stackrel{ SMod1 }{=}  \\ 
+& - \underline{n(m(e(1,3),4),2)} - n(n(\beta(1,4),3),2) + m(e(1,\alpha(2,3)),4) + n(\beta(1,4),\alpha(2,3))\\ 
+ &  - m(\alpha(e(1,2),3),4) \stackrel{ SMod2 }{=}  \\ 
+& - \underline{n(n(\beta(1,4),3),2)} + m(e(1,\alpha(2,3)),4) + n(\beta(1,4),\alpha(2,3)) - m(\alpha(e(1,2),3),4)\\ 
+ &  - m(\alpha(e(1,3),2),4) \stackrel{ SMod5 }{=}  \\ 
+&\underline{m(e(1,\alpha(2,3)),4)} - m(\alpha(e(1,2),3),4) - m(\alpha(e(1,3),2),4) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and SMod3:} \\ 
+& \gamma = \beta(1,m(2,n(3,4))) \\ 
+& \text{Reduction}: \\& - m(e(1,2),n(3,4)) - n(\beta(1,n(3,4)),2) + \underline{\beta(1,m(\alpha(2,4),3))} \stackrel{ LR-B1 }{=}  \\ 
+& - m(e(1,2),n(3,4)) - \underline{n(\beta(1,n(3,4)),2)} + m(e(1,\alpha(2,4)),3) + n(\beta(1,3),\alpha(2,4)) \stackrel{ LR-B4 }{=}  \\ 
+& - m(e(1,2),n(3,4)) + m(e(1,\alpha(2,4)),3) + n(\beta(1,3),\alpha(2,4)) - \underline{n(m(e(1,4),3),2)}\\ 
+ &  - n(n(\beta(1,3),4),2) \stackrel{ SMod2 }{=}  \\ 
+& - \underline{m(e(1,2),n(3,4))} + m(e(1,\alpha(2,4)),3) + n(\beta(1,3),\alpha(2,4)) - n(n(\beta(1,3),4),2)\\ 
+ &  - m(\alpha(e(1,4),2),3) \stackrel{ SMod3 }{=}  \\ 
+&m(e(1,\alpha(2,4)),3) + n(\beta(1,3),\alpha(2,4)) - \underline{n(n(\beta(1,3),4),2)} - m(\alpha(e(1,4),2),3)\\ 
+ &  - m(\alpha(e(1,2),4),3) \stackrel{ SMod5 }{=}  \\ 
+&\underline{m(e(1,\alpha(2,4)),3)} - m(\alpha(e(1,4),2),3) - m(\alpha(e(1,2),4),3) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and Lie:} \\ 
+& \gamma = \beta(\beta(1,2),m(3,4)) \\ 
+& \text{Reduction}: \\& - m(e(\beta(1,2),3),4) - n(\beta(\beta(1,2),4),3) + \underline{\beta(\beta(1,m(3,4)),2)} + \underline{\beta(1,\beta(2,m(3,4)))} \stackrel{ LR-B1 }{=}  \\ 
+& - m(e(\beta(1,2),3),4) - n(\beta(\beta(1,2),4),3) + \beta(m(e(1,3),4),2) + \beta(n(\beta(1,4),3),2)\\ 
+ &  + \underline{\beta(1,m(e(2,3),4))} + \beta(1,n(\beta(2,4),3)) \stackrel{ LR-B1 }{=}  \\ 
+& - m(e(\beta(1,2),3),4) - n(\beta(\beta(1,2),4),3) + \underline{\beta(m(e(1,3),4),2)} + \beta(n(\beta(1,4),3),2)\\ 
+ &  + \beta(1,n(\beta(2,4),3)) + m(e(1,e(2,3)),4) + n(\beta(1,4),e(2,3)) \stackrel{ LR-B2 }{=}  \\ 
+& - m(e(\beta(1,2),3),4) - n(\beta(\beta(1,2),4),3) + \beta(n(\beta(1,4),3),2) + \underline{\beta(1,n(\beta(2,4),3))}\\ 
+ &  + m(e(1,e(2,3)),4) + n(\beta(1,4),e(2,3)) - m(d(e(1,3),2),4) - m(e(1,3),\beta(2,4)) \stackrel{ LR-B4 }{=}  \\ 
+& - m(e(\beta(1,2),3),4) - n(\beta(\beta(1,2),4),3) + \underline{\beta(n(\beta(1,4),3),2)} + m(e(1,e(2,3)),4)\\ 
+ &  + n(\beta(1,4),e(2,3)) - m(d(e(1,3),2),4) + n(\beta(1,\beta(2,4)),3) \stackrel{ LR-B5 }{=}  \\ 
+& - \underline{m(e(\beta(1,2),3),4)} - n(\beta(\beta(1,2),4),3) + m(e(1,e(2,3)),4) - m(d(e(1,3),2),4)\\ 
+ &  + n(\beta(1,\beta(2,4)),3) + n(\beta(\beta(1,4),2),3) \stackrel{ Mor4 }{=}  \\ 
+& - \underline{n(\beta(\beta(1,2),4),3)} + n(\beta(1,\beta(2,4)),3) + n(\beta(\beta(1,4),2),3) \stackrel{ Lie }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and Lie:} \\ 
+& \gamma = \beta(\beta(1,m(2,3)),4) \\ 
+& \text{Reduction}: \\& - \beta(m(e(1,2),3),4) - \beta(n(\beta(1,3),2),4) + \underline{\beta(\beta(1,4),m(2,3))} + \beta(1,\beta(m(2,3),4)) \stackrel{ LR-B1 }{=}  \\ 
+& - \beta(m(e(1,2),3),4) - \underline{\beta(n(\beta(1,3),2),4)} + \beta(1,\beta(m(2,3),4)) + m(e(\beta(1,4),2),3)\\ 
+ &  + n(\beta(\beta(1,4),3),2) \stackrel{ LR-B3 }{=}  \\ 
+& - \underline{\beta(m(e(1,2),3),4)} + \underline{\beta(1,\beta(m(2,3),4))} + m(e(\beta(1,4),2),3) + n(\beta(\beta(1,4),3),2)\\ 
+ &  + n(\beta(1,3),d(2,4)) - n(\beta(\beta(1,3),4),2) \stackrel{ LR-B6 }{=}  \\ 
+&\underline{m(e(\beta(1,4),2),3)} + n(\beta(\beta(1,4),3),2) + n(\beta(1,3),d(2,4)) - n(\beta(\beta(1,3),4),2)\\ 
+ &  + m(d(e(1,2),4),3) - m(e(1,2),\beta(3,4)) - \beta(1,m(d(2,4),3)) + \beta(1,m(2,\beta(3,4))) \stackrel{ Mor2 }{=}  \\ 
+&n(\beta(\beta(1,4),3),2) + n(\beta(1,3),d(2,4)) - \underline{n(\beta(\beta(1,3),4),2)} - m(e(1,2),\beta(3,4))\\ 
+ &  - \beta(1,m(d(2,4),3)) + \beta(1,m(2,\beta(3,4))) + m(e(1,d(2,4)),3) \stackrel{ Lie }{=}  \\ 
+&n(\beta(1,3),d(2,4)) - m(e(1,2),\beta(3,4)) - \underline{\beta(1,m(d(2,4),3))} + \underline{\beta(1,m(2,\beta(3,4)))}\\ 
+ &  + m(e(1,d(2,4)),3) - n(\beta(1,\beta(3,4)),2) \stackrel{ LR-B1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B1 and Lie:} \\ 
+& \gamma = \beta(\beta(1,m(2,4)),3) \\ 
+& \text{Reduction}: \\& - \beta(m(e(1,2),4),3) - \beta(n(\beta(1,4),2),3) + \underline{\beta(\beta(1,3),m(2,4))} + \beta(1,\beta(m(2,4),3)) \stackrel{ LR-B1 }{=}  \\ 
+& - \underline{\beta(m(e(1,2),4),3)} - \beta(n(\beta(1,4),2),3) + \underline{\beta(1,\beta(m(2,4),3))} + m(e(\beta(1,3),2),4)\\ 
+ &  + n(\beta(\beta(1,3),4),2) \stackrel{ LR-B2 }{=}  \\ 
+& - \underline{\beta(n(\beta(1,4),2),3)} + m(e(\beta(1,3),2),4) + n(\beta(\beta(1,3),4),2) + m(d(e(1,2),3),4)\\ 
+ &  + m(e(1,2),\beta(3,4)) - \beta(1,m(d(2,3),4)) - \beta(1,m(2,\beta(3,4))) \stackrel{ LR-B3 }{=}  \\ 
+&\underline{m(e(\beta(1,3),2),4)} + n(\beta(\beta(1,3),4),2) + m(d(e(1,2),3),4) + m(e(1,2),\beta(3,4))\\ 
+ &  - \beta(1,m(d(2,3),4)) - \beta(1,m(2,\beta(3,4))) + n(\beta(1,4),d(2,3)) - n(\beta(\beta(1,4),3),2) \stackrel{ Mor2 }{=}  \\ 
+&\underline{n(\beta(\beta(1,3),4),2)} + m(e(1,2),\beta(3,4)) - \beta(1,m(d(2,3),4)) - \beta(1,m(2,\beta(3,4)))\\ 
+ &  + n(\beta(1,4),d(2,3)) - n(\beta(\beta(1,4),3),2) + m(e(1,d(2,3)),4) \stackrel{ Lie }{=}  \\ 
+&m(e(1,2),\beta(3,4)) - \underline{\beta(1,m(d(2,3),4))} - \underline{\beta(1,m(2,\beta(3,4)))} + n(\beta(1,4),d(2,3))\\ 
+ &  + m(e(1,d(2,3)),4) + n(\beta(1,\beta(3,4)),2) \stackrel{ LR-B1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and LR-B4:} \\ 
+& \gamma = \beta(m(1,3),n(2,4)) \\ 
+& \text{Reduction}: \\& - m(d(1,n(2,4)),3) - m(1,\beta(n(2,4),3)) - m(e(m(1,3),4),2) - \underline{n(\beta(m(1,3),2),4)} \stackrel{ LR-B2 }{=}  \\ 
+& - m(d(1,n(2,4)),3) - \underline{m(1,\beta(n(2,4),3))} - m(e(m(1,3),4),2) + n(m(d(1,2),3),4)\\ 
+ &  + n(m(1,\beta(2,3)),4) \stackrel{ LR-B5 }{=}  \\ 
+& - m(d(1,n(2,4)),3) - \underline{m(e(m(1,3),4),2)} + n(m(d(1,2),3),4) + n(m(1,\beta(2,3)),4)\\ 
+ &  + m(1,n(2,e(3,4))) - m(1,n(\beta(2,3),4)) \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{m(d(1,n(2,4)),3)} + n(m(d(1,2),3),4) + n(m(1,\beta(2,3)),4) + m(1,n(2,e(3,4)))\\ 
+ &  - m(1,n(\beta(2,3),4)) - m(\alpha(1,e(3,4)),2) \stackrel{ LR-A3 }{=}  \\ 
+&n(m(d(1,2),3),4) + n(m(1,\beta(2,3)),4) + \underline{m(1,n(2,e(3,4)))} - \underline{m(1,n(\beta(2,3),4))}\\ 
+ &  - m(\alpha(1,e(3,4)),2) - m(\alpha(d(1,2),4),3) \stackrel{ SMod3 }{=}  \\ 
+&\underline{n(m(d(1,2),3),4)} + \underline{n(m(1,\beta(2,3)),4)} - m(\alpha(d(1,2),4),3) - m(\alpha(1,4),\beta(2,3)) \stackrel{ SMod6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and LR-B4:} \\ 
+& \gamma = \beta(m(1,4),n(2,3)) \\ 
+& \text{Reduction}: \\& - m(d(1,n(2,3)),4) - m(1,\beta(n(2,3),4)) - m(e(m(1,4),3),2) - \underline{n(\beta(m(1,4),2),3)} \stackrel{ LR-B2 }{=}  \\ 
+& - m(d(1,n(2,3)),4) - \underline{m(1,\beta(n(2,3),4))} - m(e(m(1,4),3),2) + n(m(d(1,2),4),3)\\ 
+ &  + n(m(1,\beta(2,4)),3) \stackrel{ LR-B3 }{=}  \\ 
+& - \underline{m(d(1,n(2,3)),4)} - m(e(m(1,4),3),2) + n(m(d(1,2),4),3) + n(m(1,\beta(2,4)),3)\\ 
+ &  + m(1,n(2,d(3,4))) - m(1,n(\beta(2,4),3)) \stackrel{ LR-A3 }{=}  \\ 
+& - \underline{m(e(m(1,4),3),2)} + n(m(d(1,2),4),3) + n(m(1,\beta(2,4)),3) + m(1,n(2,d(3,4)))\\ 
+ &  - m(1,n(\beta(2,4),3)) - m(\alpha(d(1,2),3),4) \stackrel{ LR-A4 }{=}  \\ 
+&\underline{n(m(d(1,2),4),3)} + n(m(1,\beta(2,4)),3) + m(1,n(2,d(3,4))) - m(1,n(\beta(2,4),3))\\ 
+ &  - m(\alpha(d(1,2),3),4) - m(\alpha(1,d(3,4)),2) \stackrel{ SMod2 }{=}  \\ 
+&n(m(1,\beta(2,4)),3) + \underline{m(1,n(2,d(3,4)))} - \underline{m(1,n(\beta(2,4),3))} - m(\alpha(1,d(3,4)),2) \stackrel{ SMod3 }{=}  \\ 
+&\underline{n(m(1,\beta(2,4)),3)} - m(\alpha(1,3),\beta(2,4)) \stackrel{ SMod6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and Mor1:} \\ 
+& \gamma = d(1,\beta(m(2,4),3)) \\ 
+& \text{Reduction}: \\& - \underline{d(1,m(d(2,3),4))} - \underline{d(1,m(2,\beta(3,4)))} + \underline{d(d(1,m(2,4)),3)} - \underline{d(d(1,3),m(2,4))} \stackrel{ LR-A5 }{=}  \\ 
+& - \alpha(d(1,4),d(2,3)) - \underline{\alpha(d(1,\beta(3,4)),2)} + d(\alpha(d(1,4),2),3) - \alpha(d(d(1,3),4),2) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,4),d(2,3)) + \underline{d(\alpha(d(1,4),2),3)} - \alpha(d(d(1,4),3),2) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and Mor2:} \\ 
+& \gamma = e(\beta(m(1,4),3),2) \\ 
+& \text{Reduction}: \\& - \underline{e(m(d(1,3),4),2)} - \underline{e(m(1,\beta(3,4)),2)} + \underline{d(e(m(1,4),2),3)} - \underline{e(m(1,4),d(2,3))} \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(d(1,3),d(2,4)) - \underline{\alpha(1,d(2,\beta(3,4)))} + d(\alpha(1,d(2,4)),3) - \alpha(1,d(d(2,3),4)) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,3),d(2,4)) + \underline{d(\alpha(1,d(2,4)),3)} - \alpha(1,d(d(2,4),3)) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and Mor3:} \\ 
+& \gamma = d(1,\beta(m(2,4),3)) \\ 
+& \text{Reduction}: \\& - \underline{d(1,m(d(2,3),4))} - \underline{d(1,m(2,\beta(3,4)))} - \underline{d(d(1,3),m(2,4))} + \underline{d(d(1,m(2,4)),3)} \stackrel{ LR-A5 }{=}  \\ 
+& - \alpha(d(1,4),d(2,3)) - \underline{\alpha(d(1,\beta(3,4)),2)} - \alpha(d(d(1,3),4),2) + d(\alpha(d(1,4),2),3) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,4),d(2,3)) + \underline{d(\alpha(d(1,4),2),3)} - \alpha(d(d(1,4),3),2) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and Mor4:} \\ 
+& \gamma = e(\beta(m(1,3),2),4) \\ 
+& \text{Reduction}: \\& - \underline{e(m(d(1,2),3),4)} - \underline{e(m(1,\beta(2,3)),4)} - e(m(1,3),e(2,4)) + \underline{d(e(m(1,3),4),2)} \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{e(m(1,3),e(2,4))} - \alpha(d(1,2),e(3,4)) - \alpha(1,e(\beta(2,3),4)) + d(\alpha(1,e(3,4)),2) \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(d(1,2),e(3,4)) - \underline{\alpha(1,e(\beta(2,3),4))} + d(\alpha(1,e(3,4)),2) - \alpha(1,d(e(2,4),3)) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(d(1,2),e(3,4)) + \underline{d(\alpha(1,e(3,4)),2)} - \alpha(1,e(2,e(3,4))) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and Mor4:} \\ 
+& \gamma = e(\beta(m(1,4),2),3) \\ 
+& \text{Reduction}: \\& - e(m(d(1,2),4),3) - \underline{e(m(1,\beta(2,4)),3)} - e(m(1,4),e(2,3)) + d(e(m(1,4),3),2) \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{e(m(d(1,2),4),3)} - \underline{e(m(1,4),e(2,3))} + \underline{d(e(m(1,4),3),2)} - \alpha(1,e(\beta(2,4),3)) \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{\alpha(1,e(\beta(2,4),3))} - \alpha(d(1,2),d(3,4)) - \alpha(1,d(e(2,3),4)) + d(\alpha(1,d(3,4)),2) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(d(1,2),d(3,4)) + \underline{d(\alpha(1,d(3,4)),2)} - \alpha(1,e(2,d(3,4))) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and Mor5:} \\ 
+& \gamma = e(\beta(m(1,4),3),2) \\ 
+& \text{Reduction}: \\& - \underline{e(m(d(1,3),4),2)} - \underline{e(m(1,\beta(3,4)),2)} - \underline{e(m(1,4),d(2,3))} + \underline{d(e(m(1,4),2),3)} \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(d(1,3),d(2,4)) - \underline{\alpha(1,d(2,\beta(3,4)))} - \alpha(1,d(d(2,3),4)) + d(\alpha(1,d(2,4)),3) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,3),d(2,4)) + \underline{d(\alpha(1,d(2,4)),3)} - \alpha(1,d(d(2,4),3)) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and Mor6:} \\ 
+& \gamma = e(\beta(m(1,3),2),4) \\ 
+& \text{Reduction}: \\& - \underline{e(m(d(1,2),3),4)} - \underline{e(m(1,\beta(2,3)),4)} + \underline{d(e(m(1,3),4),2)} - e(m(1,3),e(2,4)) \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{e(m(1,3),e(2,4))} - \alpha(d(1,2),e(3,4)) - \alpha(1,e(\beta(2,3),4)) + d(\alpha(1,e(3,4)),2) \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(d(1,2),e(3,4)) - \underline{\alpha(1,e(\beta(2,3),4))} + d(\alpha(1,e(3,4)),2) - \alpha(1,d(e(2,4),3)) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(d(1,2),e(3,4)) + \underline{d(\alpha(1,e(3,4)),2)} - \alpha(1,e(2,e(3,4))) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and Mor6:} \\ 
+& \gamma = e(\beta(m(1,4),2),3) \\ 
+& \text{Reduction}: \\& - e(m(d(1,2),4),3) - \underline{e(m(1,\beta(2,4)),3)} + d(e(m(1,4),3),2) - e(m(1,4),e(2,3)) \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{e(m(d(1,2),4),3)} + \underline{d(e(m(1,4),3),2)} - \underline{e(m(1,4),e(2,3))} - \alpha(1,e(\beta(2,4),3)) \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{\alpha(1,e(\beta(2,4),3))} - \alpha(d(1,2),d(3,4)) + d(\alpha(1,d(3,4)),2) - \alpha(1,d(e(2,3),4)) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(d(1,2),d(3,4)) + \underline{d(\alpha(1,d(3,4)),2)} - \alpha(1,e(2,d(3,4))) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and SMod1:} \\ 
+& \gamma = \beta(m(1,m(3,4)),2) \\ 
+& \text{Reduction}: \\& - m(d(1,2),m(3,4)) - \underline{m(1,\beta(2,m(3,4)))} - \beta(m(\alpha(1,3),4),2) \stackrel{ LR-B1 }{=}  \\ 
+& - m(d(1,2),m(3,4)) - \underline{\beta(m(\alpha(1,3),4),2)} - m(1,m(e(2,3),4)) - m(1,n(\beta(2,4),3)) \stackrel{ LR-B2 }{=}  \\ 
+& - \underline{m(d(1,2),m(3,4))} - \underline{m(1,m(e(2,3),4))} - m(1,n(\beta(2,4),3)) + m(d(\alpha(1,3),2),4)\\ 
+ &  + m(\alpha(1,3),\beta(2,4)) \stackrel{ SMod1 }{=}  \\ 
+& - \underline{m(1,n(\beta(2,4),3))} + m(d(\alpha(1,3),2),4) + m(\alpha(1,3),\beta(2,4)) - m(\alpha(d(1,2),3),4)\\ 
+ &  - m(\alpha(1,e(2,3)),4) \stackrel{ SMod3 }{=}  \\ 
+&\underline{m(d(\alpha(1,3),2),4)} - m(\alpha(d(1,2),3),4) - m(\alpha(1,e(2,3)),4) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and SMod3:} \\ 
+& \gamma = \beta(m(1,n(3,4)),2) \\ 
+& \text{Reduction}: \\& - m(d(1,2),n(3,4)) - m(1,\beta(2,n(3,4))) - \underline{\beta(m(\alpha(1,4),3),2)} \stackrel{ LR-B2 }{=}  \\ 
+& - m(d(1,2),n(3,4)) - \underline{m(1,\beta(2,n(3,4)))} + m(d(\alpha(1,4),2),3) + m(\alpha(1,4),\beta(2,3)) \stackrel{ LR-B4 }{=}  \\ 
+& - m(d(1,2),n(3,4)) + m(d(\alpha(1,4),2),3) + m(\alpha(1,4),\beta(2,3)) - \underline{m(1,m(e(2,4),3))}\\ 
+ &  - m(1,n(\beta(2,3),4)) \stackrel{ SMod1 }{=}  \\ 
+& - \underline{m(d(1,2),n(3,4))} + m(d(\alpha(1,4),2),3) + m(\alpha(1,4),\beta(2,3)) - \underline{m(1,n(\beta(2,3),4))}\\ 
+ &  - m(\alpha(1,e(2,4)),3) \stackrel{ SMod3 }{=}  \\ 
+&\underline{m(d(\alpha(1,4),2),3)} - m(\alpha(1,e(2,4)),3) - m(\alpha(d(1,2),4),3) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and Lie:} \\ 
+& \gamma = \beta(\beta(m(1,3),2),4) \\ 
+& \text{Reduction}: \\& - \beta(m(d(1,2),3),4) - \beta(m(1,\beta(2,3)),4) - \beta(\beta(m(1,3),4),2) - \underline{\beta(m(1,3),\beta(2,4))} \stackrel{ LR-B2 }{=}  \\ 
+& - \underline{\beta(m(d(1,2),3),4)} - \underline{\beta(m(1,\beta(2,3)),4)} - \underline{\beta(\beta(m(1,3),4),2)} + m(d(1,\beta(2,4)),3)\\ 
+ &  + m(1,\beta(\beta(2,4),3)) \stackrel{ LR-B6 }{=}  \\ 
+&\underline{m(d(1,\beta(2,4)),3)} + m(1,\beta(\beta(2,4),3)) + m(d(d(1,2),4),3) - m(d(1,2),\beta(3,4))\\ 
+ &  + m(d(1,4),\beta(2,3)) - m(1,\beta(\beta(2,3),4)) + \beta(m(d(1,4),3),2) - \beta(m(1,\beta(3,4)),2) \stackrel{ Mor1 }{=}  \\ 
+&m(1,\beta(\beta(2,4),3)) - m(d(1,2),\beta(3,4)) + m(d(1,4),\beta(2,3)) - \underline{m(1,\beta(\beta(2,3),4))}\\ 
+ &  + \beta(m(d(1,4),3),2) - \beta(m(1,\beta(3,4)),2) + m(d(d(1,4),2),3) \stackrel{ Lie }{=}  \\ 
+& - m(d(1,2),\beta(3,4)) + m(d(1,4),\beta(2,3)) + \underline{\beta(m(d(1,4),3),2)} - \underline{\beta(m(1,\beta(3,4)),2)}\\ 
+ &  + m(d(d(1,4),2),3) - m(1,\beta(2,\beta(3,4))) \stackrel{ LR-B2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B2 and Lie:} \\ 
+& \gamma = \beta(\beta(m(1,4),2),3) \\ 
+& \text{Reduction}: \\& - \underline{\beta(m(d(1,2),4),3)} - \beta(m(1,\beta(2,4)),3) - \underline{\beta(\beta(m(1,4),3),2)} - \underline{\beta(m(1,4),\beta(2,3))} \stackrel{ LR-B2 }{=}  \\ 
+& - \beta(m(1,\beta(2,4)),3) + m(d(d(1,2),3),4) + m(d(1,2),\beta(3,4)) + \underline{\beta(m(d(1,3),4),2)}\\ 
+ &  + \underline{\beta(m(1,\beta(3,4)),2)} + m(d(1,\beta(2,3)),4) + m(1,\beta(\beta(2,3),4)) \stackrel{ LR-B2 }{=}  \\ 
+& - \underline{\beta(m(1,\beta(2,4)),3)} + m(d(d(1,2),3),4) + m(d(1,\beta(2,3)),4) + m(1,\beta(\beta(2,3),4))\\ 
+ &  - m(d(d(1,3),2),4) - m(d(1,3),\beta(2,4)) - m(1,\beta(2,\beta(3,4))) \stackrel{ LR-B6 }{=}  \\ 
+&m(d(d(1,2),3),4) + \underline{m(d(1,\beta(2,3)),4)} + m(1,\beta(\beta(2,3),4)) - m(d(d(1,3),2),4)\\ 
+ &  - m(1,\beta(2,\beta(3,4))) - m(1,\beta(\beta(2,4),3)) \stackrel{ Mor1 }{=}  \\ 
+&\underline{m(1,\beta(\beta(2,3),4))} - m(1,\beta(2,\beta(3,4))) - m(1,\beta(\beta(2,4),3)) \stackrel{ Lie }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and LR-B4:} \\ 
+& \gamma = \beta(n(1,2),n(3,4)) \\ 
+& \text{Reduction}: \\& - n(1,d(2,n(3,4))) + n(\beta(1,n(3,4)),2) - m(e(n(1,2),4),3) - \underline{n(\beta(n(1,2),3),4)} \stackrel{ LR-B3 }{=}  \\ 
+& - n(1,d(2,n(3,4))) + \underline{n(\beta(1,n(3,4)),2)} - m(e(n(1,2),4),3) + n(n(1,d(2,3)),4)\\ 
+ &  - n(n(\beta(1,3),2),4) \stackrel{ LR-B4 }{=}  \\ 
+& - n(1,d(2,n(3,4))) - \underline{m(e(n(1,2),4),3)} + n(n(1,d(2,3)),4) - n(n(\beta(1,3),2),4)\\ 
+ &  + n(m(e(1,4),3),2) + n(n(\beta(1,3),4),2) \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{n(1,d(2,n(3,4)))} + n(n(1,d(2,3)),4) - n(n(\beta(1,3),2),4) + n(m(e(1,4),3),2)\\ 
+ &  + n(n(\beta(1,3),4),2) - m(\alpha(e(1,4),2),3) \stackrel{ LR-A3 }{=}  \\ 
+&n(n(1,d(2,3)),4) - n(n(\beta(1,3),2),4) + \underline{n(m(e(1,4),3),2)} + n(n(\beta(1,3),4),2)\\ 
+ &  - m(\alpha(e(1,4),2),3) - n(1,\alpha(d(2,3),4)) \stackrel{ SMod2 }{=}  \\ 
+&\underline{n(n(1,d(2,3)),4)} - \underline{n(n(\beta(1,3),2),4)} + n(n(\beta(1,3),4),2) - n(1,\alpha(d(2,3),4)) \stackrel{ SMod4 }{=}  \\ 
+&\underline{n(n(\beta(1,3),4),2)} - n(\beta(1,3),\alpha(2,4)) \stackrel{ SMod5 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and Mor1:} \\ 
+& \gamma = d(1,\beta(n(2,3),4)) \\ 
+& \text{Reduction}: \\& - \underline{d(1,n(2,d(3,4)))} + \underline{d(1,n(\beta(2,4),3))} + \underline{d(d(1,n(2,3)),4)} - \underline{d(d(1,4),n(2,3))} \stackrel{ LR-A3 }{=}  \\ 
+& - \alpha(d(1,2),d(3,4)) + \underline{\alpha(d(1,\beta(2,4)),3)} + d(\alpha(d(1,2),3),4) - \alpha(d(d(1,4),2),3) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,2),d(3,4)) + \underline{d(\alpha(d(1,2),3),4)} - \alpha(d(d(1,2),4),3) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and Mor2:} \\ 
+& \gamma = e(\beta(n(1,2),4),3) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,d(2,4)),3)} + \underline{e(n(\beta(1,4),2),3)} + \underline{d(e(n(1,2),3),4)} - \underline{e(n(1,2),d(3,4))} \stackrel{ LR-A2 }{=}  \\ 
+& - \alpha(e(1,3),d(2,4)) + \underline{\alpha(e(\beta(1,4),3),2)} + d(\alpha(e(1,3),2),4) - \alpha(e(1,d(3,4)),2) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(e(1,3),d(2,4)) + \underline{d(\alpha(e(1,3),2),4)} - \alpha(d(e(1,3),4),2) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and Mor2:} \\ 
+& \gamma = e(\beta(n(1,3),4),2) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,d(3,4)),2)} + \underline{e(n(\beta(1,4),3),2)} + \underline{d(e(n(1,3),2),4)} - \underline{e(n(1,3),d(2,4))} \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,2),d(3,4)) + \underline{\alpha(e(\beta(1,4),2),3)} + d(\alpha(e(1,2),3),4) - \alpha(e(1,d(2,4)),3) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(e(1,2),d(3,4)) + \underline{d(\alpha(e(1,2),3),4)} - \alpha(d(e(1,2),4),3) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and Mor3:} \\ 
+& \gamma = d(1,\beta(n(2,3),4)) \\ 
+& \text{Reduction}: \\& - \underline{d(1,n(2,d(3,4)))} + \underline{d(1,n(\beta(2,4),3))} - \underline{d(d(1,4),n(2,3))} + \underline{d(d(1,n(2,3)),4)} \stackrel{ LR-A3 }{=}  \\ 
+& - \alpha(d(1,2),d(3,4)) + \underline{\alpha(d(1,\beta(2,4)),3)} - \alpha(d(d(1,4),2),3) + d(\alpha(d(1,2),3),4) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,2),d(3,4)) + \underline{d(\alpha(d(1,2),3),4)} - \alpha(d(d(1,2),4),3) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and Mor4:} \\ 
+& \gamma = e(\beta(n(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,d(2,3)),4)} + \underline{e(n(\beta(1,3),2),4)} - \underline{e(n(1,2),e(3,4))} + \underline{d(e(n(1,2),4),3)} \stackrel{ LR-A2 }{=}  \\ 
+& - \alpha(e(1,4),d(2,3)) + \underline{\alpha(e(\beta(1,3),4),2)} - \alpha(e(1,e(3,4)),2) + d(\alpha(e(1,4),2),3) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,4),d(2,3)) + \underline{d(\alpha(e(1,4),2),3)} - \alpha(d(e(1,4),3),2) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and Mor5:} \\ 
+& \gamma = e(\beta(n(1,2),4),3) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,d(2,4)),3)} + \underline{e(n(\beta(1,4),2),3)} - \underline{e(n(1,2),d(3,4))} + \underline{d(e(n(1,2),3),4)} \stackrel{ LR-A2 }{=}  \\ 
+& - \alpha(e(1,3),d(2,4)) + \underline{\alpha(e(\beta(1,4),3),2)} - \alpha(e(1,d(3,4)),2) + d(\alpha(e(1,3),2),4) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(e(1,3),d(2,4)) + \underline{d(\alpha(e(1,3),2),4)} - \alpha(d(e(1,3),4),2) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and Mor5:} \\ 
+& \gamma = e(\beta(n(1,3),4),2) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,d(3,4)),2)} + \underline{e(n(\beta(1,4),3),2)} - \underline{e(n(1,3),d(2,4))} + \underline{d(e(n(1,3),2),4)} \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,2),d(3,4)) + \underline{\alpha(e(\beta(1,4),2),3)} - \alpha(e(1,d(2,4)),3) + d(\alpha(e(1,2),3),4) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(e(1,2),d(3,4)) + \underline{d(\alpha(e(1,2),3),4)} - \alpha(d(e(1,2),4),3) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and Mor6:} \\ 
+& \gamma = e(\beta(n(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,d(2,3)),4)} + \underline{e(n(\beta(1,3),2),4)} + \underline{d(e(n(1,2),4),3)} - \underline{e(n(1,2),e(3,4))} \stackrel{ LR-A2 }{=}  \\ 
+& - \alpha(e(1,4),d(2,3)) + \underline{\alpha(e(\beta(1,3),4),2)} + d(\alpha(e(1,4),2),3) - \alpha(e(1,e(3,4)),2) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,4),d(2,3)) + \underline{d(\alpha(e(1,4),2),3)} - \alpha(d(e(1,4),3),2) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and SMod2:} \\ 
+& \gamma = \beta(n(m(1,3),2),4) \\ 
+& \text{Reduction}: \\& - n(m(1,3),d(2,4)) + \underline{n(\beta(m(1,3),4),2)} - \underline{\beta(m(\alpha(1,2),3),4)} \stackrel{ LR-B6 }{=}  \\ 
+& - \underline{n(m(1,3),d(2,4))} - \underline{n(m(d(1,4),3),2)} + \underline{n(m(1,\beta(3,4)),2)} + m(d(\alpha(1,2),4),3)\\ 
+ &  - m(\alpha(1,2),\beta(3,4)) \stackrel{ SMod2 }{=}  \\ 
+&\underline{m(d(\alpha(1,2),4),3)} - m(\alpha(1,d(2,4)),3) - m(\alpha(d(1,4),2),3) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and SMod2:} \\ 
+& \gamma = \beta(n(m(1,4),2),3) \\ 
+& \text{Reduction}: \\& - n(m(1,4),d(2,3)) + \underline{n(\beta(m(1,4),3),2)} - \underline{\beta(m(\alpha(1,2),4),3)} \stackrel{ LR-B2 }{=}  \\ 
+& - \underline{n(m(1,4),d(2,3))} - \underline{n(m(d(1,3),4),2)} - \underline{n(m(1,\beta(3,4)),2)} + m(d(\alpha(1,2),3),4)\\ 
+ &  + m(\alpha(1,2),\beta(3,4)) \stackrel{ SMod2 }{=}  \\ 
+&\underline{m(d(\alpha(1,2),3),4)} - m(\alpha(1,d(2,3)),4) - m(\alpha(d(1,3),2),4) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and SMod4:} \\ 
+& \gamma = \beta(n(n(1,2),3),4) \\ 
+& \text{Reduction}: \\& - n(n(1,2),d(3,4)) + \underline{n(\beta(n(1,2),4),3)} - \underline{\beta(n(1,\alpha(2,3)),4)} \stackrel{ LR-B3 }{=}  \\ 
+& - \underline{n(n(1,2),d(3,4))} - \underline{n(n(1,d(2,4)),3)} + \underline{n(n(\beta(1,4),2),3)} + n(1,d(\alpha(2,3),4))\\ 
+ &  - n(\beta(1,4),\alpha(2,3)) \stackrel{ SMod4 }{=}  \\ 
+&\underline{n(1,d(\alpha(2,3),4))} - n(1,\alpha(2,d(3,4))) - n(1,\alpha(d(2,4),3)) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and SMod5:} \\ 
+& \gamma = \beta(n(n(1,3),2),4) \\ 
+& \text{Reduction}: \\& - n(n(1,3),d(2,4)) + \underline{n(\beta(n(1,3),4),2)} - \underline{\beta(n(1,\alpha(2,3)),4)} \stackrel{ LR-B3 }{=}  \\ 
+& - \underline{n(n(1,3),d(2,4))} - \underline{n(n(1,d(3,4)),2)} + \underline{n(n(\beta(1,4),3),2)} + n(1,d(\alpha(2,3),4))\\ 
+ &  - n(\beta(1,4),\alpha(2,3)) \stackrel{ SMod5 }{=}  \\ 
+&\underline{n(1,d(\alpha(2,3),4))} - n(1,\alpha(d(2,4),3)) - n(1,\alpha(2,d(3,4))) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and SMod5:} \\ 
+& \gamma = \beta(n(n(1,4),2),3) \\ 
+& \text{Reduction}: \\& - n(n(1,4),d(2,3)) + n(\beta(n(1,4),3),2) - \underline{\beta(n(1,\alpha(2,4)),3)} \stackrel{ LR-B3 }{=}  \\ 
+& - n(n(1,4),d(2,3)) + \underline{n(\beta(n(1,4),3),2)} + n(1,d(\alpha(2,4),3)) - n(\beta(1,3),\alpha(2,4)) \stackrel{ LR-B5 }{=}  \\ 
+& - \underline{n(n(1,4),d(2,3))} + n(1,d(\alpha(2,4),3)) - n(\beta(1,3),\alpha(2,4)) - \underline{n(n(1,e(3,4)),2)}\\ 
+ &  + \underline{n(n(\beta(1,3),4),2)} \stackrel{ SMod5 }{=}  \\ 
+&\underline{n(1,d(\alpha(2,4),3))} - n(1,\alpha(d(2,3),4)) - n(1,\alpha(2,e(3,4))) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and SMod6:} \\ 
+& \gamma = \beta(n(m(1,2),3),4) \\ 
+& \text{Reduction}: \\& - n(m(1,2),d(3,4)) + \underline{n(\beta(m(1,2),4),3)} - \underline{\beta(m(\alpha(1,3),2),4)} \stackrel{ LR-B6 }{=}  \\ 
+& - \underline{n(m(1,2),d(3,4))} - \underline{n(m(d(1,4),2),3)} + \underline{n(m(1,\beta(2,4)),3)} + m(d(\alpha(1,3),4),2)\\ 
+ &  - m(\alpha(1,3),\beta(2,4)) \stackrel{ SMod6 }{=}  \\ 
+&\underline{m(d(\alpha(1,3),4),2)} - m(\alpha(1,d(3,4)),2) - m(\alpha(d(1,4),3),2) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B3 and Lie:} \\ 
+& \gamma = \beta(\beta(n(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{\beta(n(1,d(2,3)),4)} + \underline{\beta(n(\beta(1,3),2),4)} - \underline{\beta(\beta(n(1,2),4),3)} - \underline{\beta(n(1,2),\beta(3,4))} \stackrel{ LR-B3 }{=}  \\ 
+&n(1,d(d(2,3),4)) - n(\beta(1,4),d(2,3)) - n(\beta(1,3),d(2,4)) + n(\beta(\beta(1,3),4),2)\\ 
+ &  + \underline{\beta(n(1,d(2,4)),3)} - \underline{\beta(n(\beta(1,4),2),3)} + n(1,d(2,\beta(3,4))) - n(\beta(1,\beta(3,4)),2) \stackrel{ LR-B3 }{=}  \\ 
+&n(1,d(d(2,3),4)) + n(\beta(\beta(1,3),4),2) + \underline{n(1,d(2,\beta(3,4)))} - n(\beta(1,\beta(3,4)),2)\\ 
+ &  - n(1,d(d(2,4),3)) - n(\beta(\beta(1,4),3),2) \stackrel{ Mor1 }{=}  \\ 
+&\underline{n(\beta(\beta(1,3),4),2)} - n(\beta(1,\beta(3,4)),2) - n(\beta(\beta(1,4),3),2) \stackrel{ Lie }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and LR-B5:} \\ 
+& \gamma = \beta(n(1,4),n(2,3)) \\ 
+& \text{Reduction}: \\& - m(e(n(1,4),3),2) - n(\beta(n(1,4),2),3) - n(1,e(n(2,3),4)) + \underline{n(\beta(1,n(2,3)),4)} \stackrel{ LR-B4 }{=}  \\ 
+& - m(e(n(1,4),3),2) - \underline{n(\beta(n(1,4),2),3)} - n(1,e(n(2,3),4)) + n(m(e(1,3),2),4)\\ 
+ &  + n(n(\beta(1,2),3),4) \stackrel{ LR-B5 }{=}  \\ 
+& - m(e(n(1,4),3),2) - \underline{n(1,e(n(2,3),4))} + n(m(e(1,3),2),4) + n(n(\beta(1,2),3),4)\\ 
+ &  + n(n(1,e(2,4)),3) - n(n(\beta(1,2),4),3) \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{m(e(n(1,4),3),2)} + n(m(e(1,3),2),4) + n(n(\beta(1,2),3),4) + n(n(1,e(2,4)),3)\\ 
+ &  - n(n(\beta(1,2),4),3) - n(1,\alpha(e(2,4),3)) \stackrel{ LR-A6 }{=}  \\ 
+&n(m(e(1,3),2),4) + \underline{n(n(\beta(1,2),3),4)} + \underline{n(n(1,e(2,4)),3)} - n(n(\beta(1,2),4),3)\\ 
+ &  - n(1,\alpha(e(2,4),3)) - m(\alpha(e(1,3),4),2) \stackrel{ SMod4 }{=}  \\ 
+&n(m(e(1,3),2),4) - \underline{n(n(\beta(1,2),4),3)} - m(\alpha(e(1,3),4),2) + n(\beta(1,2),\alpha(3,4)) \stackrel{ SMod5 }{=}  \\ 
+&\underline{n(m(e(1,3),2),4)} - m(\alpha(e(1,3),4),2) \stackrel{ SMod6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and LR-B5:} \\ 
+& \gamma = \beta(n(1,3),n(2,4)) \\ 
+& \text{Reduction}: \\& - m(e(n(1,3),4),2) - n(\beta(n(1,3),2),4) - n(1,e(n(2,4),3)) + \underline{n(\beta(1,n(2,4)),3)} \stackrel{ LR-B4 }{=}  \\ 
+& - m(e(n(1,3),4),2) - \underline{n(\beta(n(1,3),2),4)} - n(1,e(n(2,4),3)) + n(m(e(1,4),2),3)\\ 
+ &  + n(n(\beta(1,2),4),3) \stackrel{ LR-B5 }{=}  \\ 
+& - \underline{m(e(n(1,3),4),2)} - n(1,e(n(2,4),3)) + n(m(e(1,4),2),3) + n(n(\beta(1,2),4),3)\\ 
+ &  + n(n(1,e(2,3)),4) - n(n(\beta(1,2),3),4) \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{n(1,e(n(2,4),3))} + n(m(e(1,4),2),3) + n(n(\beta(1,2),4),3) + n(n(1,e(2,3)),4)\\ 
+ &  - n(n(\beta(1,2),3),4) - m(\alpha(e(1,4),3),2) \stackrel{ LR-A6 }{=}  \\ 
+&n(m(e(1,4),2),3) + n(n(\beta(1,2),4),3) + \underline{n(n(1,e(2,3)),4)} - \underline{n(n(\beta(1,2),3),4)}\\ 
+ &  - m(\alpha(e(1,4),3),2) - n(1,\alpha(e(2,3),4)) \stackrel{ SMod4 }{=}  \\ 
+&n(m(e(1,4),2),3) + \underline{n(n(\beta(1,2),4),3)} - m(\alpha(e(1,4),3),2) - n(\beta(1,2),\alpha(3,4)) \stackrel{ SMod5 }{=}  \\ 
+&\underline{n(m(e(1,4),2),3)} - m(\alpha(e(1,4),3),2) \stackrel{ SMod6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and LR-B6:} \\ 
+& \gamma = \beta(m(1,2),n(3,4)) \\ 
+& \text{Reduction}: \\& - m(e(m(1,2),4),3) - n(\beta(m(1,2),3),4) - m(d(1,n(3,4)),2) + \underline{m(1,\beta(2,n(3,4)))} \stackrel{ LR-B4 }{=}  \\ 
+& - m(e(m(1,2),4),3) - \underline{n(\beta(m(1,2),3),4)} - m(d(1,n(3,4)),2) + m(1,m(e(2,4),3))\\ 
+ &  + m(1,n(\beta(2,3),4)) \stackrel{ LR-B6 }{=}  \\ 
+& - \underline{m(e(m(1,2),4),3)} - m(d(1,n(3,4)),2) + m(1,m(e(2,4),3)) + m(1,n(\beta(2,3),4))\\ 
+ &  + n(m(d(1,3),2),4) - n(m(1,\beta(2,3)),4) \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{m(d(1,n(3,4)),2)} + m(1,m(e(2,4),3)) + m(1,n(\beta(2,3),4)) + n(m(d(1,3),2),4)\\ 
+ &  - n(m(1,\beta(2,3)),4) - m(\alpha(1,e(2,4)),3) \stackrel{ LR-A3 }{=}  \\ 
+&\underline{m(1,m(e(2,4),3))} + m(1,n(\beta(2,3),4)) + n(m(d(1,3),2),4) - n(m(1,\beta(2,3)),4)\\ 
+ &  - m(\alpha(1,e(2,4)),3) - m(\alpha(d(1,3),4),2) \stackrel{ SMod1 }{=}  \\ 
+&\underline{m(1,n(\beta(2,3),4))} + n(m(d(1,3),2),4) - n(m(1,\beta(2,3)),4) - m(\alpha(d(1,3),4),2) \stackrel{ SMod3 }{=}  \\ 
+&\underline{n(m(d(1,3),2),4)} - \underline{n(m(1,\beta(2,3)),4)} - m(\alpha(d(1,3),4),2) + m(\alpha(1,4),\beta(2,3)) \stackrel{ SMod6 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and Mor1:} \\ 
+& \gamma = d(1,\beta(2,n(3,4))) \\ 
+& \text{Reduction}: \\& - d(1,m(e(2,4),3)) - \underline{d(1,n(\beta(2,3),4))} - \underline{d(d(1,2),n(3,4))} + \underline{d(d(1,n(3,4)),2)} \stackrel{ LR-A3 }{=}  \\ 
+& - \underline{d(1,m(e(2,4),3))} - \alpha(d(1,\beta(2,3)),4) - \alpha(d(d(1,2),3),4) + d(\alpha(d(1,3),4),2) \stackrel{ LR-A5 }{=}  \\ 
+& - \underline{\alpha(d(1,\beta(2,3)),4)} - \alpha(d(d(1,2),3),4) + d(\alpha(d(1,3),4),2) - \alpha(d(1,3),e(2,4)) \stackrel{ Mor1 }{=}  \\ 
+&\underline{d(\alpha(d(1,3),4),2)} - \alpha(d(1,3),e(2,4)) - \alpha(d(d(1,3),2),4) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and Mor2:} \\ 
+& \gamma = e(\beta(1,n(3,4)),2) \\ 
+& \text{Reduction}: \\& - e(m(e(1,4),3),2) - e(n(\beta(1,3),4),2) - \underline{d(e(1,2),n(3,4))} + \underline{e(1,d(2,n(3,4)))} \stackrel{ LR-A3 }{=}  \\ 
+& - \underline{e(m(e(1,4),3),2)} - e(n(\beta(1,3),4),2) - \alpha(d(e(1,2),3),4) + e(1,\alpha(d(2,3),4)) \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{e(n(\beta(1,3),4),2)} - \alpha(d(e(1,2),3),4) + e(1,\alpha(d(2,3),4)) - \alpha(e(1,4),d(2,3)) \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(d(e(1,2),3),4) + e(1,\alpha(d(2,3),4)) - \alpha(e(1,4),d(2,3)) - \underline{\alpha(e(\beta(1,3),2),4)} \stackrel{ Mor2 }{=}  \\ 
+&\underline{e(1,\alpha(d(2,3),4))} - \alpha(e(1,4),d(2,3)) - \alpha(e(1,d(2,3)),4) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and Mor3:} \\ 
+& \gamma = d(1,\beta(2,n(3,4))) \\ 
+& \text{Reduction}: \\& - d(1,m(e(2,4),3)) - \underline{d(1,n(\beta(2,3),4))} + \underline{d(d(1,n(3,4)),2)} - \underline{d(d(1,2),n(3,4))} \stackrel{ LR-A3 }{=}  \\ 
+& - \underline{d(1,m(e(2,4),3))} - \alpha(d(1,\beta(2,3)),4) + d(\alpha(d(1,3),4),2) - \alpha(d(d(1,2),3),4) \stackrel{ LR-A5 }{=}  \\ 
+& - \underline{\alpha(d(1,\beta(2,3)),4)} + d(\alpha(d(1,3),4),2) - \alpha(d(d(1,2),3),4) - \alpha(d(1,3),e(2,4)) \stackrel{ Mor1 }{=}  \\ 
+&\underline{d(\alpha(d(1,3),4),2)} - \alpha(d(1,3),e(2,4)) - \alpha(d(d(1,3),2),4) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and Mor4:} \\ 
+& \gamma = e(\beta(1,n(2,3)),4) \\ 
+& \text{Reduction}: \\& - \underline{e(m(e(1,3),2),4)} - e(n(\beta(1,2),3),4) + e(1,e(n(2,3),4)) - d(e(1,4),n(2,3)) \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{e(n(\beta(1,2),3),4)} + \underline{e(1,e(n(2,3),4))} - d(e(1,4),n(2,3)) - \alpha(e(1,3),e(2,4)) \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{d(e(1,4),n(2,3))} - \alpha(e(1,3),e(2,4)) - \alpha(e(\beta(1,2),4),3) + e(1,\alpha(e(2,4),3)) \stackrel{ LR-A3 }{=}  \\ 
+& - \alpha(e(1,3),e(2,4)) - \underline{\alpha(e(\beta(1,2),4),3)} + e(1,\alpha(e(2,4),3)) - \alpha(d(e(1,4),2),3) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,3),e(2,4)) + \underline{e(1,\alpha(e(2,4),3))} - \alpha(e(1,e(2,4)),3) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and Mor4:} \\ 
+& \gamma = e(\beta(1,n(2,4)),3) \\ 
+& \text{Reduction}: \\& - \underline{e(m(e(1,4),2),3)} - e(n(\beta(1,2),4),3) + e(1,e(n(2,4),3)) - d(e(1,3),n(2,4)) \stackrel{ LR-A1 }{=}  \\ 
+& - e(n(\beta(1,2),4),3) + e(1,e(n(2,4),3)) - \underline{d(e(1,3),n(2,4))} - \alpha(e(1,4),e(2,3)) \stackrel{ LR-A3 }{=}  \\ 
+& - \underline{e(n(\beta(1,2),4),3)} + \underline{e(1,e(n(2,4),3))} - \alpha(e(1,4),e(2,3)) - \alpha(d(e(1,3),2),4) \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,4),e(2,3)) - \alpha(d(e(1,3),2),4) - \underline{\alpha(e(\beta(1,2),3),4)} + e(1,\alpha(e(2,3),4)) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,4),e(2,3)) + \underline{e(1,\alpha(e(2,3),4))} - \alpha(e(1,e(2,3)),4) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and Mor5:} \\ 
+& \gamma = e(\beta(1,n(3,4)),2) \\ 
+& \text{Reduction}: \\& - e(m(e(1,4),3),2) - e(n(\beta(1,3),4),2) + \underline{e(1,d(2,n(3,4)))} - \underline{d(e(1,2),n(3,4))} \stackrel{ LR-A3 }{=}  \\ 
+& - \underline{e(m(e(1,4),3),2)} - e(n(\beta(1,3),4),2) + e(1,\alpha(d(2,3),4)) - \alpha(d(e(1,2),3),4) \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{e(n(\beta(1,3),4),2)} + e(1,\alpha(d(2,3),4)) - \alpha(d(e(1,2),3),4) - \alpha(e(1,4),d(2,3)) \stackrel{ LR-A6 }{=}  \\ 
+&e(1,\alpha(d(2,3),4)) - \alpha(d(e(1,2),3),4) - \alpha(e(1,4),d(2,3)) - \underline{\alpha(e(\beta(1,3),2),4)} \stackrel{ Mor2 }{=}  \\ 
+&\underline{e(1,\alpha(d(2,3),4))} - \alpha(e(1,4),d(2,3)) - \alpha(e(1,d(2,3)),4) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and Mor6:} \\ 
+& \gamma = e(\beta(1,n(2,3)),4) \\ 
+& \text{Reduction}: \\& - \underline{e(m(e(1,3),2),4)} - e(n(\beta(1,2),3),4) - d(e(1,4),n(2,3)) + e(1,e(n(2,3),4)) \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{e(n(\beta(1,2),3),4)} - d(e(1,4),n(2,3)) + \underline{e(1,e(n(2,3),4))} - \alpha(e(1,3),e(2,4)) \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{d(e(1,4),n(2,3))} - \alpha(e(1,3),e(2,4)) - \alpha(e(\beta(1,2),4),3) + e(1,\alpha(e(2,4),3)) \stackrel{ LR-A3 }{=}  \\ 
+& - \alpha(e(1,3),e(2,4)) - \underline{\alpha(e(\beta(1,2),4),3)} + e(1,\alpha(e(2,4),3)) - \alpha(d(e(1,4),2),3) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,3),e(2,4)) + \underline{e(1,\alpha(e(2,4),3))} - \alpha(e(1,e(2,4)),3) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and Mor6:} \\ 
+& \gamma = e(\beta(1,n(2,4)),3) \\ 
+& \text{Reduction}: \\& - \underline{e(m(e(1,4),2),3)} - e(n(\beta(1,2),4),3) - d(e(1,3),n(2,4)) + e(1,e(n(2,4),3)) \stackrel{ LR-A1 }{=}  \\ 
+& - e(n(\beta(1,2),4),3) - \underline{d(e(1,3),n(2,4))} + e(1,e(n(2,4),3)) - \alpha(e(1,4),e(2,3)) \stackrel{ LR-A3 }{=}  \\ 
+& - \underline{e(n(\beta(1,2),4),3)} + \underline{e(1,e(n(2,4),3))} - \alpha(e(1,4),e(2,3)) - \alpha(d(e(1,3),2),4) \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,4),e(2,3)) - \alpha(d(e(1,3),2),4) - \underline{\alpha(e(\beta(1,2),3),4)} + e(1,\alpha(e(2,3),4)) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,4),e(2,3)) + \underline{e(1,\alpha(e(2,3),4))} - \alpha(e(1,e(2,3)),4) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and SMod2:} \\ 
+& \gamma = \beta(1,n(m(2,4),3)) \\ 
+& \text{Reduction}: \\& - m(e(1,3),m(2,4)) - \underline{n(\beta(1,m(2,4)),3)} + \underline{\beta(1,m(\alpha(2,3),4))} \stackrel{ LR-B1 }{=}  \\ 
+& - \underline{m(e(1,3),m(2,4))} - n(m(e(1,2),4),3) - n(n(\beta(1,4),2),3) + m(e(1,\alpha(2,3)),4)\\ 
+ &  + n(\beta(1,4),\alpha(2,3)) \stackrel{ SMod1 }{=}  \\ 
+& - \underline{n(m(e(1,2),4),3)} - n(n(\beta(1,4),2),3) + m(e(1,\alpha(2,3)),4) + n(\beta(1,4),\alpha(2,3))\\ 
+ &  - m(\alpha(e(1,3),2),4) \stackrel{ SMod2 }{=}  \\ 
+& - \underline{n(n(\beta(1,4),2),3)} + m(e(1,\alpha(2,3)),4) + n(\beta(1,4),\alpha(2,3)) - m(\alpha(e(1,3),2),4)\\ 
+ &  - m(\alpha(e(1,2),3),4) \stackrel{ SMod4 }{=}  \\ 
+&\underline{m(e(1,\alpha(2,3)),4)} - m(\alpha(e(1,3),2),4) - m(\alpha(e(1,2),3),4) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and SMod4:} \\ 
+& \gamma = \beta(1,n(n(2,3),4)) \\ 
+& \text{Reduction}: \\& - m(e(1,4),n(2,3)) - \underline{n(\beta(1,n(2,3)),4)} + \underline{\beta(1,n(2,\alpha(3,4)))} \stackrel{ LR-B4 }{=}  \\ 
+& - \underline{m(e(1,4),n(2,3))} - n(m(e(1,3),2),4) - n(n(\beta(1,2),3),4) + m(e(1,\alpha(3,4)),2)\\ 
+ &  + n(\beta(1,2),\alpha(3,4)) \stackrel{ SMod3 }{=}  \\ 
+& - n(m(e(1,3),2),4) - \underline{n(n(\beta(1,2),3),4)} + m(e(1,\alpha(3,4)),2) + n(\beta(1,2),\alpha(3,4))\\ 
+ &  - m(\alpha(e(1,4),3),2) \stackrel{ SMod4 }{=}  \\ 
+& - \underline{n(m(e(1,3),2),4)} + m(e(1,\alpha(3,4)),2) - m(\alpha(e(1,4),3),2) \stackrel{ SMod6 }{=}  \\ 
+&\underline{m(e(1,\alpha(3,4)),2)} - m(\alpha(e(1,4),3),2) - m(\alpha(e(1,3),4),2) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and SMod5:} \\ 
+& \gamma = \beta(1,n(n(2,4),3)) \\ 
+& \text{Reduction}: \\& - m(e(1,3),n(2,4)) - \underline{n(\beta(1,n(2,4)),3)} + \underline{\beta(1,n(2,\alpha(3,4)))} \stackrel{ LR-B4 }{=}  \\ 
+& - \underline{m(e(1,3),n(2,4))} - n(m(e(1,4),2),3) - n(n(\beta(1,2),4),3) + m(e(1,\alpha(3,4)),2)\\ 
+ &  + n(\beta(1,2),\alpha(3,4)) \stackrel{ SMod3 }{=}  \\ 
+& - n(m(e(1,4),2),3) - \underline{n(n(\beta(1,2),4),3)} + m(e(1,\alpha(3,4)),2) + n(\beta(1,2),\alpha(3,4))\\ 
+ &  - m(\alpha(e(1,3),4),2) \stackrel{ SMod5 }{=}  \\ 
+& - \underline{n(m(e(1,4),2),3)} + m(e(1,\alpha(3,4)),2) - m(\alpha(e(1,3),4),2) \stackrel{ SMod6 }{=}  \\ 
+&\underline{m(e(1,\alpha(3,4)),2)} - m(\alpha(e(1,3),4),2) - m(\alpha(e(1,4),3),2) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and SMod6:} \\ 
+& \gamma = \beta(1,n(m(2,3),4)) \\ 
+& \text{Reduction}: \\& - m(e(1,4),m(2,3)) - \underline{n(\beta(1,m(2,3)),4)} + \underline{\beta(1,m(\alpha(2,4),3))} \stackrel{ LR-B1 }{=}  \\ 
+& - \underline{m(e(1,4),m(2,3))} - n(m(e(1,2),3),4) - n(n(\beta(1,3),2),4) + m(e(1,\alpha(2,4)),3)\\ 
+ &  + n(\beta(1,3),\alpha(2,4)) \stackrel{ SMod1 }{=}  \\ 
+& - n(m(e(1,2),3),4) - \underline{n(n(\beta(1,3),2),4)} + m(e(1,\alpha(2,4)),3) + n(\beta(1,3),\alpha(2,4))\\ 
+ &  - m(\alpha(e(1,4),2),3) \stackrel{ SMod4 }{=}  \\ 
+& - \underline{n(m(e(1,2),3),4)} + m(e(1,\alpha(2,4)),3) - m(\alpha(e(1,4),2),3) \stackrel{ SMod6 }{=}  \\ 
+&\underline{m(e(1,\alpha(2,4)),3)} - m(\alpha(e(1,4),2),3) - m(\alpha(e(1,2),4),3) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and Lie:} \\ 
+& \gamma = \beta(\beta(1,2),n(3,4)) \\ 
+& \text{Reduction}: \\& - m(e(\beta(1,2),4),3) - n(\beta(\beta(1,2),3),4) + \underline{\beta(\beta(1,n(3,4)),2)} + \underline{\beta(1,\beta(2,n(3,4)))} \stackrel{ LR-B4 }{=}  \\ 
+& - m(e(\beta(1,2),4),3) - n(\beta(\beta(1,2),3),4) + \beta(m(e(1,4),3),2) + \beta(n(\beta(1,3),4),2)\\ 
+ &  + \beta(1,m(e(2,4),3)) + \underline{\beta(1,n(\beta(2,3),4))} \stackrel{ LR-B4 }{=}  \\ 
+& - m(e(\beta(1,2),4),3) - n(\beta(\beta(1,2),3),4) + \beta(m(e(1,4),3),2) + \underline{\beta(n(\beta(1,3),4),2)}\\ 
+ &  + \beta(1,m(e(2,4),3)) + m(e(1,4),\beta(2,3)) + n(\beta(1,\beta(2,3)),4) \stackrel{ LR-B5 }{=}  \\ 
+& - \underline{m(e(\beta(1,2),4),3)} - n(\beta(\beta(1,2),3),4) + \beta(m(e(1,4),3),2) + \beta(1,m(e(2,4),3))\\ 
+ &  + m(e(1,4),\beta(2,3)) + n(\beta(1,\beta(2,3)),4) - n(\beta(1,3),e(2,4)) + n(\beta(\beta(1,3),2),4) \stackrel{ Mor4 }{=}  \\ 
+& - \underline{n(\beta(\beta(1,2),3),4)} + \beta(m(e(1,4),3),2) + \beta(1,m(e(2,4),3)) + m(e(1,4),\beta(2,3))\\ 
+ &  + n(\beta(1,\beta(2,3)),4) - n(\beta(1,3),e(2,4)) + n(\beta(\beta(1,3),2),4) - m(e(1,e(2,4)),3)\\ 
+ &  + m(d(e(1,4),2),3) \stackrel{ Lie }{=}  \\ 
+&\beta(m(e(1,4),3),2) + \underline{\beta(1,m(e(2,4),3))} + m(e(1,4),\beta(2,3)) - n(\beta(1,3),e(2,4))\\ 
+ &  - m(e(1,e(2,4)),3) + m(d(e(1,4),2),3) \stackrel{ LR-B1 }{=}  \\ 
+&\underline{\beta(m(e(1,4),3),2)} + m(e(1,4),\beta(2,3)) + m(d(e(1,4),2),3) \stackrel{ LR-B2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and Lie:} \\ 
+& \gamma = \beta(\beta(1,n(2,3)),4) \\ 
+& \text{Reduction}: \\& - \beta(m(e(1,3),2),4) - \underline{\beta(n(\beta(1,2),3),4)} + \beta(\beta(1,4),n(2,3)) + \underline{\beta(1,\beta(n(2,3),4))} \stackrel{ LR-B3 }{=}  \\ 
+& - \beta(m(e(1,3),2),4) + \underline{\beta(\beta(1,4),n(2,3))} + n(\beta(1,2),d(3,4)) - n(\beta(\beta(1,2),4),3)\\ 
+ &  - \underline{\beta(1,n(2,d(3,4)))} + \underline{\beta(1,n(\beta(2,4),3))} \stackrel{ LR-B4 }{=}  \\ 
+& - \underline{\beta(m(e(1,3),2),4)} - n(\beta(\beta(1,2),4),3) + m(e(\beta(1,4),3),2) + n(\beta(\beta(1,4),2),3)\\ 
+ &  - m(e(1,d(3,4)),2) + m(e(1,3),\beta(2,4)) + n(\beta(1,\beta(2,4)),3) \stackrel{ LR-B6 }{=}  \\ 
+& - n(\beta(\beta(1,2),4),3) + \underline{m(e(\beta(1,4),3),2)} + n(\beta(\beta(1,4),2),3) - m(e(1,d(3,4)),2)\\ 
+ &  + n(\beta(1,\beta(2,4)),3) + m(d(e(1,3),4),2) \stackrel{ Mor2 }{=}  \\ 
+& - \underline{n(\beta(\beta(1,2),4),3)} + n(\beta(\beta(1,4),2),3) + n(\beta(1,\beta(2,4)),3) \stackrel{ Lie }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B4 and Lie:} \\ 
+& \gamma = \beta(\beta(1,n(2,4)),3) \\ 
+& \text{Reduction}: \\& - \beta(m(e(1,4),2),3) - \beta(n(\beta(1,2),4),3) + \underline{\beta(\beta(1,3),n(2,4))} + \beta(1,\beta(n(2,4),3)) \stackrel{ LR-B4 }{=}  \\ 
+& - \beta(m(e(1,4),2),3) - \underline{\beta(n(\beta(1,2),4),3)} + \underline{\beta(1,\beta(n(2,4),3))} + m(e(\beta(1,3),4),2)\\ 
+ &  + n(\beta(\beta(1,3),2),4) \stackrel{ LR-B5 }{=}  \\ 
+& - \underline{\beta(m(e(1,4),2),3)} + m(e(\beta(1,3),4),2) + n(\beta(\beta(1,3),2),4) + n(\beta(1,2),e(3,4))\\ 
+ &  - n(\beta(\beta(1,2),3),4) - \beta(1,n(2,e(3,4))) + \beta(1,n(\beta(2,3),4)) \stackrel{ LR-B6 }{=}  \\ 
+&\underline{m(e(\beta(1,3),4),2)} + n(\beta(\beta(1,3),2),4) + n(\beta(1,2),e(3,4)) - n(\beta(\beta(1,2),3),4)\\ 
+ &  - \beta(1,n(2,e(3,4))) + \beta(1,n(\beta(2,3),4)) + m(d(e(1,4),3),2) - m(e(1,4),\beta(2,3)) \stackrel{ Mor4 }{=}  \\ 
+&n(\beta(\beta(1,3),2),4) + n(\beta(1,2),e(3,4)) - \underline{n(\beta(\beta(1,2),3),4)} - \beta(1,n(2,e(3,4)))\\ 
+ &  + \beta(1,n(\beta(2,3),4)) - m(e(1,4),\beta(2,3)) + m(e(1,e(3,4)),2) \stackrel{ Lie }{=}  \\ 
+&n(\beta(1,2),e(3,4)) - \underline{\beta(1,n(2,e(3,4)))} + \underline{\beta(1,n(\beta(2,3),4))} - m(e(1,4),\beta(2,3))\\ 
+ &  + m(e(1,e(3,4)),2) - n(\beta(1,\beta(2,3)),4) \stackrel{ LR-B4 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and Mor1:} \\ 
+& \gamma = d(1,\beta(n(2,4),3)) \\ 
+& \text{Reduction}: \\& - \underline{d(1,n(2,e(3,4)))} + \underline{d(1,n(\beta(2,3),4))} + \underline{d(d(1,n(2,4)),3)} - \underline{d(d(1,3),n(2,4))} \stackrel{ LR-A3 }{=}  \\ 
+& - \alpha(d(1,2),e(3,4)) + \underline{\alpha(d(1,\beta(2,3)),4)} + d(\alpha(d(1,2),4),3) - \alpha(d(d(1,3),2),4) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,2),e(3,4)) + \underline{d(\alpha(d(1,2),4),3)} - \alpha(d(d(1,2),3),4) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and Mor2:} \\ 
+& \gamma = e(\beta(n(1,4),3),2) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,e(3,4)),2)} + \underline{e(n(\beta(1,3),4),2)} + \underline{d(e(n(1,4),2),3)} - \underline{e(n(1,4),d(2,3))} \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,2),e(3,4)) + \underline{\alpha(e(\beta(1,3),2),4)} + d(\alpha(e(1,2),4),3) - \alpha(e(1,d(2,3)),4) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(e(1,2),e(3,4)) + \underline{d(\alpha(e(1,2),4),3)} - \alpha(d(e(1,2),3),4) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and Mor3:} \\ 
+& \gamma = d(1,\beta(n(2,4),3)) \\ 
+& \text{Reduction}: \\& - \underline{d(1,n(2,e(3,4)))} + \underline{d(1,n(\beta(2,3),4))} - \underline{d(d(1,3),n(2,4))} + \underline{d(d(1,n(2,4)),3)} \stackrel{ LR-A3 }{=}  \\ 
+& - \alpha(d(1,2),e(3,4)) + \underline{\alpha(d(1,\beta(2,3)),4)} - \alpha(d(d(1,3),2),4) + d(\alpha(d(1,2),4),3) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,2),e(3,4)) + \underline{d(\alpha(d(1,2),4),3)} - \alpha(d(d(1,2),3),4) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and Mor4:} \\ 
+& \gamma = e(\beta(n(1,3),2),4) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,e(2,3)),4)} + \underline{e(n(\beta(1,2),3),4)} - e(n(1,3),e(2,4)) + \underline{d(e(n(1,3),4),2)} \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{e(n(1,3),e(2,4))} - \alpha(e(1,4),e(2,3)) + \alpha(e(\beta(1,2),4),3) + d(\alpha(e(1,4),3),2) \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,4),e(2,3)) + \underline{\alpha(e(\beta(1,2),4),3)} + d(\alpha(e(1,4),3),2) - \alpha(e(1,e(2,4)),3) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,4),e(2,3)) + \underline{d(\alpha(e(1,4),3),2)} - \alpha(d(e(1,4),2),3) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and Mor4:} \\ 
+& \gamma = e(\beta(n(1,4),2),3) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,e(2,4)),3)} + e(n(\beta(1,2),4),3) - e(n(1,4),e(2,3)) + d(e(n(1,4),3),2) \stackrel{ LR-A2 }{=}  \\ 
+&\underline{e(n(\beta(1,2),4),3)} - \underline{e(n(1,4),e(2,3))} + \underline{d(e(n(1,4),3),2)} - \alpha(e(1,3),e(2,4)) \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,3),e(2,4)) + \underline{\alpha(e(\beta(1,2),3),4)} - \alpha(e(1,e(2,3)),4) + d(\alpha(e(1,3),4),2) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,3),e(2,4)) + \underline{d(\alpha(e(1,3),4),2)} - \alpha(d(e(1,3),2),4) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and Mor5:} \\ 
+& \gamma = e(\beta(n(1,4),3),2) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,e(3,4)),2)} + \underline{e(n(\beta(1,3),4),2)} - \underline{e(n(1,4),d(2,3))} + \underline{d(e(n(1,4),2),3)} \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,2),e(3,4)) + \underline{\alpha(e(\beta(1,3),2),4)} - \alpha(e(1,d(2,3)),4) + d(\alpha(e(1,2),4),3) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(e(1,2),e(3,4)) + \underline{d(\alpha(e(1,2),4),3)} - \alpha(d(e(1,2),3),4) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and Mor6:} \\ 
+& \gamma = e(\beta(n(1,3),2),4) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,e(2,3)),4)} + \underline{e(n(\beta(1,2),3),4)} + \underline{d(e(n(1,3),4),2)} - e(n(1,3),e(2,4)) \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{e(n(1,3),e(2,4))} - \alpha(e(1,4),e(2,3)) + \alpha(e(\beta(1,2),4),3) + d(\alpha(e(1,4),3),2) \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,4),e(2,3)) + \underline{\alpha(e(\beta(1,2),4),3)} + d(\alpha(e(1,4),3),2) - \alpha(e(1,e(2,4)),3) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,4),e(2,3)) + \underline{d(\alpha(e(1,4),3),2)} - \alpha(d(e(1,4),2),3) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and Mor6:} \\ 
+& \gamma = e(\beta(n(1,4),2),3) \\ 
+& \text{Reduction}: \\& - \underline{e(n(1,e(2,4)),3)} + e(n(\beta(1,2),4),3) + d(e(n(1,4),3),2) - e(n(1,4),e(2,3)) \stackrel{ LR-A2 }{=}  \\ 
+&\underline{e(n(\beta(1,2),4),3)} + \underline{d(e(n(1,4),3),2)} - \underline{e(n(1,4),e(2,3))} - \alpha(e(1,3),e(2,4)) \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,3),e(2,4)) + \underline{\alpha(e(\beta(1,2),3),4)} + d(\alpha(e(1,3),4),2) - \alpha(e(1,e(2,3)),4) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(e(1,3),e(2,4)) + \underline{d(\alpha(e(1,3),4),2)} - \alpha(d(e(1,3),2),4) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and SMod2:} \\ 
+& \gamma = \beta(n(m(1,4),3),2) \\ 
+& \text{Reduction}: \\& - n(m(1,4),e(2,3)) + \underline{n(\beta(m(1,4),2),3)} - \underline{\beta(m(\alpha(1,3),4),2)} \stackrel{ LR-B2 }{=}  \\ 
+& - \underline{n(m(1,4),e(2,3))} - \underline{n(m(d(1,2),4),3)} - n(m(1,\beta(2,4)),3) + m(d(\alpha(1,3),2),4)\\ 
+ &  + m(\alpha(1,3),\beta(2,4)) \stackrel{ SMod2 }{=}  \\ 
+& - \underline{n(m(1,\beta(2,4)),3)} + m(d(\alpha(1,3),2),4) + m(\alpha(1,3),\beta(2,4)) - m(\alpha(1,e(2,3)),4)\\ 
+ &  - m(\alpha(d(1,2),3),4) \stackrel{ SMod6 }{=}  \\ 
+&\underline{m(d(\alpha(1,3),2),4)} - m(\alpha(1,e(2,3)),4) - m(\alpha(d(1,2),3),4) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and SMod4:} \\ 
+& \gamma = \beta(n(n(1,2),4),3) \\ 
+& \text{Reduction}: \\& - n(n(1,2),e(3,4)) + \underline{n(\beta(n(1,2),3),4)} - \underline{\beta(n(1,\alpha(2,4)),3)} \stackrel{ LR-B3 }{=}  \\ 
+& - \underline{n(n(1,2),e(3,4))} - \underline{n(n(1,d(2,3)),4)} + \underline{n(n(\beta(1,3),2),4)} + n(1,d(\alpha(2,4),3))\\ 
+ &  - n(\beta(1,3),\alpha(2,4)) \stackrel{ SMod4 }{=}  \\ 
+&\underline{n(1,d(\alpha(2,4),3))} - n(1,\alpha(2,e(3,4))) - n(1,\alpha(d(2,3),4)) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and SMod4:} \\ 
+& \gamma = \beta(n(n(1,3),4),2) \\ 
+& \text{Reduction}: \\& - n(n(1,3),e(2,4)) + \underline{n(\beta(n(1,3),2),4)} - \underline{\beta(n(1,\alpha(3,4)),2)} \stackrel{ LR-B5 }{=}  \\ 
+& - n(n(1,3),e(2,4)) - \underline{n(n(1,e(2,3)),4)} + \underline{n(n(\beta(1,2),3),4)} + n(1,e(2,\alpha(3,4)))\\ 
+ &  - n(\beta(1,2),\alpha(3,4)) \stackrel{ SMod4 }{=}  \\ 
+& - \underline{n(n(1,3),e(2,4))} + n(1,e(2,\alpha(3,4))) - n(1,\alpha(e(2,3),4)) \stackrel{ SMod5 }{=}  \\ 
+&\underline{n(1,e(2,\alpha(3,4)))} - n(1,\alpha(e(2,3),4)) - n(1,\alpha(e(2,4),3)) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and SMod5:} \\ 
+& \gamma = \beta(n(n(1,4),3),2) \\ 
+& \text{Reduction}: \\& - n(n(1,4),e(2,3)) + \underline{n(\beta(n(1,4),2),3)} - \underline{\beta(n(1,\alpha(3,4)),2)} \stackrel{ LR-B5 }{=}  \\ 
+& - n(n(1,4),e(2,3)) - \underline{n(n(1,e(2,4)),3)} + n(n(\beta(1,2),4),3) + n(1,e(2,\alpha(3,4)))\\ 
+ &  - n(\beta(1,2),\alpha(3,4)) \stackrel{ SMod4 }{=}  \\ 
+& - \underline{n(n(1,4),e(2,3))} + \underline{n(n(\beta(1,2),4),3)} + n(1,e(2,\alpha(3,4))) - n(\beta(1,2),\alpha(3,4))\\ 
+ &  - n(1,\alpha(e(2,4),3)) \stackrel{ SMod5 }{=}  \\ 
+&\underline{n(1,e(2,\alpha(3,4)))} - n(1,\alpha(e(2,4),3)) - n(1,\alpha(e(2,3),4)) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and SMod6:} \\ 
+& \gamma = \beta(n(m(1,2),4),3) \\ 
+& \text{Reduction}: \\& - n(m(1,2),e(3,4)) + \underline{n(\beta(m(1,2),3),4)} - \underline{\beta(m(\alpha(1,4),2),3)} \stackrel{ LR-B6 }{=}  \\ 
+& - \underline{n(m(1,2),e(3,4))} - \underline{n(m(d(1,3),2),4)} + \underline{n(m(1,\beta(2,3)),4)} + m(d(\alpha(1,4),3),2)\\ 
+ &  - m(\alpha(1,4),\beta(2,3)) \stackrel{ SMod6 }{=}  \\ 
+&\underline{m(d(\alpha(1,4),3),2)} - m(\alpha(1,e(3,4)),2) - m(\alpha(d(1,3),4),2) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and SMod6:} \\ 
+& \gamma = \beta(n(m(1,3),4),2) \\ 
+& \text{Reduction}: \\& - n(m(1,3),e(2,4)) + \underline{n(\beta(m(1,3),2),4)} - \underline{\beta(m(\alpha(1,4),3),2)} \stackrel{ LR-B2 }{=}  \\ 
+& - \underline{n(m(1,3),e(2,4))} - n(m(d(1,2),3),4) - n(m(1,\beta(2,3)),4) + m(d(\alpha(1,4),2),3)\\ 
+ &  + m(\alpha(1,4),\beta(2,3)) \stackrel{ SMod2 }{=}  \\ 
+& - \underline{n(m(d(1,2),3),4)} - \underline{n(m(1,\beta(2,3)),4)} + m(d(\alpha(1,4),2),3) + m(\alpha(1,4),\beta(2,3))\\ 
+ &  - m(\alpha(1,e(2,4)),3) \stackrel{ SMod6 }{=}  \\ 
+&\underline{m(d(\alpha(1,4),2),3)} - m(\alpha(1,e(2,4)),3) - m(\alpha(d(1,2),4),3) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and Lie:} \\ 
+& \gamma = \beta(\beta(n(1,3),2),4) \\ 
+& \text{Reduction}: \\& - \underline{\beta(n(1,e(2,3)),4)} + \underline{\beta(n(\beta(1,2),3),4)} - \underline{\beta(\beta(n(1,3),4),2)} - \beta(n(1,3),\beta(2,4)) \stackrel{ LR-B3 }{=}  \\ 
+& - \underline{\beta(n(1,3),\beta(2,4))} + n(1,d(e(2,3),4)) - n(\beta(1,4),e(2,3)) - n(\beta(1,2),d(3,4))\\ 
+ &  + n(\beta(\beta(1,2),4),3) + \underline{\beta(n(1,d(3,4)),2)} - \underline{\beta(n(\beta(1,4),3),2)} \stackrel{ LR-B5 }{=}  \\ 
+&n(1,d(e(2,3),4)) + n(\beta(\beta(1,2),4),3) + \underline{n(1,e(\beta(2,4),3))} - n(\beta(1,\beta(2,4)),3)\\ 
+ &  - n(1,e(2,d(3,4))) - n(\beta(\beta(1,4),2),3) \stackrel{ Mor2 }{=}  \\ 
+&\underline{n(\beta(\beta(1,2),4),3)} - n(\beta(1,\beta(2,4)),3) - n(\beta(\beta(1,4),2),3) \stackrel{ Lie }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B5 and Lie:} \\ 
+& \gamma = \beta(\beta(n(1,4),2),3) \\ 
+& \text{Reduction}: \\& - \underline{\beta(n(1,e(2,4)),3)} + \beta(n(\beta(1,2),4),3) - \beta(\beta(n(1,4),3),2) - \beta(n(1,4),\beta(2,3)) \stackrel{ LR-B3 }{=}  \\ 
+&\underline{\beta(n(\beta(1,2),4),3)} - \underline{\beta(\beta(n(1,4),3),2)} - \underline{\beta(n(1,4),\beta(2,3))} + n(1,d(e(2,4),3))\\ 
+ &  - n(\beta(1,3),e(2,4)) \stackrel{ LR-B5 }{=}  \\ 
+&n(1,d(e(2,4),3)) - n(\beta(1,3),e(2,4)) - n(\beta(1,2),e(3,4)) + n(\beta(\beta(1,2),3),4)\\ 
+ &  + \underline{\beta(n(1,e(3,4)),2)} - \underline{\beta(n(\beta(1,3),4),2)} + n(1,e(\beta(2,3),4)) - n(\beta(1,\beta(2,3)),4) \stackrel{ LR-B5 }{=}  \\ 
+&n(1,d(e(2,4),3)) + n(\beta(\beta(1,2),3),4) + \underline{n(1,e(\beta(2,3),4))} - n(\beta(1,\beta(2,3)),4)\\ 
+ &  - n(1,e(2,e(3,4))) - n(\beta(\beta(1,3),2),4) \stackrel{ Mor4 }{=}  \\ 
+&\underline{n(\beta(\beta(1,2),3),4)} - n(\beta(1,\beta(2,3)),4) - n(\beta(\beta(1,3),2),4) \stackrel{ Lie }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and Mor1:} \\ 
+& \gamma = d(1,\beta(m(2,3),4)) \\ 
+& \text{Reduction}: \\& - \underline{d(1,m(d(2,4),3))} + \underline{d(1,m(2,\beta(3,4)))} + \underline{d(d(1,m(2,3)),4)} - \underline{d(d(1,4),m(2,3))} \stackrel{ LR-A5 }{=}  \\ 
+& - \alpha(d(1,3),d(2,4)) + \underline{\alpha(d(1,\beta(3,4)),2)} + d(\alpha(d(1,3),2),4) - \alpha(d(d(1,4),3),2) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,3),d(2,4)) + \underline{d(\alpha(d(1,3),2),4)} - \alpha(d(d(1,3),4),2) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and Mor2:} \\ 
+& \gamma = e(\beta(m(1,2),4),3) \\ 
+& \text{Reduction}: \\& - \underline{e(m(d(1,4),2),3)} + \underline{e(m(1,\beta(2,4)),3)} + \underline{d(e(m(1,2),3),4)} - \underline{e(m(1,2),d(3,4))} \stackrel{ LR-A1 }{=}  \\ 
+& - \alpha(d(1,4),e(2,3)) + \underline{\alpha(1,e(\beta(2,4),3))} + d(\alpha(1,e(2,3)),4) - \alpha(1,e(2,d(3,4))) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(d(1,4),e(2,3)) + \underline{d(\alpha(1,e(2,3)),4)} - \alpha(1,d(e(2,3),4)) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and Mor2:} \\ 
+& \gamma = e(\beta(m(1,3),4),2) \\ 
+& \text{Reduction}: \\& - \underline{e(m(d(1,4),3),2)} + \underline{e(m(1,\beta(3,4)),2)} + \underline{d(e(m(1,3),2),4)} - \underline{e(m(1,3),d(2,4))} \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(d(1,4),d(2,3)) + \underline{\alpha(1,d(2,\beta(3,4)))} + d(\alpha(1,d(2,3)),4) - \alpha(1,d(d(2,4),3)) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,4),d(2,3)) + \underline{d(\alpha(1,d(2,3)),4)} - \alpha(1,d(d(2,3),4)) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and Mor3:} \\ 
+& \gamma = d(1,\beta(m(2,3),4)) \\ 
+& \text{Reduction}: \\& - \underline{d(1,m(d(2,4),3))} + \underline{d(1,m(2,\beta(3,4)))} - \underline{d(d(1,4),m(2,3))} + \underline{d(d(1,m(2,3)),4)} \stackrel{ LR-A5 }{=}  \\ 
+& - \alpha(d(1,3),d(2,4)) + \underline{\alpha(d(1,\beta(3,4)),2)} - \alpha(d(d(1,4),3),2) + d(\alpha(d(1,3),2),4) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,3),d(2,4)) + \underline{d(\alpha(d(1,3),2),4)} - \alpha(d(d(1,3),4),2) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and Mor4:} \\ 
+& \gamma = e(\beta(m(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{e(m(d(1,3),2),4)} + \underline{e(m(1,\beta(2,3)),4)} - \underline{e(m(1,2),e(3,4))} + \underline{d(e(m(1,2),4),3)} \stackrel{ LR-A1 }{=}  \\ 
+& - \alpha(d(1,3),e(2,4)) + \underline{\alpha(1,e(\beta(2,3),4))} - \alpha(1,e(2,e(3,4))) + d(\alpha(1,e(2,4)),3) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(d(1,3),e(2,4)) + \underline{d(\alpha(1,e(2,4)),3)} - \alpha(1,d(e(2,4),3)) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and Mor5:} \\ 
+& \gamma = e(\beta(m(1,2),4),3) \\ 
+& \text{Reduction}: \\& - \underline{e(m(d(1,4),2),3)} + \underline{e(m(1,\beta(2,4)),3)} - \underline{e(m(1,2),d(3,4))} + \underline{d(e(m(1,2),3),4)} \stackrel{ LR-A1 }{=}  \\ 
+& - \alpha(d(1,4),e(2,3)) + \underline{\alpha(1,e(\beta(2,4),3))} - \alpha(1,e(2,d(3,4))) + d(\alpha(1,e(2,3)),4) \stackrel{ Mor2 }{=}  \\ 
+& - \alpha(d(1,4),e(2,3)) + \underline{d(\alpha(1,e(2,3)),4)} - \alpha(1,d(e(2,3),4)) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and Mor5:} \\ 
+& \gamma = e(\beta(m(1,3),4),2) \\ 
+& \text{Reduction}: \\& - \underline{e(m(d(1,4),3),2)} + \underline{e(m(1,\beta(3,4)),2)} - \underline{e(m(1,3),d(2,4))} + \underline{d(e(m(1,3),2),4)} \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(d(1,4),d(2,3)) + \underline{\alpha(1,d(2,\beta(3,4)))} - \alpha(1,d(d(2,4),3)) + d(\alpha(1,d(2,3)),4) \stackrel{ Mor1 }{=}  \\ 
+& - \alpha(d(1,4),d(2,3)) + \underline{d(\alpha(1,d(2,3)),4)} - \alpha(1,d(d(2,3),4)) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and Mor6:} \\ 
+& \gamma = e(\beta(m(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{e(m(d(1,3),2),4)} + \underline{e(m(1,\beta(2,3)),4)} + \underline{d(e(m(1,2),4),3)} - \underline{e(m(1,2),e(3,4))} \stackrel{ LR-A1 }{=}  \\ 
+& - \alpha(d(1,3),e(2,4)) + \underline{\alpha(1,e(\beta(2,3),4))} + d(\alpha(1,e(2,4)),3) - \alpha(1,e(2,e(3,4))) \stackrel{ Mor4 }{=}  \\ 
+& - \alpha(d(1,3),e(2,4)) + \underline{d(\alpha(1,e(2,4)),3)} - \alpha(1,d(e(2,4),3)) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and SMod1:} \\ 
+& \gamma = \beta(m(1,m(2,3)),4) \\ 
+& \text{Reduction}: \\& - m(d(1,4),m(2,3)) + \underline{m(1,\beta(m(2,3),4))} - \underline{\beta(m(\alpha(1,2),3),4)} \stackrel{ LR-B6 }{=}  \\ 
+& - \underline{m(d(1,4),m(2,3))} - \underline{m(1,m(d(2,4),3))} + \underline{m(1,m(2,\beta(3,4)))} + m(d(\alpha(1,2),4),3)\\ 
+ &  - m(\alpha(1,2),\beta(3,4)) \stackrel{ SMod1 }{=}  \\ 
+&\underline{m(d(\alpha(1,2),4),3)} - m(\alpha(d(1,4),2),3) - m(\alpha(1,d(2,4)),3) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and SMod1:} \\ 
+& \gamma = \beta(m(1,m(2,4)),3) \\ 
+& \text{Reduction}: \\& - m(d(1,3),m(2,4)) + \underline{m(1,\beta(m(2,4),3))} - \underline{\beta(m(\alpha(1,2),4),3)} \stackrel{ LR-B2 }{=}  \\ 
+& - \underline{m(d(1,3),m(2,4))} - \underline{m(1,m(d(2,3),4))} - \underline{m(1,m(2,\beta(3,4)))} + m(d(\alpha(1,2),3),4)\\ 
+ &  + m(\alpha(1,2),\beta(3,4)) \stackrel{ SMod1 }{=}  \\ 
+&\underline{m(d(\alpha(1,2),3),4)} - m(\alpha(d(1,3),2),4) - m(\alpha(1,d(2,3)),4) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and SMod3:} \\ 
+& \gamma = \beta(m(1,n(2,3)),4) \\ 
+& \text{Reduction}: \\& - m(d(1,4),n(2,3)) + \underline{m(1,\beta(n(2,3),4))} - \beta(m(\alpha(1,3),2),4) \stackrel{ LR-B3 }{=}  \\ 
+& - m(d(1,4),n(2,3)) - \underline{\beta(m(\alpha(1,3),2),4)} - m(1,n(2,d(3,4))) + m(1,n(\beta(2,4),3)) \stackrel{ LR-B6 }{=}  \\ 
+& - \underline{m(d(1,4),n(2,3))} - \underline{m(1,n(2,d(3,4)))} + \underline{m(1,n(\beta(2,4),3))} + m(d(\alpha(1,3),4),2)\\ 
+ &  - m(\alpha(1,3),\beta(2,4)) \stackrel{ SMod3 }{=}  \\ 
+&\underline{m(d(\alpha(1,3),4),2)} - m(\alpha(d(1,4),3),2) - m(\alpha(1,d(3,4)),2) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and SMod3:} \\ 
+& \gamma = \beta(m(1,n(2,4)),3) \\ 
+& \text{Reduction}: \\& - m(d(1,3),n(2,4)) + \underline{m(1,\beta(n(2,4),3))} - \beta(m(\alpha(1,4),2),3) \stackrel{ LR-B5 }{=}  \\ 
+& - m(d(1,3),n(2,4)) - \underline{\beta(m(\alpha(1,4),2),3)} - m(1,n(2,e(3,4))) + m(1,n(\beta(2,3),4)) \stackrel{ LR-B6 }{=}  \\ 
+& - \underline{m(d(1,3),n(2,4))} - \underline{m(1,n(2,e(3,4)))} + \underline{m(1,n(\beta(2,3),4))} + m(d(\alpha(1,4),3),2)\\ 
+ &  - m(\alpha(1,4),\beta(2,3)) \stackrel{ SMod3 }{=}  \\ 
+&\underline{m(d(\alpha(1,4),3),2)} - m(\alpha(d(1,3),4),2) - m(\alpha(1,e(3,4)),2) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-B6 and Lie:} \\ 
+& \gamma = \beta(\beta(m(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{\beta(m(d(1,3),2),4)} + \underline{\beta(m(1,\beta(2,3)),4)} - \underline{\beta(\beta(m(1,2),4),3)} - \underline{\beta(m(1,2),\beta(3,4))} \stackrel{ LR-B6 }{=}  \\ 
+&m(d(d(1,3),4),2) - m(d(1,3),\beta(2,4)) - m(d(1,4),\beta(2,3)) + m(1,\beta(\beta(2,3),4))\\ 
+ &  + \underline{\beta(m(d(1,4),2),3)} - \underline{\beta(m(1,\beta(2,4)),3)} + m(d(1,\beta(3,4)),2) - m(1,\beta(2,\beta(3,4))) \stackrel{ LR-B6 }{=}  \\ 
+&m(d(d(1,3),4),2) + m(1,\beta(\beta(2,3),4)) + \underline{m(d(1,\beta(3,4)),2)} - m(1,\beta(2,\beta(3,4)))\\ 
+ &  - m(d(d(1,4),3),2) - m(1,\beta(\beta(2,4),3)) \stackrel{ Mor1 }{=}  \\ 
+&\underline{m(1,\beta(\beta(2,3),4))} - m(1,\beta(2,\beta(3,4))) - m(1,\beta(\beta(2,4),3)) \stackrel{ Lie }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A1 and SMod1:} \\ 
+& \gamma = e(m(1,m(2,3)),4) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(1,e(m(2,3),4))} + \underline{e(m(\alpha(1,2),3),4)} \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{\alpha(1,\alpha(2,e(3,4)))} + \alpha(\alpha(1,2),e(3,4)) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A1 and SMod1:} \\ 
+& \gamma = e(m(1,m(2,4)),3) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(1,e(m(2,4),3))} + \underline{e(m(\alpha(1,2),4),3)} \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{\alpha(1,\alpha(2,d(3,4)))} + \alpha(\alpha(1,2),d(3,4)) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A1 and SMod3:} \\ 
+& \gamma = e(m(1,n(2,3)),4) \\ 
+& \text{Reduction}: \\& - \alpha(1,e(n(2,3),4)) + \underline{e(m(\alpha(1,3),2),4)} \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{\alpha(1,e(n(2,3),4))} + \alpha(\alpha(1,3),e(2,4)) \stackrel{ LR-A2 }{=}  \\ 
+&\underline{\alpha(\alpha(1,3),e(2,4))} - \alpha(1,\alpha(e(2,4),3)) \stackrel{ Com1 }{=}  \\ 
+& - \underline{\alpha(1,\alpha(e(2,4),3))} + \alpha(\alpha(1,e(2,4)),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A1 and SMod3:} \\ 
+& \gamma = e(m(1,n(2,4)),3) \\ 
+& \text{Reduction}: \\& - \alpha(1,e(n(2,4),3)) + \underline{e(m(\alpha(1,4),2),3)} \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{\alpha(1,e(n(2,4),3))} + \alpha(\alpha(1,4),e(2,3)) \stackrel{ LR-A6 }{=}  \\ 
+&\underline{\alpha(\alpha(1,4),e(2,3))} - \alpha(1,\alpha(e(2,3),4)) \stackrel{ Com1 }{=}  \\ 
+& - \underline{\alpha(1,\alpha(e(2,3),4))} + \alpha(\alpha(1,e(2,3)),4) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A1 and Leib1:} \\ 
+& \gamma = e(m(1,2),\alpha(3,4)) \\ 
+& \text{Reduction}: \\& - \alpha(1,e(2,\alpha(3,4))) + \underline{\alpha(e(m(1,2),3),4)} + \underline{\alpha(e(m(1,2),4),3)} \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{\alpha(1,e(2,\alpha(3,4)))} + \alpha(\alpha(1,e(2,3)),4) + \alpha(\alpha(1,e(2,4)),3) \stackrel{ Leib1 }{=}  \\ 
+&\alpha(\alpha(1,e(2,3)),4) + \alpha(\alpha(1,e(2,4)),3) - \underline{\alpha(1,\alpha(e(2,3),4))} - \underline{\alpha(1,\alpha(e(2,4),3))} \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A2 and SMod2:} \\ 
+& \gamma = e(n(m(1,3),2),4) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(e(m(1,3),4),2)} + \underline{e(m(\alpha(1,2),3),4)} \stackrel{ LR-A1 }{=}  \\ 
+& - \underline{\alpha(\alpha(1,e(3,4)),2)} + \alpha(\alpha(1,2),e(3,4)) \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A2 and SMod2:} \\ 
+& \gamma = e(n(m(1,4),2),3) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(e(m(1,4),3),2)} + \underline{e(m(\alpha(1,2),4),3)} \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{\alpha(\alpha(1,d(3,4)),2)} + \alpha(\alpha(1,2),d(3,4)) \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A2 and SMod4:} \\ 
+& \gamma = e(n(n(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(e(n(1,2),4),3)} + \underline{e(n(1,\alpha(2,3)),4)} \stackrel{ LR-A2 }{=}  \\ 
+& - \alpha(\alpha(e(1,4),2),3) + \underline{\alpha(e(1,4),\alpha(2,3))} \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A2 and SMod5:} \\ 
+& \gamma = e(n(n(1,3),2),4) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(e(n(1,3),4),2)} + \underline{e(n(1,\alpha(2,3)),4)} \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{\alpha(\alpha(e(1,4),3),2)} + \alpha(e(1,4),\alpha(2,3)) \stackrel{ Com1 }{=}  \\ 
+&\underline{\alpha(e(1,4),\alpha(2,3))} - \alpha(\alpha(e(1,4),2),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A2 and SMod5:} \\ 
+& \gamma = e(n(n(1,4),2),3) \\ 
+& \text{Reduction}: \\& - \alpha(e(n(1,4),3),2) + \underline{e(n(1,\alpha(2,4)),3)} \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{\alpha(e(n(1,4),3),2)} + \alpha(e(1,3),\alpha(2,4)) \stackrel{ LR-A6 }{=}  \\ 
+&\alpha(e(1,3),\alpha(2,4)) - \underline{\alpha(\alpha(e(1,3),4),2)} \stackrel{ Com1 }{=}  \\ 
+&\underline{\alpha(e(1,3),\alpha(2,4))} - \alpha(\alpha(e(1,3),2),4) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A2 and SMod6:} \\ 
+& \gamma = e(n(m(1,2),3),4) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(e(m(1,2),4),3)} + \underline{e(m(\alpha(1,3),2),4)} \stackrel{ LR-A1 }{=}  \\ 
+& - \alpha(\alpha(1,e(2,4)),3) + \underline{\alpha(\alpha(1,3),e(2,4))} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A2 and Leib1:} \\ 
+& \gamma = e(n(1,2),\alpha(3,4)) \\ 
+& \text{Reduction}: \\& - \alpha(e(1,\alpha(3,4)),2) + \underline{\alpha(e(n(1,2),3),4)} + \underline{\alpha(e(n(1,2),4),3)} \stackrel{ LR-A2 }{=}  \\ 
+& - \underline{\alpha(e(1,\alpha(3,4)),2)} + \alpha(\alpha(e(1,3),2),4) + \alpha(\alpha(e(1,4),2),3) \stackrel{ Leib1 }{=}  \\ 
+&\alpha(\alpha(e(1,3),2),4) + \alpha(\alpha(e(1,4),2),3) - \underline{\alpha(\alpha(e(1,3),4),2)} - \underline{\alpha(\alpha(e(1,4),3),2)} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A3 and SMod2:} \\ 
+& \gamma = d(1,n(m(2,4),3)) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(d(1,m(2,4)),3)} + \underline{d(1,m(\alpha(2,3),4))} \stackrel{ LR-A5 }{=}  \\ 
+& - \alpha(\alpha(d(1,4),2),3) + \underline{\alpha(d(1,4),\alpha(2,3))} \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A3 and SMod4:} \\ 
+& \gamma = d(1,n(n(2,3),4)) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(d(1,n(2,3)),4)} + \underline{d(1,n(2,\alpha(3,4)))} \stackrel{ LR-A3 }{=}  \\ 
+& - \alpha(\alpha(d(1,2),3),4) + \underline{\alpha(d(1,2),\alpha(3,4))} \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A3 and SMod5:} \\ 
+& \gamma = d(1,n(n(2,4),3)) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(d(1,n(2,4)),3)} + \underline{d(1,n(2,\alpha(3,4)))} \stackrel{ LR-A3 }{=}  \\ 
+& - \underline{\alpha(\alpha(d(1,2),4),3)} + \alpha(d(1,2),\alpha(3,4)) \stackrel{ Com1 }{=}  \\ 
+&\underline{\alpha(d(1,2),\alpha(3,4))} - \alpha(\alpha(d(1,2),3),4) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A3 and SMod6:} \\ 
+& \gamma = d(1,n(m(2,3),4)) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(d(1,m(2,3)),4)} + \underline{d(1,m(\alpha(2,4),3))} \stackrel{ LR-A5 }{=}  \\ 
+& - \alpha(\alpha(d(1,3),2),4) + \underline{\alpha(d(1,3),\alpha(2,4))} \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A3 and Leib2:} \\ 
+& \gamma = d(\alpha(1,4),n(2,3)) \\ 
+& \text{Reduction}: \\& - \alpha(d(\alpha(1,4),2),3) + \alpha(d(1,n(2,3)),4) + \underline{\alpha(1,e(n(2,3),4))} \stackrel{ LR-A2 }{=}  \\ 
+& - \alpha(d(\alpha(1,4),2),3) + \underline{\alpha(d(1,n(2,3)),4)} + \alpha(1,\alpha(e(2,4),3)) \stackrel{ LR-A3 }{=}  \\ 
+& - \alpha(d(\alpha(1,4),2),3) + \underline{\alpha(1,\alpha(e(2,4),3))} + \alpha(\alpha(d(1,2),3),4) \stackrel{ Com2 }{=}  \\ 
+& - \underline{\alpha(d(\alpha(1,4),2),3)} + \alpha(\alpha(d(1,2),3),4) + \alpha(\alpha(1,e(2,4)),3) \stackrel{ Leib2 }{=}  \\ 
+&\alpha(\alpha(d(1,2),3),4) - \underline{\alpha(\alpha(d(1,2),4),3)} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A3 and Leib2:} \\ 
+& \gamma = d(\alpha(1,3),n(2,4)) \\ 
+& \text{Reduction}: \\& - \alpha(d(\alpha(1,3),2),4) + \underline{\alpha(d(1,n(2,4)),3)} + \alpha(1,e(n(2,4),3)) \stackrel{ LR-A3 }{=}  \\ 
+& - \alpha(d(\alpha(1,3),2),4) + \underline{\alpha(1,e(n(2,4),3))} + \alpha(\alpha(d(1,2),4),3) \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(d(\alpha(1,3),2),4) + \underline{\alpha(\alpha(d(1,2),4),3)} + \alpha(1,\alpha(e(2,3),4)) \stackrel{ Com1 }{=}  \\ 
+& - \alpha(d(\alpha(1,3),2),4) + \underline{\alpha(1,\alpha(e(2,3),4))} + \alpha(\alpha(d(1,2),3),4) \stackrel{ Com2 }{=}  \\ 
+& - \underline{\alpha(d(\alpha(1,3),2),4)} + \alpha(\alpha(d(1,2),3),4) + \alpha(\alpha(1,e(2,3)),4) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A3 and Leib3:} \\ 
+& \gamma = d(\alpha(1,2),n(3,4)) \\ 
+& \text{Reduction}: \\& - \alpha(d(\alpha(1,2),3),4) + \underline{\alpha(1,d(2,n(3,4)))} + \underline{\alpha(d(1,n(3,4)),2)} \stackrel{ LR-A3 }{=}  \\ 
+& - \alpha(d(\alpha(1,2),3),4) + \alpha(1,\alpha(d(2,3),4)) + \underline{\alpha(\alpha(d(1,3),4),2)} \stackrel{ Com1 }{=}  \\ 
+& - \alpha(d(\alpha(1,2),3),4) + \underline{\alpha(1,\alpha(d(2,3),4))} + \alpha(\alpha(d(1,3),2),4) \stackrel{ Com2 }{=}  \\ 
+& - \underline{\alpha(d(\alpha(1,2),3),4)} + \alpha(\alpha(d(1,3),2),4) + \alpha(\alpha(1,d(2,3)),4) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A4 and SMod1:} \\ 
+& \gamma = e(m(1,m(3,4)),2) \\ 
+& \text{Reduction}: \\& - \alpha(1,d(2,m(3,4))) + \underline{e(m(\alpha(1,3),4),2)} \stackrel{ LR-A4 }{=}  \\ 
+& - \underline{\alpha(1,d(2,m(3,4)))} + \alpha(\alpha(1,3),d(2,4)) \stackrel{ LR-A5 }{=}  \\ 
+&\underline{\alpha(\alpha(1,3),d(2,4))} - \alpha(1,\alpha(d(2,4),3)) \stackrel{ Com1 }{=}  \\ 
+& - \underline{\alpha(1,\alpha(d(2,4),3))} + \alpha(\alpha(1,d(2,4)),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A4 and SMod3:} \\ 
+& \gamma = e(m(1,n(3,4)),2) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(1,d(2,n(3,4)))} + e(m(\alpha(1,4),3),2) \stackrel{ LR-A3 }{=}  \\ 
+&\underline{e(m(\alpha(1,4),3),2)} - \alpha(1,\alpha(d(2,3),4)) \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(1,\alpha(d(2,3),4)) + \underline{\alpha(\alpha(1,4),d(2,3))} \stackrel{ Com1 }{=}  \\ 
+& - \underline{\alpha(1,\alpha(d(2,3),4))} + \alpha(\alpha(1,d(2,3)),4) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A4 and Leib1:} \\ 
+& \gamma = e(m(1,3),\alpha(2,4)) \\ 
+& \text{Reduction}: \\& - \alpha(1,d(\alpha(2,4),3)) + \alpha(e(m(1,3),2),4) + \underline{\alpha(e(m(1,3),4),2)} \stackrel{ LR-A1 }{=}  \\ 
+& - \alpha(1,d(\alpha(2,4),3)) + \underline{\alpha(e(m(1,3),2),4)} + \alpha(\alpha(1,e(3,4)),2) \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(1,d(\alpha(2,4),3)) + \underline{\alpha(\alpha(1,e(3,4)),2)} + \alpha(\alpha(1,d(2,3)),4) \stackrel{ Com1 }{=}  \\ 
+& - \underline{\alpha(1,d(\alpha(2,4),3))} + \alpha(\alpha(1,d(2,3)),4) + \alpha(\alpha(1,2),e(3,4)) \stackrel{ Leib2 }{=}  \\ 
+&\alpha(\alpha(1,d(2,3)),4) + \alpha(\alpha(1,2),e(3,4)) - \underline{\alpha(1,\alpha(d(2,3),4))} - \underline{\alpha(1,\alpha(2,e(3,4)))} \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A4 and Leib1:} \\ 
+& \gamma = e(m(1,4),\alpha(2,3)) \\ 
+& \text{Reduction}: \\& - \alpha(1,d(\alpha(2,3),4)) + \underline{\alpha(e(m(1,4),2),3)} + \underline{\alpha(e(m(1,4),3),2)} \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(1,d(\alpha(2,3),4)) + \alpha(\alpha(1,d(2,4)),3) + \underline{\alpha(\alpha(1,d(3,4)),2)} \stackrel{ Com1 }{=}  \\ 
+& - \underline{\alpha(1,d(\alpha(2,3),4))} + \alpha(\alpha(1,d(2,4)),3) + \alpha(\alpha(1,2),d(3,4)) \stackrel{ Leib3 }{=}  \\ 
+&\alpha(\alpha(1,d(2,4)),3) + \alpha(\alpha(1,2),d(3,4)) - \underline{\alpha(1,\alpha(2,d(3,4)))} - \underline{\alpha(1,\alpha(d(2,4),3))} \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A5 and SMod1:} \\ 
+& \gamma = d(1,m(2,m(3,4))) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(d(1,m(3,4)),2)} + \underline{d(1,m(\alpha(2,3),4))} \stackrel{ LR-A5 }{=}  \\ 
+& - \underline{\alpha(\alpha(d(1,4),3),2)} + \alpha(d(1,4),\alpha(2,3)) \stackrel{ Com1 }{=}  \\ 
+&\underline{\alpha(d(1,4),\alpha(2,3))} - \alpha(\alpha(d(1,4),2),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A5 and SMod3:} \\ 
+& \gamma = d(1,m(2,n(3,4))) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(d(1,n(3,4)),2)} + d(1,m(\alpha(2,4),3)) \stackrel{ LR-A3 }{=}  \\ 
+&\underline{d(1,m(\alpha(2,4),3))} - \alpha(\alpha(d(1,3),4),2) \stackrel{ LR-A5 }{=}  \\ 
+& - \underline{\alpha(\alpha(d(1,3),4),2)} + \alpha(d(1,3),\alpha(2,4)) \stackrel{ Com1 }{=}  \\ 
+&\underline{\alpha(d(1,3),\alpha(2,4))} - \alpha(\alpha(d(1,3),2),4) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A5 and Leib2:} \\ 
+& \gamma = d(\alpha(1,4),m(2,3)) \\ 
+& \text{Reduction}: \\& - \alpha(d(\alpha(1,4),3),2) + \alpha(d(1,m(2,3)),4) + \underline{\alpha(1,e(m(2,3),4))} \stackrel{ LR-A1 }{=}  \\ 
+& - \alpha(d(\alpha(1,4),3),2) + \underline{\alpha(d(1,m(2,3)),4)} + \alpha(1,\alpha(2,e(3,4))) \stackrel{ LR-A5 }{=}  \\ 
+& - \alpha(d(\alpha(1,4),3),2) + \underline{\alpha(1,\alpha(2,e(3,4)))} + \alpha(\alpha(d(1,3),2),4) \stackrel{ Com2 }{=}  \\ 
+& - \underline{\alpha(d(\alpha(1,4),3),2)} + \alpha(\alpha(d(1,3),2),4) + \alpha(\alpha(1,2),e(3,4)) \stackrel{ Leib2 }{=}  \\ 
+&\alpha(\alpha(d(1,3),2),4) + \alpha(\alpha(1,2),e(3,4)) - \underline{\alpha(\alpha(d(1,3),4),2)} - \underline{\alpha(\alpha(1,e(3,4)),2)} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A5 and Leib2:} \\ 
+& \gamma = d(\alpha(1,3),m(2,4)) \\ 
+& \text{Reduction}: \\& - \alpha(d(\alpha(1,3),4),2) + \alpha(d(1,m(2,4)),3) + \underline{\alpha(1,e(m(2,4),3))} \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(d(\alpha(1,3),4),2) + \underline{\alpha(d(1,m(2,4)),3)} + \alpha(1,\alpha(2,d(3,4))) \stackrel{ LR-A5 }{=}  \\ 
+& - \alpha(d(\alpha(1,3),4),2) + \underline{\alpha(1,\alpha(2,d(3,4)))} + \alpha(\alpha(d(1,4),2),3) \stackrel{ Com2 }{=}  \\ 
+& - \underline{\alpha(d(\alpha(1,3),4),2)} + \alpha(\alpha(d(1,4),2),3) + \alpha(\alpha(1,2),d(3,4)) \stackrel{ Leib3 }{=}  \\ 
+&\alpha(\alpha(d(1,4),2),3) + \alpha(\alpha(1,2),d(3,4)) - \underline{\alpha(\alpha(1,d(3,4)),2)} - \underline{\alpha(\alpha(d(1,4),3),2)} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A5 and Leib3:} \\ 
+& \gamma = d(\alpha(1,2),m(3,4)) \\ 
+& \text{Reduction}: \\& - \alpha(d(\alpha(1,2),4),3) + \underline{\alpha(1,d(2,m(3,4)))} + \underline{\alpha(d(1,m(3,4)),2)} \stackrel{ LR-A5 }{=}  \\ 
+& - \alpha(d(\alpha(1,2),4),3) + \alpha(1,\alpha(d(2,4),3)) + \underline{\alpha(\alpha(d(1,4),3),2)} \stackrel{ Com1 }{=}  \\ 
+& - \alpha(d(\alpha(1,2),4),3) + \underline{\alpha(1,\alpha(d(2,4),3))} + \alpha(\alpha(d(1,4),2),3) \stackrel{ Com2 }{=}  \\ 
+& - \underline{\alpha(d(\alpha(1,2),4),3)} + \alpha(\alpha(d(1,4),2),3) + \alpha(\alpha(1,d(2,4)),3) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A6 and SMod2:} \\ 
+& \gamma = e(n(m(1,4),3),2) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(e(m(1,4),2),3)} + \underline{e(m(\alpha(1,3),4),2)} \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(\alpha(1,d(2,4)),3) + \underline{\alpha(\alpha(1,3),d(2,4))} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A6 and SMod4:} \\ 
+& \gamma = e(n(n(1,2),4),3) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(e(n(1,2),3),4)} + \underline{e(n(1,\alpha(2,4)),3)} \stackrel{ LR-A2 }{=}  \\ 
+& - \alpha(\alpha(e(1,3),2),4) + \underline{\alpha(e(1,3),\alpha(2,4))} \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A6 and SMod4:} \\ 
+& \gamma = e(n(n(1,3),4),2) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(e(n(1,3),2),4)} + \underline{e(n(1,\alpha(3,4)),2)} \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(\alpha(e(1,2),3),4) + \underline{\alpha(e(1,2),\alpha(3,4))} \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A6 and SMod5:} \\ 
+& \gamma = e(n(n(1,4),3),2) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(e(n(1,4),2),3)} + \underline{e(n(1,\alpha(3,4)),2)} \stackrel{ LR-A6 }{=}  \\ 
+& - \underline{\alpha(\alpha(e(1,2),4),3)} + \alpha(e(1,2),\alpha(3,4)) \stackrel{ Com1 }{=}  \\ 
+&\underline{\alpha(e(1,2),\alpha(3,4))} - \alpha(\alpha(e(1,2),3),4) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A6 and SMod6:} \\ 
+& \gamma = e(n(m(1,2),4),3) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(e(m(1,2),3),4)} + \underline{e(m(\alpha(1,4),2),3)} \stackrel{ LR-A1 }{=}  \\ 
+& - \alpha(\alpha(1,e(2,3)),4) + \underline{\alpha(\alpha(1,4),e(2,3))} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A6 and SMod6:} \\ 
+& \gamma = e(n(m(1,3),4),2) \\ 
+& \text{Reduction}: \\& - \underline{\alpha(e(m(1,3),2),4)} + \underline{e(m(\alpha(1,4),3),2)} \stackrel{ LR-A4 }{=}  \\ 
+& - \alpha(\alpha(1,d(2,3)),4) + \underline{\alpha(\alpha(1,4),d(2,3))} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A6 and Leib1:} \\ 
+& \gamma = e(n(1,3),\alpha(2,4)) \\ 
+& \text{Reduction}: \\& - \alpha(e(1,\alpha(2,4)),3) + \alpha(e(n(1,3),2),4) + \underline{\alpha(e(n(1,3),4),2)} \stackrel{ LR-A2 }{=}  \\ 
+& - \alpha(e(1,\alpha(2,4)),3) + \underline{\alpha(e(n(1,3),2),4)} + \alpha(\alpha(e(1,4),3),2) \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,\alpha(2,4)),3) + \underline{\alpha(\alpha(e(1,4),3),2)} + \alpha(\alpha(e(1,2),3),4) \stackrel{ Com1 }{=}  \\ 
+& - \underline{\alpha(e(1,\alpha(2,4)),3)} + \alpha(\alpha(e(1,2),3),4) + \alpha(\alpha(e(1,4),2),3) \stackrel{ Leib1 }{=}  \\ 
+&\alpha(\alpha(e(1,2),3),4) - \underline{\alpha(\alpha(e(1,2),4),3)} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations LR-A6 and Leib1:} \\ 
+& \gamma = e(n(1,4),\alpha(2,3)) \\ 
+& \text{Reduction}: \\& - \alpha(e(1,\alpha(2,3)),4) + \underline{\alpha(e(n(1,4),2),3)} + \underline{\alpha(e(n(1,4),3),2)} \stackrel{ LR-A6 }{=}  \\ 
+& - \alpha(e(1,\alpha(2,3)),4) + \underline{\alpha(\alpha(e(1,2),4),3)} + \underline{\alpha(\alpha(e(1,3),4),2)} \stackrel{ Com1 }{=}  \\ 
+& - \underline{\alpha(e(1,\alpha(2,3)),4)} + \alpha(\alpha(e(1,2),3),4) + \alpha(\alpha(e(1,3),2),4) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor1 and Lie:} \\ 
+& \gamma = d(1,\beta(\beta(2,3),4)) \\ 
+& \text{Reduction}: \\&\underline{d(d(1,\beta(2,3)),4)} - \underline{d(d(1,4),\beta(2,3))} + \underline{d(1,\beta(\beta(2,4),3))} + \underline{d(1,\beta(2,\beta(3,4)))} \stackrel{ Mor1 }{=}  \\ 
+& - d(d(d(1,2),3),4) + d(d(d(1,3),2),4) + d(d(d(1,4),2),3) - d(d(d(1,4),3),2)\\ 
+ &  - \underline{d(d(1,\beta(2,4)),3)} + \underline{d(d(1,3),\beta(2,4))} - \underline{d(d(1,2),\beta(3,4))} + \underline{d(d(1,\beta(3,4)),2)} \stackrel{ Mor1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor1 and Leib2:} \\ 
+& \gamma = d(\alpha(1,4),\beta(2,3)) \\ 
+& \text{Reduction}: \\&d(d(\alpha(1,4),2),3) - d(d(\alpha(1,4),3),2) + \underline{\alpha(d(1,\beta(2,3)),4)} + \alpha(1,e(\beta(2,3),4)) \stackrel{ Mor1 }{=}  \\ 
+&d(d(\alpha(1,4),2),3) - d(d(\alpha(1,4),3),2) + \underline{\alpha(1,e(\beta(2,3),4))} - \alpha(d(d(1,2),3),4)\\ 
+ &  + \alpha(d(d(1,3),2),4) \stackrel{ Mor4 }{=}  \\ 
+&\underline{d(d(\alpha(1,4),2),3)} - \underline{d(d(\alpha(1,4),3),2)} - \alpha(d(d(1,2),3),4) + \alpha(d(d(1,3),2),4)\\ 
+ &  + \alpha(1,e(2,e(3,4))) - \alpha(1,d(e(2,4),3)) \stackrel{ Leib2 }{=}  \\ 
+& - \alpha(d(d(1,2),3),4) + \alpha(d(d(1,3),2),4) + \alpha(1,e(2,e(3,4))) - \alpha(1,d(e(2,4),3))\\ 
+ &  + \underline{d(\alpha(d(1,2),4),3)} + d(\alpha(1,e(2,4)),3) - \underline{d(\alpha(d(1,3),4),2)} - \underline{d(\alpha(1,e(3,4)),2)} \stackrel{ Leib2 }{=}  \\ 
+& - \alpha(1,d(e(2,4),3)) + \underline{d(\alpha(1,e(2,4)),3)} - \alpha(d(1,3),e(2,4)) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor1 and Leib2:} \\ 
+& \gamma = d(\alpha(1,3),\beta(2,4)) \\ 
+& \text{Reduction}: \\&d(d(\alpha(1,3),2),4) - d(d(\alpha(1,3),4),2) + \underline{\alpha(d(1,\beta(2,4)),3)} + \alpha(1,e(\beta(2,4),3)) \stackrel{ Mor1 }{=}  \\ 
+&d(d(\alpha(1,3),2),4) - d(d(\alpha(1,3),4),2) + \underline{\alpha(1,e(\beta(2,4),3))} - \alpha(d(d(1,2),4),3)\\ 
+ &  + \alpha(d(d(1,4),2),3) \stackrel{ Mor2 }{=}  \\ 
+&\underline{d(d(\alpha(1,3),2),4)} - d(d(\alpha(1,3),4),2) - \alpha(d(d(1,2),4),3) + \alpha(d(d(1,4),2),3)\\ 
+ &  - \alpha(1,d(e(2,3),4)) + \alpha(1,e(2,d(3,4))) \stackrel{ Leib2 }{=}  \\ 
+& - \underline{d(d(\alpha(1,3),4),2)} - \alpha(d(d(1,2),4),3) + \alpha(d(d(1,4),2),3) - \alpha(1,d(e(2,3),4))\\ 
+ &  + \alpha(1,e(2,d(3,4))) + \underline{d(\alpha(d(1,2),3),4)} + \underline{d(\alpha(1,e(2,3)),4)} \stackrel{ Leib3 }{=}  \\ 
+&\alpha(d(d(1,4),2),3) + \alpha(1,e(2,d(3,4))) - \underline{d(\alpha(1,d(3,4)),2)} - \underline{d(\alpha(d(1,4),3),2)}\\ 
+ &  + \alpha(d(1,2),d(3,4)) + \alpha(d(1,4),e(2,3)) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor1 and Leib3:} \\ 
+& \gamma = d(\alpha(1,2),\beta(3,4)) \\ 
+& \text{Reduction}: \\&d(d(\alpha(1,2),3),4) - d(d(\alpha(1,2),4),3) + \underline{\alpha(1,d(2,\beta(3,4)))} + \underline{\alpha(d(1,\beta(3,4)),2)} \stackrel{ Mor1 }{=}  \\ 
+&\underline{d(d(\alpha(1,2),3),4)} - \underline{d(d(\alpha(1,2),4),3)} - \alpha(1,d(d(2,3),4)) + \alpha(1,d(d(2,4),3))\\ 
+ &  - \alpha(d(d(1,3),4),2) + \alpha(d(d(1,4),3),2) \stackrel{ Leib3 }{=}  \\ 
+& - \alpha(1,d(d(2,3),4)) + \alpha(1,d(d(2,4),3)) - \alpha(d(d(1,3),4),2) + \alpha(d(d(1,4),3),2)\\ 
+ &  + \underline{d(\alpha(1,d(2,3)),4)} + \underline{d(\alpha(d(1,3),2),4)} - \underline{d(\alpha(1,d(2,4)),3)} - \underline{d(\alpha(d(1,4),2),3)} \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor2 and Lie:} \\ 
+& \gamma = e(\beta(\beta(1,2),4),3) \\ 
+& \text{Reduction}: \\&\underline{d(e(\beta(1,2),3),4)} - \underline{e(\beta(1,2),d(3,4))} + \underline{e(\beta(\beta(1,4),2),3)} + \underline{e(\beta(1,\beta(2,4)),3)} \stackrel{ Mor4 }{=}  \\ 
+&d(e(1,e(2,3)),4) - d(d(e(1,3),2),4) - e(1,e(2,d(3,4))) + d(e(1,d(3,4)),2)\\ 
+ &  + \underline{e(\beta(1,4),e(2,3))} - \underline{d(e(\beta(1,4),3),2)} + \underline{e(1,e(\beta(2,4),3))} - d(e(1,3),\beta(2,4)) \stackrel{ Mor5 }{=}  \\ 
+& - d(d(e(1,3),2),4) - \underline{d(e(1,3),\beta(2,4))} + d(d(e(1,3),4),2) \stackrel{ Mor1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor2 and Lie:} \\ 
+& \gamma = e(\beta(\beta(1,3),4),2) \\ 
+& \text{Reduction}: \\&\underline{d(e(\beta(1,3),2),4)} - \underline{e(\beta(1,3),d(2,4))} + \underline{e(\beta(\beta(1,4),3),2)} + \underline{e(\beta(1,\beta(3,4)),2)} \stackrel{ Mor2 }{=}  \\ 
+& - d(d(e(1,2),3),4) + d(e(1,d(2,3)),4) + d(e(1,d(2,4)),3) - e(1,d(d(2,4),3))\\ 
+ &  - \underline{d(e(\beta(1,4),2),3)} + \underline{e(\beta(1,4),d(2,3))} - d(e(1,2),\beta(3,4)) + e(1,d(2,\beta(3,4))) \stackrel{ Mor2 }{=}  \\ 
+& - d(d(e(1,2),3),4) - e(1,d(d(2,4),3)) - \underline{d(e(1,2),\beta(3,4))} + \underline{e(1,d(2,\beta(3,4)))}\\ 
+ &  + d(d(e(1,2),4),3) + e(1,d(d(2,3),4)) \stackrel{ Mor3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor2 and Leib1:} \\ 
+& \gamma = e(\beta(1,3),\alpha(2,4)) \\ 
+& \text{Reduction}: \\&d(e(1,\alpha(2,4)),3) - e(1,d(\alpha(2,4),3)) + \underline{\alpha(e(\beta(1,3),2),4)} + \alpha(e(\beta(1,3),4),2) \stackrel{ Mor2 }{=}  \\ 
+&d(e(1,\alpha(2,4)),3) - e(1,d(\alpha(2,4),3)) + \underline{\alpha(e(\beta(1,3),4),2)} - \alpha(d(e(1,2),3),4)\\ 
+ &  + \alpha(e(1,d(2,3)),4) \stackrel{ Mor4 }{=}  \\ 
+&\underline{d(e(1,\alpha(2,4)),3)} - e(1,d(\alpha(2,4),3)) - \alpha(d(e(1,2),3),4) + \alpha(e(1,d(2,3)),4)\\ 
+ &  + \alpha(e(1,e(3,4)),2) - \alpha(d(e(1,4),3),2) \stackrel{ Leib1 }{=}  \\ 
+& - \underline{e(1,d(\alpha(2,4),3))} - \alpha(d(e(1,2),3),4) + \alpha(e(1,d(2,3)),4) + \alpha(e(1,e(3,4)),2)\\ 
+ &  - \alpha(d(e(1,4),3),2) + \underline{d(\alpha(e(1,2),4),3)} + d(\alpha(e(1,4),2),3) \stackrel{ Leib2 }{=}  \\ 
+&\alpha(e(1,d(2,3)),4) + \alpha(e(1,e(3,4)),2) - \alpha(d(e(1,4),3),2) + \underline{d(\alpha(e(1,4),2),3)}\\ 
+ &  - e(1,\alpha(d(2,3),4)) - e(1,\alpha(2,e(3,4))) + \alpha(e(1,2),e(3,4)) \stackrel{ Leib3 }{=}  \\ 
+&\alpha(e(1,d(2,3)),4) + \alpha(e(1,e(3,4)),2) - \underline{e(1,\alpha(d(2,3),4))} - \underline{e(1,\alpha(2,e(3,4)))}\\ 
+ &  + \alpha(e(1,2),e(3,4)) + \alpha(e(1,4),d(2,3)) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor2 and Leib1:} \\ 
+& \gamma = e(\beta(1,4),\alpha(2,3)) \\ 
+& \text{Reduction}: \\&d(e(1,\alpha(2,3)),4) - e(1,d(\alpha(2,3),4)) + \underline{\alpha(e(\beta(1,4),2),3)} + \underline{\alpha(e(\beta(1,4),3),2)} \stackrel{ Mor2 }{=}  \\ 
+&\underline{d(e(1,\alpha(2,3)),4)} - e(1,d(\alpha(2,3),4)) - \alpha(d(e(1,2),4),3) + \alpha(e(1,d(2,4)),3)\\ 
+ &  - \alpha(d(e(1,3),4),2) + \alpha(e(1,d(3,4)),2) \stackrel{ Leib1 }{=}  \\ 
+& - \underline{e(1,d(\alpha(2,3),4))} - \alpha(d(e(1,2),4),3) + \alpha(e(1,d(2,4)),3) - \alpha(d(e(1,3),4),2)\\ 
+ &  + \alpha(e(1,d(3,4)),2) + \underline{d(\alpha(e(1,2),3),4)} + \underline{d(\alpha(e(1,3),2),4)} \stackrel{ Leib3 }{=}  \\ 
+&\alpha(e(1,d(2,4)),3) + \alpha(e(1,d(3,4)),2) - \underline{e(1,\alpha(2,d(3,4)))} - \underline{e(1,\alpha(d(2,4),3))}\\ 
+ &  + \alpha(e(1,2),d(3,4)) + \alpha(e(1,3),d(2,4)) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor3 and Lie:} \\ 
+& \gamma = d(1,\beta(\beta(2,3),4)) \\ 
+& \text{Reduction}: \\&\underline{d(d(1,4),\beta(2,3))} - \underline{d(d(1,\beta(2,3)),4)} - \underline{d(1,\beta(\beta(2,4),3))} - \underline{d(1,\beta(2,\beta(3,4)))} \stackrel{ Mor1 }{=}  \\ 
+& - d(d(d(1,4),2),3) + d(d(d(1,4),3),2) + d(d(d(1,2),3),4) - d(d(d(1,3),2),4)\\ 
+ &  + \underline{d(d(1,\beta(2,4)),3)} - \underline{d(d(1,3),\beta(2,4))} + \underline{d(d(1,2),\beta(3,4))} - \underline{d(d(1,\beta(3,4)),2)} \stackrel{ Mor1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor3 and Leib2:} \\ 
+& \gamma = d(\alpha(1,4),\beta(2,3)) \\ 
+& \text{Reduction}: \\&d(d(\alpha(1,4),3),2) - d(d(\alpha(1,4),2),3) - \underline{\alpha(d(1,\beta(2,3)),4)} - \alpha(1,e(\beta(2,3),4)) \stackrel{ Mor1 }{=}  \\ 
+&d(d(\alpha(1,4),3),2) - d(d(\alpha(1,4),2),3) - \underline{\alpha(1,e(\beta(2,3),4))} + \alpha(d(d(1,2),3),4)\\ 
+ &  - \alpha(d(d(1,3),2),4) \stackrel{ Mor4 }{=}  \\ 
+&\underline{d(d(\alpha(1,4),3),2)} - \underline{d(d(\alpha(1,4),2),3)} + \alpha(d(d(1,2),3),4) - \alpha(d(d(1,3),2),4)\\ 
+ &  - \alpha(1,e(2,e(3,4))) + \alpha(1,d(e(2,4),3)) \stackrel{ Leib2 }{=}  \\ 
+&\alpha(d(d(1,2),3),4) - \alpha(d(d(1,3),2),4) - \alpha(1,e(2,e(3,4))) + \alpha(1,d(e(2,4),3))\\ 
+ &  + \underline{d(\alpha(d(1,3),4),2)} + \underline{d(\alpha(1,e(3,4)),2)} - \underline{d(\alpha(d(1,2),4),3)} - d(\alpha(1,e(2,4)),3) \stackrel{ Leib2 }{=}  \\ 
+&\alpha(1,d(e(2,4),3)) - \underline{d(\alpha(1,e(2,4)),3)} + \alpha(d(1,3),e(2,4)) \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor3 and Leib2:} \\ 
+& \gamma = d(\alpha(1,3),\beta(2,4)) \\ 
+& \text{Reduction}: \\&d(d(\alpha(1,3),4),2) - d(d(\alpha(1,3),2),4) - \underline{\alpha(d(1,\beta(2,4)),3)} - \alpha(1,e(\beta(2,4),3)) \stackrel{ Mor1 }{=}  \\ 
+&d(d(\alpha(1,3),4),2) - d(d(\alpha(1,3),2),4) - \underline{\alpha(1,e(\beta(2,4),3))} + \alpha(d(d(1,2),4),3)\\ 
+ &  - \alpha(d(d(1,4),2),3) \stackrel{ Mor2 }{=}  \\ 
+&d(d(\alpha(1,3),4),2) - \underline{d(d(\alpha(1,3),2),4)} + \alpha(d(d(1,2),4),3) - \alpha(d(d(1,4),2),3)\\ 
+ &  + \alpha(1,d(e(2,3),4)) - \alpha(1,e(2,d(3,4))) \stackrel{ Leib2 }{=}  \\ 
+&\underline{d(d(\alpha(1,3),4),2)} + \alpha(d(d(1,2),4),3) - \alpha(d(d(1,4),2),3) + \alpha(1,d(e(2,3),4))\\ 
+ &  - \alpha(1,e(2,d(3,4))) - \underline{d(\alpha(d(1,2),3),4)} - \underline{d(\alpha(1,e(2,3)),4)} \stackrel{ Leib3 }{=}  \\ 
+& - \alpha(d(d(1,4),2),3) - \alpha(1,e(2,d(3,4))) + \underline{d(\alpha(1,d(3,4)),2)} + \underline{d(\alpha(d(1,4),3),2)}\\ 
+ &  - \alpha(d(1,2),d(3,4)) - \alpha(d(1,4),e(2,3)) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor3 and Leib3:} \\ 
+& \gamma = d(\alpha(1,2),\beta(3,4)) \\ 
+& \text{Reduction}: \\&d(d(\alpha(1,2),4),3) - d(d(\alpha(1,2),3),4) - \underline{\alpha(1,d(2,\beta(3,4)))} - \underline{\alpha(d(1,\beta(3,4)),2)} \stackrel{ Mor1 }{=}  \\ 
+&\underline{d(d(\alpha(1,2),4),3)} - \underline{d(d(\alpha(1,2),3),4)} + \alpha(1,d(d(2,3),4)) - \alpha(1,d(d(2,4),3))\\ 
+ &  + \alpha(d(d(1,3),4),2) - \alpha(d(d(1,4),3),2) \stackrel{ Leib3 }{=}  \\ 
+&\alpha(1,d(d(2,3),4)) - \alpha(1,d(d(2,4),3)) + \alpha(d(d(1,3),4),2) - \alpha(d(d(1,4),3),2)\\ 
+ &  + \underline{d(\alpha(1,d(2,4)),3)} + \underline{d(\alpha(d(1,4),2),3)} - \underline{d(\alpha(1,d(2,3)),4)} - \underline{d(\alpha(d(1,3),2),4)} \stackrel{ Leib3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor4 and Lie:} \\ 
+& \gamma = e(\beta(\beta(1,2),3),4) \\ 
+& \text{Reduction}: \\&\underline{e(\beta(1,2),e(3,4))} - \underline{d(e(\beta(1,2),4),3)} - \underline{e(\beta(\beta(1,3),2),4)} - \underline{e(\beta(1,\beta(2,3)),4)} \stackrel{ Mor4 }{=}  \\ 
+&e(1,e(2,e(3,4))) - d(e(1,e(3,4)),2) - d(e(1,e(2,4)),3) + d(d(e(1,4),2),3)\\ 
+ &  - e(\beta(1,3),e(2,4)) + \underline{d(e(\beta(1,3),4),2)} - \underline{e(1,e(\beta(2,3),4))} + d(e(1,4),\beta(2,3)) \stackrel{ Mor4 }{=}  \\ 
+& - d(e(1,e(2,4)),3) + d(d(e(1,4),2),3) - \underline{e(\beta(1,3),e(2,4))} + d(e(1,4),\beta(2,3))\\ 
+ &  - d(d(e(1,4),3),2) + e(1,d(e(2,4),3)) \stackrel{ Mor5 }{=}  \\ 
+&d(d(e(1,4),2),3) + \underline{d(e(1,4),\beta(2,3))} - d(d(e(1,4),3),2) \stackrel{ Mor1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor4 and Leib1:} \\ 
+& \gamma = e(\beta(1,2),\alpha(3,4)) \\ 
+& \text{Reduction}: \\&e(1,e(2,\alpha(3,4))) - d(e(1,\alpha(3,4)),2) - \underline{\alpha(e(\beta(1,2),3),4)} - \underline{\alpha(e(\beta(1,2),4),3)} \stackrel{ Mor4 }{=}  \\ 
+&\underline{e(1,e(2,\alpha(3,4)))} - \underline{d(e(1,\alpha(3,4)),2)} - \alpha(e(1,e(2,3)),4) + \alpha(d(e(1,3),2),4)\\ 
+ &  - \alpha(e(1,e(2,4)),3) + \alpha(d(e(1,4),2),3) \stackrel{ Leib1 }{=}  \\ 
+& - \alpha(e(1,e(2,3)),4) + \alpha(d(e(1,3),2),4) - \alpha(e(1,e(2,4)),3) + \alpha(d(e(1,4),2),3)\\ 
+ &  + \underline{e(1,\alpha(e(2,3),4))} + \underline{e(1,\alpha(e(2,4),3))} - d(\alpha(e(1,3),4),2) - d(\alpha(e(1,4),3),2) \stackrel{ Leib1 }{=}  \\ 
+&\alpha(d(e(1,3),2),4) + \alpha(d(e(1,4),2),3) - \underline{d(\alpha(e(1,3),4),2)} - \underline{d(\alpha(e(1,4),3),2)}\\ 
+ &  + \alpha(e(1,4),e(2,3)) + \alpha(e(1,3),e(2,4)) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor5 and Lie:} \\ 
+& \gamma = e(\beta(\beta(1,2),4),3) \\ 
+& \text{Reduction}: \\&\underline{e(\beta(1,2),d(3,4))} - \underline{d(e(\beta(1,2),3),4)} - \underline{e(\beta(\beta(1,4),2),3)} - \underline{e(\beta(1,\beta(2,4)),3)} \stackrel{ Mor4 }{=}  \\ 
+&e(1,e(2,d(3,4))) - d(e(1,d(3,4)),2) - d(e(1,e(2,3)),4) + d(d(e(1,3),2),4)\\ 
+ &  - \underline{e(\beta(1,4),e(2,3))} + \underline{d(e(\beta(1,4),3),2)} - \underline{e(1,e(\beta(2,4),3))} + d(e(1,3),\beta(2,4)) \stackrel{ Mor5 }{=}  \\ 
+&d(d(e(1,3),2),4) + \underline{d(e(1,3),\beta(2,4))} - d(d(e(1,3),4),2) \stackrel{ Mor1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor5 and Lie:} \\ 
+& \gamma = e(\beta(\beta(1,3),4),2) \\ 
+& \text{Reduction}: \\&\underline{e(\beta(1,3),d(2,4))} - \underline{d(e(\beta(1,3),2),4)} - \underline{e(\beta(\beta(1,4),3),2)} - \underline{e(\beta(1,\beta(3,4)),2)} \stackrel{ Mor2 }{=}  \\ 
+& - d(e(1,d(2,4)),3) + e(1,d(d(2,4),3)) + d(d(e(1,2),3),4) - d(e(1,d(2,3)),4)\\ 
+ &  + \underline{d(e(\beta(1,4),2),3)} - \underline{e(\beta(1,4),d(2,3))} + d(e(1,2),\beta(3,4)) - e(1,d(2,\beta(3,4))) \stackrel{ Mor2 }{=}  \\ 
+&e(1,d(d(2,4),3)) + d(d(e(1,2),3),4) + \underline{d(e(1,2),\beta(3,4))} - \underline{e(1,d(2,\beta(3,4)))}\\ 
+ &  - d(d(e(1,2),4),3) - e(1,d(d(2,3),4)) \stackrel{ Mor3 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor5 and Leib1:} \\ 
+& \gamma = e(\beta(1,3),\alpha(2,4)) \\ 
+& \text{Reduction}: \\&e(1,d(\alpha(2,4),3)) - d(e(1,\alpha(2,4)),3) - \underline{\alpha(e(\beta(1,3),2),4)} - \alpha(e(\beta(1,3),4),2) \stackrel{ Mor2 }{=}  \\ 
+&e(1,d(\alpha(2,4),3)) - d(e(1,\alpha(2,4)),3) - \underline{\alpha(e(\beta(1,3),4),2)} + \alpha(d(e(1,2),3),4)\\ 
+ &  - \alpha(e(1,d(2,3)),4) \stackrel{ Mor4 }{=}  \\ 
+&e(1,d(\alpha(2,4),3)) - \underline{d(e(1,\alpha(2,4)),3)} + \alpha(d(e(1,2),3),4) - \alpha(e(1,d(2,3)),4)\\ 
+ &  - \alpha(e(1,e(3,4)),2) + \alpha(d(e(1,4),3),2) \stackrel{ Leib1 }{=}  \\ 
+&\underline{e(1,d(\alpha(2,4),3))} + \alpha(d(e(1,2),3),4) - \alpha(e(1,d(2,3)),4) - \alpha(e(1,e(3,4)),2)\\ 
+ &  + \alpha(d(e(1,4),3),2) - \underline{d(\alpha(e(1,2),4),3)} - d(\alpha(e(1,4),2),3) \stackrel{ Leib2 }{=}  \\ 
+& - \alpha(e(1,d(2,3)),4) - \alpha(e(1,e(3,4)),2) + \alpha(d(e(1,4),3),2) - \underline{d(\alpha(e(1,4),2),3)}\\ 
+ &  + e(1,\alpha(d(2,3),4)) + e(1,\alpha(2,e(3,4))) - \alpha(e(1,2),e(3,4)) \stackrel{ Leib3 }{=}  \\ 
+& - \alpha(e(1,d(2,3)),4) - \alpha(e(1,e(3,4)),2) + \underline{e(1,\alpha(d(2,3),4))} + \underline{e(1,\alpha(2,e(3,4)))}\\ 
+ &  - \alpha(e(1,2),e(3,4)) - \alpha(e(1,4),d(2,3)) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor5 and Leib1:} \\ 
+& \gamma = e(\beta(1,4),\alpha(2,3)) \\ 
+& \text{Reduction}: \\&e(1,d(\alpha(2,3),4)) - d(e(1,\alpha(2,3)),4) - \underline{\alpha(e(\beta(1,4),2),3)} - \underline{\alpha(e(\beta(1,4),3),2)} \stackrel{ Mor2 }{=}  \\ 
+&e(1,d(\alpha(2,3),4)) - \underline{d(e(1,\alpha(2,3)),4)} + \alpha(d(e(1,2),4),3) - \alpha(e(1,d(2,4)),3)\\ 
+ &  + \alpha(d(e(1,3),4),2) - \alpha(e(1,d(3,4)),2) \stackrel{ Leib1 }{=}  \\ 
+&\underline{e(1,d(\alpha(2,3),4))} + \alpha(d(e(1,2),4),3) - \alpha(e(1,d(2,4)),3) + \alpha(d(e(1,3),4),2)\\ 
+ &  - \alpha(e(1,d(3,4)),2) - \underline{d(\alpha(e(1,2),3),4)} - \underline{d(\alpha(e(1,3),2),4)} \stackrel{ Leib3 }{=}  \\ 
+& - \alpha(e(1,d(2,4)),3) - \alpha(e(1,d(3,4)),2) + \underline{e(1,\alpha(2,d(3,4)))} + \underline{e(1,\alpha(d(2,4),3))}\\ 
+ &  - \alpha(e(1,2),d(3,4)) - \alpha(e(1,3),d(2,4)) \stackrel{ Leib1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor6 and Lie:} \\ 
+& \gamma = e(\beta(\beta(1,2),3),4) \\ 
+& \text{Reduction}: \\&\underline{d(e(\beta(1,2),4),3)} - \underline{e(\beta(1,2),e(3,4))} + \underline{e(\beta(\beta(1,3),2),4)} + \underline{e(\beta(1,\beta(2,3)),4)} \stackrel{ Mor4 }{=}  \\ 
+&d(e(1,e(2,4)),3) - d(d(e(1,4),2),3) - e(1,e(2,e(3,4))) + d(e(1,e(3,4)),2)\\ 
+ &  + e(\beta(1,3),e(2,4)) - \underline{d(e(\beta(1,3),4),2)} + \underline{e(1,e(\beta(2,3),4))} - d(e(1,4),\beta(2,3)) \stackrel{ Mor4 }{=}  \\ 
+&d(e(1,e(2,4)),3) - d(d(e(1,4),2),3) + \underline{e(\beta(1,3),e(2,4))} - d(e(1,4),\beta(2,3))\\ 
+ &  + d(d(e(1,4),3),2) - e(1,d(e(2,4),3)) \stackrel{ Mor5 }{=}  \\ 
+& - d(d(e(1,4),2),3) - \underline{d(e(1,4),\beta(2,3))} + d(d(e(1,4),3),2) \stackrel{ Mor1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Mor6 and Leib1:} \\ 
+& \gamma = e(\beta(1,2),\alpha(3,4)) \\ 
+& \text{Reduction}: \\&d(e(1,\alpha(3,4)),2) - e(1,e(2,\alpha(3,4))) + \underline{\alpha(e(\beta(1,2),3),4)} + \underline{\alpha(e(\beta(1,2),4),3)} \stackrel{ Mor4 }{=}  \\ 
+&\underline{d(e(1,\alpha(3,4)),2)} - \underline{e(1,e(2,\alpha(3,4)))} + \alpha(e(1,e(2,3)),4) - \alpha(d(e(1,3),2),4)\\ 
+ &  + \alpha(e(1,e(2,4)),3) - \alpha(d(e(1,4),2),3) \stackrel{ Leib1 }{=}  \\ 
+&\alpha(e(1,e(2,3)),4) - \alpha(d(e(1,3),2),4) + \alpha(e(1,e(2,4)),3) - \alpha(d(e(1,4),2),3)\\ 
+ &  + d(\alpha(e(1,3),4),2) + d(\alpha(e(1,4),3),2) - \underline{e(1,\alpha(e(2,3),4))} - \underline{e(1,\alpha(e(2,4),3))} \stackrel{ Leib1 }{=}  \\ 
+& - \alpha(d(e(1,3),2),4) - \alpha(d(e(1,4),2),3) + \underline{d(\alpha(e(1,3),4),2)} + \underline{d(\alpha(e(1,4),3),2)}\\ 
+ &  - \alpha(e(1,4),e(2,3)) - \alpha(e(1,3),e(2,4)) \stackrel{ Leib2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod1 and SMod2:} \\ 
+& \gamma = n(m(1,m(3,4)),2) \\ 
+& \text{Reduction}: \\&n(m(\alpha(1,3),4),2) - \underline{m(\alpha(1,2),m(3,4))} \stackrel{ SMod1 }{=}  \\ 
+&\underline{n(m(\alpha(1,3),4),2)} - m(\alpha(\alpha(1,2),3),4) \stackrel{ SMod2 }{=}  \\ 
+& - m(\alpha(\alpha(1,2),3),4) + \underline{m(\alpha(\alpha(1,3),2),4)} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod1 and SMod3:} \\ 
+& \gamma = m(1,m(2,n(3,4))) \\ 
+& \text{Reduction}: \\&m(\alpha(1,2),n(3,4)) - \underline{m(1,m(\alpha(2,4),3))} \stackrel{ SMod1 }{=}  \\ 
+&\underline{m(\alpha(1,2),n(3,4))} - m(\alpha(1,\alpha(2,4)),3) \stackrel{ SMod3 }{=}  \\ 
+& - \underline{m(\alpha(1,\alpha(2,4)),3)} + m(\alpha(\alpha(1,2),4),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod1 and SMod6:} \\ 
+& \gamma = n(m(1,m(2,3)),4) \\ 
+& \text{Reduction}: \\&n(m(\alpha(1,2),3),4) - \underline{m(\alpha(1,4),m(2,3))} \stackrel{ SMod1 }{=}  \\ 
+&\underline{n(m(\alpha(1,2),3),4)} - m(\alpha(\alpha(1,4),2),3) \stackrel{ SMod6 }{=}  \\ 
+& - \underline{m(\alpha(\alpha(1,4),2),3)} + m(\alpha(\alpha(1,2),4),3) \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod1 and SMod6:} \\ 
+& \gamma = n(m(1,m(2,4)),3) \\ 
+& \text{Reduction}: \\&n(m(\alpha(1,2),4),3) - \underline{m(\alpha(1,3),m(2,4))} \stackrel{ SMod1 }{=}  \\ 
+&\underline{n(m(\alpha(1,2),4),3)} - m(\alpha(\alpha(1,3),2),4) \stackrel{ SMod2 }{=}  \\ 
+& - \underline{m(\alpha(\alpha(1,3),2),4)} + m(\alpha(\alpha(1,2),3),4) \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod2 and SMod3:} \\ 
+& \gamma = m(1,n(m(2,4),3)) \\ 
+& \text{Reduction}: \\&\underline{m(1,m(\alpha(2,3),4))} - \underline{m(\alpha(1,3),m(2,4))} \stackrel{ SMod1 }{=}  \\ 
+&m(\alpha(1,\alpha(2,3)),4) - \underline{m(\alpha(\alpha(1,3),2),4)} \stackrel{ Com1 }{=}  \\ 
+&\underline{m(\alpha(1,\alpha(2,3)),4)} - m(\alpha(\alpha(1,2),3),4) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod2 and SMod3:} \\ 
+& \gamma = n(m(1,n(3,4)),2) \\ 
+& \text{Reduction}: \\&m(\alpha(1,2),n(3,4)) - \underline{n(m(\alpha(1,4),3),2)} \stackrel{ SMod2 }{=}  \\ 
+&\underline{m(\alpha(1,2),n(3,4))} - m(\alpha(\alpha(1,4),2),3) \stackrel{ SMod3 }{=}  \\ 
+& - \underline{m(\alpha(\alpha(1,4),2),3)} + m(\alpha(\alpha(1,2),4),3) \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod2 and SMod4:} \\ 
+& \gamma = n(n(m(1,3),2),4) \\ 
+& \text{Reduction}: \\&n(m(\alpha(1,2),3),4) - \underline{n(m(1,3),\alpha(2,4))} \stackrel{ SMod2 }{=}  \\ 
+&\underline{n(m(\alpha(1,2),3),4)} - m(\alpha(1,\alpha(2,4)),3) \stackrel{ SMod6 }{=}  \\ 
+& - \underline{m(\alpha(1,\alpha(2,4)),3)} + m(\alpha(\alpha(1,2),4),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod2 and SMod4:} \\ 
+& \gamma = n(n(m(1,4),2),3) \\ 
+& \text{Reduction}: \\&\underline{n(m(\alpha(1,2),4),3)} - \underline{n(m(1,4),\alpha(2,3))} \stackrel{ SMod2 }{=}  \\ 
+&m(\alpha(\alpha(1,2),3),4) - \underline{m(\alpha(1,\alpha(2,3)),4)} \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod2 and SMod5:} \\ 
+& \gamma = n(n(m(1,4),3),2) \\ 
+& \text{Reduction}: \\&\underline{n(m(\alpha(1,3),4),2)} - \underline{n(m(1,4),\alpha(2,3))} \stackrel{ SMod2 }{=}  \\ 
+&\underline{m(\alpha(\alpha(1,3),2),4)} - m(\alpha(1,\alpha(2,3)),4) \stackrel{ Com1 }{=}  \\ 
+& - \underline{m(\alpha(1,\alpha(2,3)),4)} + m(\alpha(\alpha(1,2),3),4) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod3 and SMod4:} \\ 
+& \gamma = m(1,n(n(2,3),4)) \\ 
+& \text{Reduction}: \\&\underline{m(\alpha(1,4),n(2,3))} - \underline{m(1,n(2,\alpha(3,4)))} \stackrel{ SMod3 }{=}  \\ 
+&\underline{m(\alpha(\alpha(1,4),3),2)} - m(\alpha(1,\alpha(3,4)),2) \stackrel{ Com1 }{=}  \\ 
+& - \underline{m(\alpha(1,\alpha(3,4)),2)} + m(\alpha(\alpha(1,3),4),2) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod3 and SMod5:} \\ 
+& \gamma = m(1,n(n(2,4),3)) \\ 
+& \text{Reduction}: \\&\underline{m(\alpha(1,3),n(2,4))} - \underline{m(1,n(2,\alpha(3,4)))} \stackrel{ SMod3 }{=}  \\ 
+&m(\alpha(\alpha(1,3),4),2) - \underline{m(\alpha(1,\alpha(3,4)),2)} \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod3 and SMod6:} \\ 
+& \gamma = n(m(1,n(2,3)),4) \\ 
+& \text{Reduction}: \\&n(m(\alpha(1,3),2),4) - \underline{m(\alpha(1,4),n(2,3))} \stackrel{ SMod3 }{=}  \\ 
+&\underline{n(m(\alpha(1,3),2),4)} - m(\alpha(\alpha(1,4),3),2) \stackrel{ SMod6 }{=}  \\ 
+& - \underline{m(\alpha(\alpha(1,4),3),2)} + m(\alpha(\alpha(1,3),4),2) \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod3 and SMod6:} \\ 
+& \gamma = n(m(1,n(2,4)),3) \\ 
+& \text{Reduction}: \\&n(m(\alpha(1,4),2),3) - \underline{m(\alpha(1,3),n(2,4))} \stackrel{ SMod3 }{=}  \\ 
+&\underline{n(m(\alpha(1,4),2),3)} - m(\alpha(\alpha(1,3),4),2) \stackrel{ SMod6 }{=}  \\ 
+& - m(\alpha(\alpha(1,3),4),2) + \underline{m(\alpha(\alpha(1,4),3),2)} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod3 and SMod6:} \\ 
+& \gamma = m(1,n(m(2,3),4)) \\ 
+& \text{Reduction}: \\&\underline{m(\alpha(1,4),m(2,3))} - \underline{m(1,m(\alpha(2,4),3))} \stackrel{ SMod1 }{=}  \\ 
+&\underline{m(\alpha(\alpha(1,4),2),3)} - m(\alpha(1,\alpha(2,4)),3) \stackrel{ Com1 }{=}  \\ 
+& - \underline{m(\alpha(1,\alpha(2,4)),3)} + m(\alpha(\alpha(1,2),4),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod4 and SMod5:} \\ 
+& \gamma = n(n(n(1,2),4),3) \\ 
+& \text{Reduction}: \\&\underline{n(n(1,\alpha(2,4)),3)} - \underline{n(n(1,2),\alpha(3,4))} \stackrel{ SMod4 }{=}  \\ 
+&\underline{n(1,\alpha(\alpha(2,4),3))} - n(1,\alpha(2,\alpha(3,4))) \stackrel{ Com1 }{=}  \\ 
+& - \underline{n(1,\alpha(2,\alpha(3,4)))} + n(1,\alpha(\alpha(2,3),4)) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod4 and SMod5:} \\ 
+& \gamma = n(n(n(1,3),4),2) \\ 
+& \text{Reduction}: \\&\underline{n(n(1,\alpha(3,4)),2)} - \underline{n(n(1,3),\alpha(2,4))} \stackrel{ SMod5 }{=}  \\ 
+&n(1,\alpha(2,\alpha(3,4))) - \underline{n(1,\alpha(\alpha(2,4),3))} \stackrel{ Com1 }{=}  \\ 
+&\underline{n(1,\alpha(2,\alpha(3,4)))} - n(1,\alpha(\alpha(2,3),4)) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod4 and SMod5:} \\ 
+& \gamma = n(n(n(1,3),2),4) \\ 
+& \text{Reduction}: \\&n(n(1,3),\alpha(2,4)) - \underline{n(n(1,\alpha(2,3)),4)} \stackrel{ SMod4 }{=}  \\ 
+&\underline{n(n(1,3),\alpha(2,4))} - n(1,\alpha(\alpha(2,3),4)) \stackrel{ SMod5 }{=}  \\ 
+& - n(1,\alpha(\alpha(2,3),4)) + \underline{n(1,\alpha(\alpha(2,4),3))} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod4 and SMod5:} \\ 
+& \gamma = n(n(n(1,4),2),3) \\ 
+& \text{Reduction}: \\&n(n(1,4),\alpha(2,3)) - \underline{n(n(1,\alpha(2,4)),3)} \stackrel{ SMod4 }{=}  \\ 
+&\underline{n(n(1,4),\alpha(2,3))} - n(1,\alpha(\alpha(2,4),3)) \stackrel{ SMod5 }{=}  \\ 
+& - \underline{n(1,\alpha(\alpha(2,4),3))} + n(1,\alpha(\alpha(2,3),4)) \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod4 and SMod6:} \\ 
+& \gamma = n(n(m(1,2),3),4) \\ 
+& \text{Reduction}: \\&\underline{n(m(1,2),\alpha(3,4))} - \underline{n(m(\alpha(1,3),2),4)} \stackrel{ SMod6 }{=}  \\ 
+&\underline{m(\alpha(1,\alpha(3,4)),2)} - m(\alpha(\alpha(1,3),4),2) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod5 and SMod6:} \\ 
+& \gamma = n(n(m(1,2),4),3) \\ 
+& \text{Reduction}: \\&\underline{n(m(1,2),\alpha(3,4))} - \underline{n(m(\alpha(1,4),2),3)} \stackrel{ SMod6 }{=}  \\ 
+&m(\alpha(1,\alpha(3,4)),2) - \underline{m(\alpha(\alpha(1,4),3),2)} \stackrel{ Com1 }{=}  \\ 
+&\underline{m(\alpha(1,\alpha(3,4)),2)} - m(\alpha(\alpha(1,3),4),2) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations SMod5 and SMod6:} \\ 
+& \gamma = n(n(m(1,3),4),2) \\ 
+& \text{Reduction}: \\&\underline{n(m(1,3),\alpha(2,4))} - \underline{n(m(\alpha(1,4),3),2)} \stackrel{ SMod2 }{=}  \\ 
+&m(\alpha(1,\alpha(2,4)),3) - \underline{m(\alpha(\alpha(1,4),2),3)} \stackrel{ Com1 }{=}  \\ 
+&\underline{m(\alpha(1,\alpha(2,4)),3)} - m(\alpha(\alpha(1,2),4),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com1 and Com2:} \\ 
+& \gamma = \alpha(\alpha(1,3),\alpha(2,4)) \\ 
+& \text{Reduction}: \\&\alpha(\alpha(1,\alpha(2,4)),3) - \underline{\alpha(\alpha(\alpha(1,3),2),4)} \stackrel{ Com1 }{=}  \\ 
+&\underline{\alpha(\alpha(1,\alpha(2,4)),3)} - \alpha(\alpha(\alpha(1,2),3),4) \stackrel{ Com2 }{=}  \\ 
+& - \alpha(\alpha(\alpha(1,2),3),4) + \underline{\alpha(\alpha(\alpha(1,2),4),3)} \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com1 and Com2:} \\ 
+& \gamma = \alpha(\alpha(1,4),\alpha(2,3)) \\ 
+& \text{Reduction}: \\&\alpha(\alpha(1,\alpha(2,3)),4) - \underline{\alpha(\alpha(\alpha(1,4),2),3)} \stackrel{ Com1 }{=}  \\ 
+&\alpha(\alpha(1,\alpha(2,3)),4) - \underline{\alpha(\alpha(\alpha(1,2),4),3)} \stackrel{ Com1 }{=}  \\ 
+&\underline{\alpha(\alpha(1,\alpha(2,3)),4)} - \alpha(\alpha(\alpha(1,2),3),4) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com1 and Com2:} \\ 
+& \gamma = \alpha(1,\alpha(\alpha(2,4),3)) \\ 
+& \text{Reduction}: \\&\underline{\alpha(1,\alpha(\alpha(2,3),4))} - \underline{\alpha(\alpha(1,\alpha(2,4)),3)} \stackrel{ Com2 }{=}  \\ 
+&\underline{\alpha(\alpha(1,\alpha(2,3)),4)} - \alpha(\alpha(\alpha(1,2),4),3) \stackrel{ Com2 }{=}  \\ 
+& - \underline{\alpha(\alpha(\alpha(1,2),4),3)} + \alpha(\alpha(\alpha(1,2),3),4) \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com1 and Com2:} \\ 
+& \gamma = \alpha(\alpha(1,\alpha(3,4)),2) \\ 
+& \text{Reduction}: \\&\alpha(\alpha(1,2),\alpha(3,4)) - \underline{\alpha(\alpha(\alpha(1,3),4),2)} \stackrel{ Com1 }{=}  \\ 
+&\alpha(\alpha(1,2),\alpha(3,4)) - \underline{\alpha(\alpha(\alpha(1,3),2),4)} \stackrel{ Com1 }{=}  \\ 
+&\underline{\alpha(\alpha(1,2),\alpha(3,4))} - \alpha(\alpha(\alpha(1,2),3),4) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com1 and Leib1:} \\ 
+& \gamma = e(1,\alpha(\alpha(2,4),3)) \\ 
+& \text{Reduction}: \\&e(1,\alpha(\alpha(2,3),4)) - \alpha(e(1,\alpha(2,4)),3) - \underline{\alpha(e(1,3),\alpha(2,4))} \stackrel{ Com2 }{=}  \\ 
+&\underline{e(1,\alpha(\alpha(2,3),4))} - \underline{\alpha(e(1,\alpha(2,4)),3)} - \alpha(\alpha(e(1,3),2),4) \stackrel{ Leib1 }{=}  \\ 
+& - \alpha(\alpha(e(1,3),2),4) + \underline{\alpha(e(1,\alpha(2,3)),4)} + \alpha(e(1,4),\alpha(2,3)) - \alpha(\alpha(e(1,2),4),3)\\ 
+ &  - \alpha(\alpha(e(1,4),2),3) \stackrel{ Leib1 }{=}  \\ 
+&\alpha(e(1,4),\alpha(2,3)) - \underline{\alpha(\alpha(e(1,2),4),3)} - \alpha(\alpha(e(1,4),2),3) + \alpha(\alpha(e(1,2),3),4) \stackrel{ Com1 }{=}  \\ 
+&\underline{\alpha(e(1,4),\alpha(2,3))} - \alpha(\alpha(e(1,4),2),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com1 and Leib2:} \\ 
+& \gamma = d(\alpha(\alpha(1,4),3),2) \\ 
+& \text{Reduction}: \\&d(\alpha(\alpha(1,3),4),2) - \alpha(d(\alpha(1,4),2),3) - \underline{\alpha(\alpha(1,4),e(2,3))} \stackrel{ Com1 }{=}  \\ 
+&\underline{d(\alpha(\alpha(1,3),4),2)} - \underline{\alpha(d(\alpha(1,4),2),3)} - \alpha(\alpha(1,e(2,3)),4) \stackrel{ Leib2 }{=}  \\ 
+& - \alpha(\alpha(1,e(2,3)),4) + \underline{\alpha(d(\alpha(1,3),2),4)} + \alpha(\alpha(1,3),e(2,4)) - \alpha(\alpha(d(1,2),4),3)\\ 
+ &  - \alpha(\alpha(1,e(2,4)),3) \stackrel{ Leib2 }{=}  \\ 
+&\underline{\alpha(\alpha(1,3),e(2,4))} - \underline{\alpha(\alpha(d(1,2),4),3)} - \alpha(\alpha(1,e(2,4)),3) + \alpha(\alpha(d(1,2),3),4) \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com1 and Leib3:} \\ 
+& \gamma = d(\alpha(\alpha(1,3),2),4) \\ 
+& \text{Reduction}: \\&d(\alpha(\alpha(1,2),3),4) - \underline{\alpha(\alpha(1,3),d(2,4))} - \alpha(d(\alpha(1,3),4),2) \stackrel{ Com1 }{=}  \\ 
+&\underline{d(\alpha(\alpha(1,2),3),4)} - \underline{\alpha(d(\alpha(1,3),4),2)} - \alpha(\alpha(1,d(2,4)),3) \stackrel{ Leib3 }{=}  \\ 
+& - \alpha(\alpha(1,d(2,4)),3) + \alpha(\alpha(1,2),d(3,4)) + \underline{\alpha(d(\alpha(1,2),4),3)} - \alpha(\alpha(1,d(3,4)),2)\\ 
+ &  - \alpha(\alpha(d(1,4),3),2) \stackrel{ Leib3 }{=}  \\ 
+&\alpha(\alpha(1,2),d(3,4)) - \underline{\alpha(\alpha(1,d(3,4)),2)} - \underline{\alpha(\alpha(d(1,4),3),2)} + \alpha(\alpha(d(1,4),2),3) \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com1 and Leib3:} \\ 
+& \gamma = d(\alpha(\alpha(1,4),2),3) \\ 
+& \text{Reduction}: \\&d(\alpha(\alpha(1,2),4),3) - \underline{\alpha(\alpha(1,4),d(2,3))} - \alpha(d(\alpha(1,4),3),2) \stackrel{ Com1 }{=}  \\ 
+&\underline{d(\alpha(\alpha(1,2),4),3)} - \underline{\alpha(d(\alpha(1,4),3),2)} - \alpha(\alpha(1,d(2,3)),4) \stackrel{ Leib2 }{=}  \\ 
+& - \alpha(\alpha(1,d(2,3)),4) + \underline{\alpha(d(\alpha(1,2),3),4)} + \alpha(\alpha(1,2),e(3,4)) - \alpha(\alpha(d(1,3),4),2)\\ 
+ &  - \alpha(\alpha(1,e(3,4)),2) \stackrel{ Leib3 }{=}  \\ 
+&\alpha(\alpha(1,2),e(3,4)) - \underline{\alpha(\alpha(d(1,3),4),2)} - \underline{\alpha(\alpha(1,e(3,4)),2)} + \alpha(\alpha(d(1,3),2),4) \stackrel{ Com1 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com2 and Leib1:} \\ 
+& \gamma = e(1,\alpha(2,\alpha(3,4))) \\ 
+& \text{Reduction}: \\&e(1,\alpha(\alpha(2,3),4)) - \underline{\alpha(e(1,2),\alpha(3,4))} - \alpha(e(1,\alpha(3,4)),2) \stackrel{ Com2 }{=}  \\ 
+&\underline{e(1,\alpha(\alpha(2,3),4))} - \underline{\alpha(e(1,\alpha(3,4)),2)} - \alpha(\alpha(e(1,2),3),4) \stackrel{ Leib1 }{=}  \\ 
+& - \alpha(\alpha(e(1,2),3),4) + \underline{\alpha(e(1,\alpha(2,3)),4)} + \alpha(e(1,4),\alpha(2,3)) - \alpha(\alpha(e(1,3),4),2)\\ 
+ &  - \alpha(\alpha(e(1,4),3),2) \stackrel{ Leib1 }{=}  \\ 
+&\alpha(e(1,4),\alpha(2,3)) - \underline{\alpha(\alpha(e(1,3),4),2)} - \underline{\alpha(\alpha(e(1,4),3),2)} + \alpha(\alpha(e(1,3),2),4) \stackrel{ Com1 }{=}  \\ 
+&\underline{\alpha(e(1,4),\alpha(2,3))} - \alpha(\alpha(e(1,4),2),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com2 and Leib2:} \\ 
+& \gamma = d(\alpha(1,\alpha(3,4)),2) \\ 
+& \text{Reduction}: \\&d(\alpha(\alpha(1,3),4),2) - \underline{\alpha(d(1,2),\alpha(3,4))} - \alpha(1,e(2,\alpha(3,4))) \stackrel{ Com2 }{=}  \\ 
+&d(\alpha(\alpha(1,3),4),2) - \underline{\alpha(1,e(2,\alpha(3,4)))} - \alpha(\alpha(d(1,2),3),4) \stackrel{ Leib1 }{=}  \\ 
+&\underline{d(\alpha(\alpha(1,3),4),2)} - \alpha(\alpha(d(1,2),3),4) - \alpha(1,\alpha(e(2,3),4)) - \alpha(1,\alpha(e(2,4),3)) \stackrel{ Leib2 }{=}  \\ 
+& - \alpha(\alpha(d(1,2),3),4) - \alpha(1,\alpha(e(2,3),4)) - \alpha(1,\alpha(e(2,4),3)) + \underline{\alpha(d(\alpha(1,3),2),4)}\\ 
+ &  + \alpha(\alpha(1,3),e(2,4)) \stackrel{ Leib2 }{=}  \\ 
+& - \alpha(1,\alpha(e(2,3),4)) - \alpha(1,\alpha(e(2,4),3)) + \underline{\alpha(\alpha(1,3),e(2,4))} + \alpha(\alpha(1,e(2,3)),4) \stackrel{ Com1 }{=}  \\ 
+& - \underline{\alpha(1,\alpha(e(2,3),4))} - \underline{\alpha(1,\alpha(e(2,4),3))} + \alpha(\alpha(1,e(2,3)),4) + \alpha(\alpha(1,e(2,4)),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com2 and Leib3:} \\ 
+& \gamma = d(\alpha(1,\alpha(2,3)),4) \\ 
+& \text{Reduction}: \\&d(\alpha(\alpha(1,2),3),4) - \alpha(1,d(\alpha(2,3),4)) - \underline{\alpha(d(1,4),\alpha(2,3))} \stackrel{ Com2 }{=}  \\ 
+&\underline{d(\alpha(\alpha(1,2),3),4)} - \underline{\alpha(1,d(\alpha(2,3),4))} - \alpha(\alpha(d(1,4),2),3) \stackrel{ Leib3 }{=}  \\ 
+& - \alpha(\alpha(d(1,4),2),3) + \alpha(\alpha(1,2),d(3,4)) + \underline{\alpha(d(\alpha(1,2),4),3)} - \alpha(1,\alpha(2,d(3,4)))\\ 
+ &  - \alpha(1,\alpha(d(2,4),3)) \stackrel{ Leib3 }{=}  \\ 
+&\alpha(\alpha(1,2),d(3,4)) - \underline{\alpha(1,\alpha(2,d(3,4)))} - \underline{\alpha(1,\alpha(d(2,4),3))} + \alpha(\alpha(1,d(2,4)),3) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+\begin{align*} 
+& \text{Reducing S-polynomial for relations Com2 and Leib3:} \\ 
+& \gamma = d(\alpha(1,\alpha(2,4)),3) \\ 
+& \text{Reduction}: \\&d(\alpha(\alpha(1,2),4),3) - \alpha(1,d(\alpha(2,4),3)) - \underline{\alpha(d(1,3),\alpha(2,4))} \stackrel{ Com2 }{=}  \\ 
+&\underline{d(\alpha(\alpha(1,2),4),3)} - \underline{\alpha(1,d(\alpha(2,4),3))} - \alpha(\alpha(d(1,3),2),4) \stackrel{ Leib2 }{=}  \\ 
+& - \alpha(\alpha(d(1,3),2),4) + \underline{\alpha(d(\alpha(1,2),3),4)} + \alpha(\alpha(1,2),e(3,4)) - \alpha(1,\alpha(d(2,3),4))\\ 
+ &  - \alpha(1,\alpha(2,e(3,4))) \stackrel{ Leib3 }{=}  \\ 
+&\alpha(\alpha(1,2),e(3,4)) - \underline{\alpha(1,\alpha(d(2,3),4))} - \underline{\alpha(1,\alpha(2,e(3,4)))} + \alpha(\alpha(1,d(2,3)),4) \stackrel{ Com2 }{=}  \\ 
+&0\\ 
+\end{align*} 
+ 
+
+ Quadratic: True
+ \end{document}
