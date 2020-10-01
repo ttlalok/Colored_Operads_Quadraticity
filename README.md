@@ -1,4 +1,9 @@
 # Colored_Operads Project
+
+
+[![DOI](https://zenodo.org/badge/287342466.svg)](https://zenodo.org/badge/latestdoi/287342466)
+
+
 This project implements a rewriting system for colored operads, 
 following the article [Gröbner Bases for Coloured Operads](https://arxiv.org/abs/2008.05295).
 
