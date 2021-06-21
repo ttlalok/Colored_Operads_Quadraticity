@@ -405,9 +405,9 @@ def graft(bottom_tree_source, top_tree_source, position, shuffle=Permutation()):
             target_leaf = leaf
     parent_of_target_leaf = target_leaf.parent
     #if parent_of_target_leaf.input_colors[target_leaf.index_in_parent - 1] != top_tree.root.output_color:
-    if parent_of_target_leaf.input_colors[target_leaf.index_in_parent - 1] == top_tree.root.output_color:
-        print('Grafting ERROR for: ', bottom_tree, top_tree, position, shuffle)
-        raise ValueError('Input/output colouring mismatch!')
+    # if parent_of_target_leaf.input_colors[target_leaf.index_in_parent - 1] == top_tree.root.output_color:
+    #     print('Grafting ERROR for: ', bottom_tree, top_tree, position, shuffle)
+    #     raise ValueError('Input/output colouring mismatch!')
 
     # refactor min descendant for vertices in the top tree:
     top_tree_nodes = top_tree.bfs_nodes

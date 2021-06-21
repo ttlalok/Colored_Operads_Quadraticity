@@ -299,8 +299,8 @@ def generate_QP_relation(inp, oup):
             sign = -1
         else:
             sign = 1
-        signs.append(sign)
         for tau in Permutation.group(3):
+            signs.append(sign)
             qp_tree = QPTree(sigma.permute(inp), tau.permute(oup))
             top_label, bot_label, slot, perm = qp_tree.get_decomposition()
             tree = graft(gen_dict[bot_label].create_corolla(), gen_dict[top_label].create_corolla(), slot, perm)
@@ -317,15 +317,7 @@ for inp in combinations(six_numbers, 3):
     oup = tuple([x for x in six_numbers if x not in inp])
     relations.append(generate_QP_relation(inp, oup))
 
-#QP = GroebnerBasis(relations)
-#quadraticity_check(QP, "QuadraticPoisson_log.tex")
+QP = GroebnerBasis(relations)
+quadraticity_check(QP, "QuadraticPoisson_log.tex")
 
-def get_shuffles(n):
-    result = []
-    for perm in Permutation.group(n):
-        L = list(perm.permute(list(range(1, n + 1))))
-
-        if L[0] == 1:
-            result.append(Permutation(*L))
-    return result
 

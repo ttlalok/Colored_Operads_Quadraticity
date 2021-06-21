@@ -9,7 +9,7 @@ from overlapping import get_list_of_gammas
 def shuffles(n):
     result = []
     for perm in Permutation.group(n):
-        L = list(perm.permute(list(range(1, 6))))
+        L = list(perm.permute(list(range(1, n + 1))))
         if L[0] == 1:
             result.append(Permutation(*L))
     return result
