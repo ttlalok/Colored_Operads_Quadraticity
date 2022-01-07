@@ -99,6 +99,7 @@ class ColoredTree:
         root.parent = None
         self.bfs_nodes = [root] + root.children
         self.subtree_markings_for_bfs_nodes = [False]
+        self.possible_lead = True
 
         # rendering self as a subtree:
         d = dict((i, i) for i in range(1, self.arity + 1))

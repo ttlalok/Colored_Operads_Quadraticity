@@ -287,8 +287,10 @@ class QPTree:
 # tr2 = QPTree([1, 3, 6], [4, 2, 5])
 # tr2.get_decomposition() #a z 1 [1, 3, 4, 2, 5]
 
+named_polys = list()
+rel_possible_leads = list()
 
-def generate_QP_relation(inp, oup):
+def generate_QP_polys(inp, oup):
     relation = []
     rel_name = "INP: " + str(inp) + " OUT: " + str(oup)
     trees = []
@@ -304,20 +306,53 @@ def generate_QP_relation(inp, oup):
             qp_tree = QPTree(sigma.permute(inp), tau.permute(oup))
             top_label, bot_label, slot, perm = qp_tree.get_decomposition()
             tree = graft(gen_dict[bot_label].create_corolla(), gen_dict[top_label].create_corolla(), slot, perm)
+            if slot != 1:
+                tree.possible_lead = False
             trees.append(tree)
     poly = TreePolynomial(trees, signs)
-    rel = GroebnerRelation(poly, 0, rel_name)
-    return rel
+    named_polys.append([rel_name, poly])
+    rel_possible_leads.append(list(j for j, tree in enumerate(poly.trees) if tree.possible_lead))
 
 
-generate_QP_relation((6, 3, 1), (4, 2, 5))
-six_numbers = set(range(1, 7))
-relations = []
+#generate_QP_relation((6, 3, 1), (4, 2, 5))
+six_numbers = list(range(1, 7))
 for inp in combinations(six_numbers, 3):
     oup = tuple([x for x in six_numbers if x not in inp])
-    relations.append(generate_QP_relation(inp, oup))
+    generate_QP_polys(inp, oup)
 
-QP = GroebnerBasis(relations)
-quadraticity_check(QP, "QuadraticPoisson_log.tex")
+# for lead_choice in product(*rel_possible_leads):
+
+# a > b > c > x > y > z : FALSE
+# lead_choice = [0, 0, 3, 8, 0, 3, 6, 0,
+#                7, 8, 0, 3, 8, 6, 7, 8,
+#                0, 7, 8, 8]
+
+# a > b > c > z > y > x : FALSE
+# lead_choice = [0, 0, 3, 0, 0, 3, 1, 0,
+#                2, 0, 0, 3, 0, 6, 0, 0,
+#                0, 0, 0, 0]
+
+for lead_choice in product(*rel_possible_leads):
+    relations = []
+    for i, named_poly in enumerate(named_polys):
+        relations.append(GroebnerRelation(named_poly[1], lead_choice[i], named_poly[0]))
+    QP = GroebnerBasis(relations)
+    quadratic, s_polys_found = quadraticity_check(QP, "QuadraticPoisson_log.tex")
+    if quadratic:
+        with open('QPManualLead.txt', 'a') as f:
+            f.write("\n \n SUCCESS: \n")
+            for i, named_poly in enumerate(named_polys):
+                f.write(str(named_poly[0]) + " : " + str(named_poly[1]) + "\n")
+                f.write(str(lead_choice[i]))
+                f.write("\n")
+    else:
+        with open('QPManualLead.txt', 'a') as f:
+            f.write("\n \n FAILED: \n")
+            for i, named_poly in enumerate(named_polys):
+                f.write(str(named_poly[0]) + " : " + str(named_poly[1]) + "\n")
+                f.write(str(lead_choice[i]))
+                f.write("\n")
+
+
 
 

@@ -8,8 +8,9 @@ from basic import *
 
 class TreePolynomial:
     def __init__(self, trees=[], coeffs=[]):
-        self.trees = trees
-        self.coeffs = coeffs
+        reduced_trees, reduced_coeffs = self.reduce_input(trees, coeffs)
+        self.trees = reduced_trees
+        self.coeffs = reduced_coeffs
 
     def __bool__(self):
         return bool(self.trees)
@@ -31,6 +32,29 @@ class TreePolynomial:
 
     def __ne__(self, other):
         return not self.__eq__(other)
+
+
+    def reduce_input(self, trees, coeffs):
+        added = [False] * len(trees)
+        res_trees = []
+        res_coeffs = []
+        for i, tree1 in enumerate(trees):
+            if not added[i]:
+                for j, tree2 in enumerate(trees):
+                    if i != j:
+                        if tree1 == tree2:
+                            added[i] = True
+                            added[j] = True
+                            cf = coeffs[i] + coeffs[j]
+                            if cf != 0:
+                                res_trees.append(tree1)
+                                res_coeffs.append(cf)
+        for i, tree in enumerate(trees):
+            if not added[i]:
+                res_trees.append(tree)
+                res_coeffs.append(coeffs[i])
+        return res_trees, res_coeffs
+
 
     def same_trees(self, other):
         if len(self.trees) != len(other.trees):

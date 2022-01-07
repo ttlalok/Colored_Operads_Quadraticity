@@ -78,10 +78,12 @@ class GroebnerRelation:
 
     def relation_to_latex(self):
         poly = self.poly
-        result = '\n Relation ' + self.label + ': \n $$ \n'
+        result = '\n Relation ' + self.label + ': \n \\begin{align*} \n'
         if not poly.coeffs:
             result += '0'
         for i in range(len(poly.coeffs)):
+            if i > 0 and i % 4 == 0:
+                result += '\\\\'
             if i == self.lt_index:
                 result += '\\underline{'
             cf = poly.coeffs[i]
@@ -101,7 +103,7 @@ class GroebnerRelation:
             result += tree_to_latex(tree)
             if i == self.lt_index:
                 result += '}'
-        result += '\n $$ \n'
+        result += '\n  \\end{align*} \n'
         return result
 
 
